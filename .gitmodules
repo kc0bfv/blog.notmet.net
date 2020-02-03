@@ -1,0 +1,4 @@
+[submodule "themes/hugo-minimalist-theme"]
+	path = themes/hugo-minimalist-theme
+	url = git@github.com:kc0bfv/hugo-minimalist-theme.git
+	branch = kc0bfv_mods
