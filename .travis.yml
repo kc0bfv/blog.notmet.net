@@ -13,3 +13,7 @@ deploy:
   local_dir: public
   on:
     branch: master
+
+after_deploy:
+  script:
+    - curl -d "code=$PULL_CODE" $PULL_ENDPOINT
