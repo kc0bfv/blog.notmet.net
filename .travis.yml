@@ -15,5 +15,4 @@ deploy:
     branch: master
 
 after_deploy:
-  script:
-    - curl -d "code=$PULL_CODE" $PULL_ENDPOINT
+  - curl -d "code=$PULL_CODE" $PULL_ENDPOINT
