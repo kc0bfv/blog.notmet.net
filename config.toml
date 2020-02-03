@@ -1,0 +1,57 @@
+baseURL = "https://blog.notmet.net/"
+languageCode = "en-us"
+title = "Karl's Blog"
+theme = "hugo-minimalist-theme"
+paginate = 10
+googleAnalytics = "UA-42117518-3"
+
+[params]
+
+    description = "Karl's blog of randomness and programming"
+    header_background = [
+            "https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg",
+            "https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg",
+        ]
+    header_title = ""
+    copyright = "Karl Sickendick"
+    mainSections = ["post"]
+
+[author]
+    name = "Karl Sickendick"
+    email = "kc0bfv@notmet.net"
+    avatar = "https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80"
+    [author.Social]
+        facebook = "karl.sickendick"
+        twitter = "kc0bfv"
+
+
+[social]
+    twitter = "kc0bfv"
+    github = "kc0bfv"
+
+[permalinks]
+    post = "/:year/:month/:slug/"

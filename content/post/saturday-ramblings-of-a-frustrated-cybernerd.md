@@ -1,0 +1,36 @@
+---
+author: finity
+date: 2015-08-01 19:48:38+00:00
+draft: false
+title: Saturday Ramblings of a Frustrated Cybernerd
+type: post
+url: /2015/08/saturday-ramblings-of-a-frustrated-cybernerd/
+categories:
+- Blog
+---
+
+This is one of those Saturdays where I'm finding it hard to focus on what I want to focus on.  Ok, so that's a pretty regular problem for me on Saturday.  I'm trying to focus on programming for this volunteer activity I'm supposed to be leading in September.  I've got to build some software for the event, and make some decisions, and wrap it all up at some point.  It's not too far from being done, and I guess this is the first time I've had to just sit and think a bit this week, so maybe that's why I'm not too concerned about being unproductive, and I'm just letting my mind wander.
+
+I'm sitting at this coffee shop on Broadway in San Antonio that's beautiful.  It's not my favorite coffee place, that's in Dayton Ohio, and it's dressed like this old timey comfy grandma parlor room.  With funky art.  No, this coffee shop is too modern for any of that.  But, there's also this falling down burned out building architecture thing going on which makes me feel like a fucking outlaw.  Which reminds me of old times.
+
+And makes me remember how much I like being rebellious.  Which is basically the opposite of what the Air Force has me doing now.  But which I got a taste of on a recent visit to San Francisco.
+
+My thoughts keep turning, over the last weeks, to the thought of kicking this AF thing and starting my own company or something.  I don't know what it'd do yet, I guess that's the only thing holding me back, but I'm pretty sure it's only a matter of time.  Thinking about the problem this much means at some point a piece of my brain will kick over and find the answer - what I should start a business doing.  What's the thing the World needs now, with computers and shit, that people or businesses would pay for?  It needs to be new.  I want to invent some shit again.
+
+The idea of inviting some of my college and high school buddies to come invent some new shit with me is so attractive.  In my brain it's days and nights of programming and designing and breaking shit and fixing it.  I know there's also this hustling piece of starting something like that, the marketing piece.  I don't have that on lock-down, and don't have anybody in mind, but I bet I could find a partner to manage that side.
+
+The idea of moving out to the left coast is so attractive.  But I look around San Antonio and see places I could move into, too.  Boston.  The idea of setting up something that could be worked anywhere is probably more valuable to me.  Something with a physical location of wherever we're at.  I'd become a nomad during the day, or find some maker-shop or incubator to work at.
+
+It's not that there's anything wrong with being in the AF, or even doing what I'm doing now.  I have my hand in how AF cyber is developing, which is valuable to me.  However, it feels like it's this big cruise ship and my hand is out a port-hole dragging in the water alongside the ship, trying to turn it a little.
+
+Maybe the worst thing is that I'm not sure which way I'd want to turn it.  Some of the things that are clear to me that we need to be doing are being worked already, in small ways.  They're great!  Fundamental things like, let's thing about our security differently!  AF folks have great ideas and are doing things that are the same as what the really smart security folks are suggesting.  Things like - assume bad guys are in your network, now do security.  In a scenario like that, the naive solution is to kick the bad guys out.  It's naive because once you succeed at kicking them out you must then think, "ok now it's time for security again!  What are our assumptions?  We assume bad guys are in our network!"  It doesn't stop, and it shouldn't.  The smarter thing is to figure out how to make sure the bad guys in the network don't cause serious problems.  Sometimes that involves kicking them out at a specific time and place, and only with the expectation that the kicking-out will last for a set amount of time.  The smartest thing is to design and build networks in which the assumption (bad guys are in the network) is true to a much lesser extent.
+
+The Air Force calls that "smarter" thing mission assurance, and many are trying really hard to do it.  It's a great freaking idea!  It's probably one of the long term solutions, and we're mature enough to be getting that.  The problem is it's a big freaking organization - the entire military really - and we have money but not enough people!  To the military money buys contractors, but no other type of person, and we cannot take care of our contractors like we take care of military and civilian.  Like, by law.  The motivations are all fucked up.  The individuals that contractors bring on are great, but we can't use them like normal people.
+
+The solutions we come up with, where I sit, are so focused at making things work across the whole AF.  When we get something that works in a small place well and it's what we need it's like getting lucky.  The right folks were in the right place with their small organization and could do good stuff at that level.  Then the military says, how do we make this work everywhere?  How do we institutionalize this?  I think the answer is to take all the shit that's tying peoples' hands and cut it, and make sure good nerds are in charge of these organizations, but in general that's the opposite of what happens when institutionalizing something.  Efforts to educate cyber leaders and educate their followers are necessary, but not sufficient.
+
+We aren't working on that "smartest" solution at my level.  Not in any strategic way, just by slowly improving the shit we're working with to try to get there.  That'll work eventually, but it'll be a while.  That was basically my last job, take what we have and make it better.  Well, we need a strategy for a full revamp.  It's time.  We need a huge picture of what the military cyber enterprise (people, networks, missions) needs to look like in 10 years based on all the good shit we know now, without compromising due to cost or money already spent or projects we'll kill.  Without compromising due to people who want their equipment to do unsafe stupid shit.  Then we need to come up with the roadmap to make our current investment and projects fit into that ideal.  Then we need to get some really big General that understands why compromising due to morons is _so_ bad, and to back it.  Most of the stuff we do or are doing will fit into it, because it's good stuff, just seemingly lacking a vision to fit into.
+
+So, maybe I am in the right place.  Maybe I need to focus this frustration that kinda motivates me back as a call to arms for my fellow frustrated AF smarties.  I'm fucking out there with fun sometimes, and I can brief the shit out of some stuff, maybe I need to take time at work to focus and motivate people.  Maybe I could make the front staff seem less intimidating, and tell people about what's going on, and tell people what I think we need to do about it all at the same time.
+
+Yup, I could probably do that.  It would probably be fun.  I'll email some folks and try to set something up.  Maybe it'll keep me sane.
