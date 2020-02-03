@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>I always feel like someone&#39;s watching me on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/i-always-feel-like-someones-watching-me/</link>
+    <description>Recent content in I always feel like someone&#39;s watching me on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Sun, 15 Jul 2012 01:26:03 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/i-always-feel-like-someones-watching-me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Surveillance Art</title>
+      <link>https://blog.notmet.net/2012/07/surveillance-art/</link>
+      <pubDate>Sun, 15 Jul 2012 01:26:03 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2012/07/surveillance-art/</guid>
+      <description>Wired has some great reporting, and this story is no different.
+ On July 3rd, I installed this exhibition app on all the free computers at the 14th Street Apple Store. [&amp;hellip;] When the slideshow first opened, it would capture an image of whoever was standing in front of the computer, and show them first before fading into the previously captured photos.
+ It&amp;rsquo;s the backstory behind the &amp;ldquo;People Staring at Computers&amp;rdquo; art exhibit.</description>
+    </item>
+    
+  </channel>
+</rss>

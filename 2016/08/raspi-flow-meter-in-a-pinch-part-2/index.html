@@ -1,0 +1,249 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="RasPi Flow Meter In A Pinch - Part 2" />
+<meta property="og:description" content="META: Part 1 describes the problem I&rsquo;m trying to solve here.
+I need a way to monitor water flow through my water filter over several days, and I don&rsquo;t want to sit and watch it.
+So - I took a Raspberry Pi I&rsquo;ve got and a little Python and hacked a solution together. The basic idea was that I&rsquo;d position a plastic cup below the output stream of the waste water, I&rsquo;d put two wires into the cup, I&rsquo;d put a voltage on one wire and attempt to see the voltage on the other." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/" />
+<meta property="article:published_time" content="2016-08-20T00:14:23+00:00" />
+<meta property="article:modified_time" content="2016-08-20T00:14:23+00:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RasPi Flow Meter In A Pinch - Part 2"/>
+<meta name="twitter:description" content="META: Part 1 describes the problem I&rsquo;m trying to solve here.
+I need a way to monitor water flow through my water filter over several days, and I don&rsquo;t want to sit and watch it.
+So - I took a Raspberry Pi I&rsquo;ve got and a little Python and hacked a solution together. The basic idea was that I&rsquo;d position a plastic cup below the output stream of the waste water, I&rsquo;d put two wires into the cup, I&rsquo;d put a voltage on one wire and attempt to see the voltage on the other."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/">RasPi Flow Meter In A Pinch - Part 2</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016-08-20">2016.08.20</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/programming">programming</a>
+        
+    
+
+</span>
+</footer>
+
+        <p>META: <a href="https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/">Part 1</a> describes the problem I&rsquo;m trying to solve here.</p>
+<p>I need a way to monitor water flow through my water filter over several days, and I don&rsquo;t want to sit and watch it.</p>
+<p>So - I took a Raspberry Pi I&rsquo;ve got and a little Python and hacked a solution together.  The basic idea was that I&rsquo;d position a plastic cup below the output stream of the waste water, I&rsquo;d put two wires into the cup, I&rsquo;d put a voltage on one wire and attempt to see the voltage on the other.  I&rsquo;d use the Raspberry Pi to check for the voltage once per minute and log the status to a file with a timestamp.  Later, I could graph the state of the voltage - DETECTED or NOT DETECTED - over time, and produce a graph showing when the waste water was running.  With that I could even get an approximate flow rate waste water, if I wanted, by measuring how long it takes to output a liter of waste water and multiplying by run time.</p>
+<p>First - the cup.  The simple flow meter.  I poked a hole in the bottom so water drains out slowly, and poked a couple holes through the sides to hold wires in position close to each other without touching.  When water covers the wires current should be able to flow between them, when the water drains out current should stop flowing.  If the waste water overflows the cup it will just run over and down the drain as it usually does.  It takes about 30 seconds for water to drain from overflow until the wires are not conducting, and I was hoping to measure conductivity every minute, so my initial cup holes were close enough.  The waste water runs quickly enough that the cup fills up in about a minute.  This means that polling every minute should produce a graph that closely represents reality.</p>
+<p><a href="https://blog.notmet.net/wp-content/uploads/2016/08/20160819_182113-e1471649741539.jpg"><img src="https://blog.notmet.net/wp-content/uploads/2016/08/20160819_182113-e1471649726856-169x300.jpg" alt="Cup with two wires hooked up, water running into the top, and water overflowing down the side.  Cup is sitting in a laundry room slop sink.">
+</a></p>
+<p>Next - the Raspberry Pi.  I got <a href="https://www.adafruit.com/products/2029">Adafruit&rsquo;s Pi Cobbler</a> along with the Pi, which is a cleverly-named pinout that&rsquo;s easy to plug into a breadboard.  That plus <a href="http://makezine.com/projects/tutorial-raspberry-pi-gpio-pins-and-python/">this handy tutorial from Make</a> made it really easy to write a little voltage tester.  Here&rsquo;s the code.</p>
+<pre><code>#!/usr/bin/env python3
+
+import RPi.GPIO as GPIO
+from time import sleep, ctime
+import atexit
+
+INPUT_PIN=21
+POLL_PERIOD=60
+LOG_FILE=&quot;/home/username/waterLog.csv&quot;
+
+def resetGPIO():
+    GPIO.cleanup()
+
+def setupGPIO():
+    GPIO.setmode(GPIO.BCM)
+    &quot;&quot;&quot; Set INPUT_PIN to pull-up, so the signal will be when it goes low
+    That way, we won't potentially source a lot of current to ground with
+    a positive voltage, and also just the ground of water might pull it down,
+    which would indicate there's water in the cup (and therefore, is what we
+    want)
+    &quot;&quot;&quot;
+    GPIO.setup(INPUT_PIN, GPIO.IN, pull_up_down = GPIO.PUD_UP)
+
+def pollForWater():
+    with open(LOG_FILE, &quot;a&quot;) as f:
+        f.write(&quot;,&quot;.join((ctime(), str(GPIO.input(INPUT_PIN) == 0)))+&quot;\n&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    atexit.register(resetGPIO)
+    setupGPIO()
+    while True:
+        pollForWater()
+        sleep(POLL_PERIOD)
+</code></pre><p>So, now I connect the Pi to a ribbon cable, to a Pi Cobbler, to a breadboard, to two wires on pin 21 and a ground pin respectively.  The other ends of the wires are not touching and are in the cup.  A couple design choices - I could make the pin I&rsquo;m using for input (pin 21) connect to the Pi via a pull-up or a pull-down resistor.  These options, and the resistors, are built-in to the Pi and selectable in code.</p>
+<p>I told pin 21 to use a pull-up resistor, but if instead I told pin 21 to use a pull-down resistor, it would normally rest at 0 V and I would detect a voltage (and thereby detect water) by connecting 3.3 V to the other wire.  There&rsquo;s a problem with that - I&rsquo;m putting these wires in water and that will potentially introduce another &ldquo;ground&rdquo; connection.  When the wires touch water, the 3.3 V wire would essentially be connected directly to ground, and then the Pi would try to provide a bunch of current, and that could be bad for the Pi.</p>
+<p>I told pin 21 to use a pull-up resistor, so that means it normally rests at 3.3 V.  It is connected through a good-sized resistor to 3.3 V, so when nothing is connecting the pin to ground or some other voltage, that resistor &ldquo;pulls&rdquo; the voltage on pin 21 up to 3.3 V.  If something connects the pin to ground, the Pi will try to provide current again, just like before.  However, in this case the good-sized resistor is in the way, between 3.3 V and ground, so the Pi won&rsquo;t have to provide too much current to get everything to equilibrium.  Some folks call this &ldquo;current limiting&rdquo; - the Pi is limited to how much current it can provide.  A voltage source simply provides enough current to raise the voltage at its output to its set level.  When that happens, all the currents and voltages balance out and everything reaches equilibrium and stays the same until some other thing happens to the circuit to throw everything out-of-balance.  With pin 21 set as &ldquo;pull-up&rdquo;, even if the water introduces another ground, nothing bad should happen to the Pi.</p>
+<p>Another design choice - I used Python&rsquo;s &ldquo;atexit&rdquo; to cleanup the Pi&rsquo;s GPIO port.  The example website I linked to above simply put it after the &ldquo;while True&rdquo; polling loop.  The problem with putting the GPIO cleanup after the infinite loop is that if you kill the program by pressing ctrl+c (or by any other means I can think of) the cleanup code never runs.  Python just exits the program immediately.  By registering the cleanup code with &ldquo;atexit&rdquo;, Python will run that cleanup code as the last thing it does whenever it possibly can.  There are ways to kill the program where Python will bypass atexit, but all the common methods will let Python exit cleanly and cleanup the port.  Port cleanup isn&rsquo;t critical in my case - I&rsquo;ve already got the simple ground protection setup I described above, but it can&rsquo;t hurt, and if I ever just copy my old code into a new project I&rsquo;ll be glad I did it correctly.</p>
+<p><a href="https://blog.notmet.net/wp-content/uploads/2016/08/20160819_182131-e1471651217642.jpg"><img src="https://blog.notmet.net/wp-content/uploads/2016/08/20160819_182131-300x169.jpg" alt="Raspberry Pi connected via ribbon cable to breadboard.  Breadboard has several circuits on it, and is sitting on a table.  Two wires run from breadboard to slop sink to the right.">
+</a></p>
+<p>Um, that&rsquo;s pretty much it.  There&rsquo;s some other stuff on the breadboard but it&rsquo;s just an old circuit and is irrelevant here.</p>
+<p><a href="https://blog.notmet.net/wp-content/uploads/2016/08/20160819_182100-e1471651271194.jpg"><img src="https://blog.notmet.net/wp-content/uploads/2016/08/20160819_182100-300x169.jpg" alt="Waste water hose draining into cup (the cup with the two wires, sitting in the slop sink).">
+</a></p>
+<p>So, that&rsquo;s what the setup in the sink looks like.  The water is running out of the output here, it&rsquo;s hard to see in the photo but there&rsquo;s the shadow.</p>
+<p><a href="https://blog.notmet.net/wp-content/uploads/2016/08/20160819_182013-e1471651337266.jpg"><img src="https://blog.notmet.net/wp-content/uploads/2016/08/20160819_182013-300x169.jpg" alt="Photo of a command prompt terminal displaying sample output.  Sample output is date stamp on the left followed by a true or false value, separated by a comma.  The time stamps are a second apart, and true/false values vary through the data.">
+</a></p>
+<p>And here&rsquo;s a photo of the screen.  Because no screenshots for you.  Just gonna take a photo and pretend like that&rsquo;s cool.  See how some say true and some say false?  This was a test run, polling every second.  When the wires are less than half-submerged they don&rsquo;t provide a clean on/off signal to the Pi.  That&rsquo;s ok, this was a hack.  When I poll only every minute the on/off signal gets much sharper.</p>
+<p><a href="https://blog.notmet.net/wp-content/uploads/2016/08/raspiwatermeteroutput.png"><img src="https://blog.notmet.net/wp-content/uploads/2016/08/raspiwatermeteroutput.png" alt="Screenshot of terminal data taken once a minute, timestamp comma true/false.  All of the early time stamps are true, then about halfway through they switch to all-false.">
+</a></p>
+<p>Actual data - a screenshot this time because we&rsquo;re not savages.  I filled up some containers at around 17:20, that caused the filter to start filtering and the waste water to start running, then the water ran until about 18:31, so about an hour.  I would expect that the water doesn&rsquo;t run again until late tomorrow at the earliest&hellip;  We&rsquo;ll see!</p>
+<hr>
+<h3 id="comments">Comments:</h3>
+<h4 id="heading"></h4>
+<p><a href="https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/" title="">RasPi Flow Meter In A Pinch – Part 1 | blog.notmet.net</a> - Aug 5, 2016</p>
+<p>[…] ← Previous Next → […]</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2016%2f08%2fraspi-flow-meter-in-a-pinch-part-2%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=RasPi%20Flow%20Meter%20In%20A%20Pinch%20-%20Part%202&amp;url=https%3a%2f%2fblog.notmet.net%2f2016%2f08%2fraspi-flow-meter-in-a-pinch-part-2%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2016%2f08%2fraspi-flow-meter-in-a-pinch-part-2%2f&title=RasPi%20Flow%20Meter%20In%20A%20Pinch%20-%20Part%202" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

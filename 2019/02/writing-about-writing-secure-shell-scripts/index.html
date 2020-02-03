@@ -1,0 +1,224 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Writing About Writing Secure Shell Scripts" />
+<meta property="og:description" content="I recently read this cautionary tale about shell scripts. https://www.linuxjournal.com/content/writing-secure-shell-scripts
+It&rsquo;s cautionary in two ways: it is intended to cause shell programmers caution, and I caution against you taking the article too seriously.
+One of the biggest threats to the shell in memory was the Shellshock vulnerability. This wasn&rsquo;t typically a direct threat to shell scripts, but one caused by a bug in a shell, and by other programs exposing parts of the shell to external input, often in unexpected and unlikely places." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2019/02/writing-about-writing-secure-shell-scripts/" />
+<meta property="article:published_time" content="2019-02-07T02:27:44+00:00" />
+<meta property="article:modified_time" content="2019-02-07T02:27:44+00:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Writing About Writing Secure Shell Scripts"/>
+<meta name="twitter:description" content="I recently read this cautionary tale about shell scripts. https://www.linuxjournal.com/content/writing-secure-shell-scripts
+It&rsquo;s cautionary in two ways: it is intended to cause shell programmers caution, and I caution against you taking the article too seriously.
+One of the biggest threats to the shell in memory was the Shellshock vulnerability. This wasn&rsquo;t typically a direct threat to shell scripts, but one caused by a bug in a shell, and by other programs exposing parts of the shell to external input, often in unexpected and unlikely places."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2019/02/writing-about-writing-secure-shell-scripts/">Writing About Writing Secure Shell Scripts</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2019-02-07">2019.02.07</time>
+
+</span>
+</footer>
+
+        <p>I recently read this cautionary tale about shell scripts.  <a href="https://www.linuxjournal.com/content/writing-secure-shell-scripts">https://www.linuxjournal.com/content/writing-secure-shell-scripts</a></p>
+<p>It&rsquo;s cautionary in two ways: it is intended to cause shell programmers caution, and I caution against you taking the article too seriously.</p>
+<p>One of the biggest threats to the shell in memory was the Shellshock vulnerability.  This wasn&rsquo;t typically a direct threat to shell scripts, but one caused by a bug in a shell, and by other programs exposing parts of the shell to external input, often in unexpected and unlikely places.</p>
+<p>That kind of topic is not what the Linux Journal article is about.</p>
+<p>Instead, it provides three cautions to people writing shell scripts:</p>
+<ul>
+<li>Know the utilities you invoke: fully specify program paths so you don&rsquo;t accidentally run something out of /tmp  * Don&rsquo;t store passwords in scripts: find your own other solution, good luck sucker!  * Beware of invoking anything the user inputs: with examples that work on no modern Linux</li>
+</ul>
+<p>These are all fine recommendations, but are made in terrible ways.</p>
+<h2 id="know-the-utilities-you-invoke">Know the Utilities You Invoke</h2>
+<p>The author provides an example where a user drops a malicious &ldquo;ls&rdquo; script in /tmp, then scripts execute it because they do not completely specify the path of ls.  The author&rsquo;s recommendation is to completely specify all paths.  The problems with this are two-fold&hellip;</p>
+<p>First, to execute a program in a directory that isn&rsquo;t in your path, you must specify the path of that program.  If it&rsquo;s your current directory, that&rsquo;s just a &ldquo;./&quot;, but it still must be present.  If you have &ldquo;.&rdquo; in your path, as the article suggests, then you have made a configuration error that can easily cause you unexpected behavior at best, and the precise security vulnerability mentioned in the article at worst.</p>
+<p>The correct remediation for this issue is to not put &ldquo;.&rdquo; in your path.</p>
+<p>The second problem with the article&rsquo;s recommendation is that many programs are not in a set location on the system, and some even move around over time (decades).  Many claim that the &ldquo;/bin&rdquo;, &ldquo;/usr/bin&rdquo;, &ldquo;/usr/local/bin&rdquo; system is set, sensible, and regular.  This is not the case in practice.  Usage varies between distros, and even between versions of distros.  A system update can move the location of a program in the worst case.  This isn&rsquo;t a problem if the new location is in your path, you&rsquo;ll still execute the right thing.  Unless you fully specified the old location in all your scripts.</p>
+<p>This isn&rsquo;t to say that you can&rsquo;t usually specify the full location.  And specifying the full path might provide a greater security guarantee.  However, the author&rsquo;s recommendation has some practical downsides, and anyway don&rsquo;t put &ldquo;.&rdquo; in your path!</p>
+<p>The <a href="https://freedesktop.org/wiki/Software/systemd/TheCaseForTheUsrMerge">great /usr merge</a> makes fully specifying paths more practical.</p>
+<h2 id="dont-store-passwords-in-scripts">Don&rsquo;t Store Passwords in Scripts</h2>
+<p>This is 100% correct.  Anyone with read access to your scripts or your git repo or your backups can pull those passwords right out.  The problem with this section of the article is that it doesn&rsquo;t provide any practical solutions.  Anybody that has been doing shell scripting for a time will have run into the password problem, and lots of us have just crammed the password in the script or in a readable file at some point.</p>
+<p>There are other better solutions!</p>
+<p>First though, another wrong way to do it: specifying passwords on the command line or in environment variables.  Don&rsquo;t do this either!  It often seems a better solution than dropping it in the code, but both solutions still expose passwords in many ways.</p>
+<p>If your need is for SSH (or related) authentication, consider requiring the script user to type in the password.  The password is a way to ensure the user actually has permission to use the resource you&rsquo;re automating access to.</p>
+<p>Often, scripts need to run without user interaction though, so entering a password is not feasible in those cases.</p>
+<p>Then you need to limit the damage someone malicious can do if they gain access to the target system.  Consider setting up a specific user on the target system that has permissions limited to only what is required for the automated actions.  Setup key-based access to that target account, don&rsquo;t specify a key file password, and don&rsquo;t provide the target account an actual system password.  Place the key file in a location only accessible to the users that should be able to execute the script (maybe you need a custom user or group here, too) and give the file only the minimum required permissions. Now, in your script, invoke SSH, or SCP, etc. with that key file specified.</p>
+<p>Using SSH-Agent is probably an even better solution: <a href="https://www.akadia.com/services/ssh_agent.html">https://www.akadia.com/services/ssh_agent.html</a></p>
+<p>What if it&rsquo;s not SSH that you&rsquo;re sending a password to, what if it&rsquo;s sudo?  I think we&rsquo;ve all wanted to do this at some point, I confess that I have.</p>
+<p>Don&rsquo;t do it though!</p>
+<p>Change your sudo configuration so that for the specific command you need a specific user to run, it doesn&rsquo;t require a password!  Then lock access to that user down some.  Even in this case, you&rsquo;re probably causing problems you don&rsquo;t expect.  Imagine if the target executable has a vulnerability…  Now you&rsquo;re opening the aperture for privilege escalation. A better solution is to change permissions to allow specific users access to the specific resources required, then reduce others&rsquo; access to those user accounts.</p>
+<p>What if you need to script password sending to telnet or ftp?  I don&rsquo;t have great solutions at hand for you.  At some point you may need to put passwords and usernames in files, then limit access to those files, and have your script grab the file contents.</p>
+<h2 id="beware-of-invoking-anything-the-user-inputs">Beware of Invoking Anything the User Inputs</h2>
+<p>The author suggests that a specific setup and command line can cause, &ldquo;quite dire consequences.&rdquo; Try this command for yourself though, after changing the &ldquo;rm&rdquo; command to something benign like a version of &ldquo;ls&rdquo;.</p>
+<p>You didn&rsquo;t get the output the author suggested you might?  That&rsquo;s because this isn&rsquo;t really a problem the way he states it.</p>
+<p>Oh, the author&rsquo;s &ldquo;eval&rdquo; version might work, but when have you ever written code like that?  Please say you haven&rsquo;t.</p>
+<p>It&rsquo;s definitely possible to accidentally provide ways for users to cause command injection - it&rsquo;s a very common class of vulnerabilities.  Scrubbing the input, as the article author suggests, is a common solution.</p>
+<p>One recommendation the author should have made more clear is that when scrubbing input you should permit only data that fits a minimalist whitelist.  Don&rsquo;t try to look for bad characters, like you would with a blacklist…  Instead, fail on any characters that aren&rsquo;t in your specific small set.</p>
+<p>More often though, the use case for shell scripts is in accepting input from users already on your system.  In this case, the recommendations in the article are lacking.</p>
+<p>My main recommendation is to avoid permitting users to run anything as a higher level user, or as a different user at all.  If users can only execute scripts as themselves, and the script doesn&rsquo;t grab extra permissions like via SSH, any commands the user might try to get the script to run would also run with the user&rsquo;s permissions.  Therefore, it&rsquo;s a thing they could&rsquo;ve done themselves.</p>
+<p>If there are shared resources the script needs that the user shouldn&rsquo;t normally have, perhaps use sudo within the script to grab/use those resources then drop permissions (as would happen if a separate program did the permissioned work, then ended).  Alternatively, create another user with only minimal permissions, including those shared resources, then have the script run as that user.</p>
+<p>If the script does have to get extra permissions, like through SSH, avoid sending user input there, or sanitize it with a whitelist (worst case).  When I say SSH provides extra permissions, I mean that it does so by providing access to another computer, and potentially another user.</p>
+<p>You should try to avoid writing code that eval&rsquo;s user input, or potentially places it on the command line as multiple arguments, and you should try to sanitize input when you have to take a risk&hellip;  But the best solution is to design the environment so that even when you inevitably mess up it&rsquo;s not that big a deal.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Good points Dave, but the recommendations are lacking.</p>
+<p>The Apple article he links has better recommendations, and solid examples.  It points out that older Bash versions were vulnerable to one of Dave&rsquo;s examples that I poo-pooed.  However, there are many problems with running older Bash versions (you wondered why I mentioned Shellshock?)…  Don&rsquo;t do that anymore.  The Apple example also has a great hidden eval command in there - echoing user input to a file then executing the file is essentially eval.  Avoid.</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2019%2f02%2fwriting-about-writing-secure-shell-scripts%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Writing%20About%20Writing%20Secure%20Shell%20Scripts&amp;url=https%3a%2f%2fblog.notmet.net%2f2019%2f02%2fwriting-about-writing-secure-shell-scripts%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2019%2f02%2fwriting-about-writing-secure-shell-scripts%2f&title=Writing%20About%20Writing%20Secure%20Shell%20Scripts" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

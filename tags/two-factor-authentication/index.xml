@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>two factor authentication on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/two-factor-authentication/</link>
+    <description>Recent content in two factor authentication on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Fri, 26 Jul 2019 21:00:07 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/two-factor-authentication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Broken Phone and Recovery</title>
+      <link>https://blog.notmet.net/2019/07/the-broken-phone-and-recovery/</link>
+      <pubDate>Fri, 26 Jul 2019 21:00:07 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2019/07/the-broken-phone-and-recovery/</guid>
+      <description>A couple tips about getting an Android phone working again when you&amp;rsquo;re on the road are down below, along with tips about TOTP codes when your phone dies. I set those apart. But first, the background.
+Recently, my Google Pixel stopped working for phone calls. That&amp;rsquo;s a big deal when you&amp;rsquo;re trying to move across the country. Not to mention the fact that failing to work for phone calls is an existential crisis for a cell phone.</description>
+    </item>
+    
+  </channel>
+</rss>

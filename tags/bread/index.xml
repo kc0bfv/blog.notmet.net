@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bread on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/bread/</link>
+    <description>Recent content in Bread on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Sun, 05 May 2019 01:14:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/bread/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sourdough Bread</title>
+      <link>https://blog.notmet.net/2019/05/sourdough-bread/</link>
+      <pubDate>Sun, 05 May 2019 01:14:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2019/05/sourdough-bread/</guid>
+      <description>I made a couple loaves of bread a couple weeks ago, based on a recipe in this book Sarah asked for, Josie Baker Bread. It was good, but actually not as good as when Sarah makes bread out of the book. Mine was not mixed uniformly (the two types of flour were a little noticeable in the end product), and it was saltier than it should have been. When Sarah makes bread from these recipes, it comes out amazing.</description>
+    </item>
+    
+  </channel>
+</rss>

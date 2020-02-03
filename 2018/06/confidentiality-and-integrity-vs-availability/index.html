@@ -1,0 +1,230 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Confidentiality and Integrity vs Availability" />
+<meta property="og:description" content="In computer security, there are three main axes for consideration - confidentiality, integrity, and availability (CIA). These are commonly thought of as things you desire out of a secure system. You want your communications to only be available to the intended agents, you want them to remain unchanged except when you intend them to change, and you want them to be available when you need them. Preferably, you want your communications to have all of those properties." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2018/06/confidentiality-and-integrity-vs-availability/" />
+<meta property="article:published_time" content="2018-06-16T15:03:51+00:00" />
+<meta property="article:modified_time" content="2018-06-16T15:03:51+00:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Confidentiality and Integrity vs Availability"/>
+<meta name="twitter:description" content="In computer security, there are three main axes for consideration - confidentiality, integrity, and availability (CIA). These are commonly thought of as things you desire out of a secure system. You want your communications to only be available to the intended agents, you want them to remain unchanged except when you intend them to change, and you want them to be available when you need them. Preferably, you want your communications to have all of those properties."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2018/06/confidentiality-and-integrity-vs-availability/">Confidentiality and Integrity vs Availability</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2018-06-16">2018.06.16</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/leaveweb">leaveweb</a>, 
+        
+        <a href="https://blog.notmet.net/tags/network-security">network security</a>
+        
+    
+
+</span>
+</footer>
+
+        <p>In computer security, there are three main axes for consideration - confidentiality, integrity, and availability (CIA).  These are commonly thought of as things you desire out of a secure system.  You want your communications to only be available to the intended agents, you want them to remain unchanged except when you intend them to change, and you want them to be available when you need them.  Preferably, you want your communications to have all of those properties.</p>
+<blockquote>
+<p>Organizations make trade offs between CIA daily, and in the real world increasing one necessarily decreases another.</p>
+</blockquote>
+<p>This fact is obvious to most network security practitioners - but only considered in theory.  In practice, organizations trade off CIA each time they make a decision about their information systems.</p>
+<p>This fact is not obvious to an organization&rsquo;s decision makers - management.</p>
+<blockquote>
+<p>Most computer security decisions seek to increase confidentiality and integrity without considering the costs to availability.</p>
+</blockquote>
+<p>This is visible primarily in the standard Information Technology world, as contrasted to the SCADA/ICS Operational Technology world where most recognize availability as king.</p>
+<p>To demonstrate C&amp;I vs A, consider the way we &ldquo;improve the security&rdquo; of our information systems in the traditional IT world.  Improvements generally focus on the C&amp;I, and they do so by adding defense in depth, or defense in breadth.</p>
+<h2 id="depth">Depth</h2>
+<p>Defense in depth, first.  Add a security measure to your IT system that is of a type not currently available - add a firewall, an IDS or IPS, include SSL introspection, endpoint virus scanners, host-based firewalls, host-based anomaly detection&hellip;  There are always new ways to add defense in depth.</p>
+<p>These are methods that directly add fragility to your IT system!  This type of fragility is similar to a child&rsquo;s model bridge that is supported by one popsicle stick at each end, perhaps leaning against a wall.  Popsicle sticks snap, breaking the bridge, in the same way that network infrastructure has the potential to disrupt your network.</p>
+<blockquote>
+<p>Security infrastructure components have a non-zero probability of causing a problem with part of your organization&rsquo;s mission.</p>
+</blockquote>
+<p>When you add defense in depth, you are gluing a popsicle stick to the bottom of the bridge&rsquo;s current supports.  You&rsquo;re making those bridge supports longer by one popsicle stick.  Now the chances of the bridge breaking have increased - the older stick can snap, or the newer, or both.  The probability for the older stick snapping and the bridge breaking remains the same, but you&rsquo;ve added in a new possibility with the new stick.</p>
+<p>In network security a popsicle stick snap looks like a device blocking legitimate traffic (false-positives), a device providing a new attack surface area for adversaries, a device adding just enough to the packet TTL that delivery fails, or a device delaying traffic long enough to disrupt communications at higher levels in the network model.</p>
+<p>Adding defense in depth can provide benefit to confidentiality and integrity, but increases network fragility.  An increase in network fragility necessarily reduces network availability.  The reduction in availability may be difficult to detect, and most of the time has negligible effect.  However - networks are in place for months and years, and over that time the availability reductions become noticeable.</p>
+<h2 id="breadth">Breadth</h2>
+<p>Defense in breadth is again like gluing an additional popsicle stick to the end of the existing bridge supports!  It is not similar to taping a second popsicle stick to the existing ones, nor is it similar to adding another connection point to the bridge for a popsicle stick.</p>
+<p>Defense in breadth is adding a second version of an existing defensive measure with the idea that, if the first didn&rsquo;t catch a bad guy maybe the second will, and we&rsquo;ll still have caught the bad guy.  Increasing defense in breadth by adding measures to the system has all the same negatives as increasing defense in depth, all of the same outcomes, and increases fragility of the system in the same way.</p>
+<blockquote>
+<p>Adding network redundancies can improve availability, but stretches manpower, limiting the benefits of redundancy to availability.</p>
+</blockquote>
+<h2 id="practice">Practice</h2>
+<p>In practice, manpower is limited.  This is as true in the field of network security as it is in every other field.  The limited manpower that is monitoring your networks today is having some amount of success - you are able to use your networks with some level of CI&amp;A.  By increasing the number of defensive measures those employees must maintain, and increasing the redundancy measures they must maintain, you are requiring more of those limited manpower resources.  This is all in addition to the growing size of other parts of your enterprise and the growing network requirements of our information age.</p>
+<p>There is, of course, a rate at which you can increase C&amp;I defenses, and increase network redundancy, and increase manpower, and remain in front of your decreasing network availability.  However, increases in organizational size increase complexity and decrease your return on investment.</p>
+<blockquote>
+<p>Implementing new confidentiality or integrity measures at a constant rate requires exponential increases in availability investment.</p>
+</blockquote>
+<p>This is unsustainable!  Not to mention the fact that every organization has monetary resources and management motivation that will give out long before availability is substantially improved.</p>
+<p>Of course - this type of problem has been common in history.  Automation technology and process improvements (defensive/operational tactics) usually save the day, and they can here too, but they are one more thing that will add complexity and fragility to your network, thus reducing availability.  The measures become self-limiting in the same way as before.</p>
+<p>Others have discussed the trade offs in C&amp;I vs A - however the idea that C&amp;I trade off vs A is mostly found in discussions of availability&rsquo;s more human needs.  <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.153.3974&amp;rep=rep1&amp;type=pdf">For example, the idea</a> that increasing C or I by implementing password restrictions makes it more likely that a bank manager will forget their password, and therefore will be unable to run the bank, decreasing availability.  <a href="http://discovery.ucl.ac.uk/20102/2/pym-weis-2008.pdf">Another paper discusses</a> how confidentiality decreases as redundancy measures (availability) increases, due to increased attack surface area.  However, I have seen very little discussion of a decrease in availability of the underlying technical network consequent from implementing new confidentiality and integrity measures.  I have seen ample evidence of this, though, especially in the business networks I a most familiar with.</p>
+<p>Managers of the networks I&rsquo;m familiar with regularly mandate new security measures, nearly always designed to improve confidentiality or integrity.  Availability issues are always cropping up, and network complexity is rarely considered as a possible cause.  Network complexity is almost never fingered as a problem worth fixing, and increased manpower is always the solution.  Increased manpower is also rarely politically practical.</p>
+<p>Lastly - this thought is related to the idea of byzantine failures causing catastrophe within a complex system.  Availability issues are simply the small catastrophes leading up to the major one.</p>
+<h2 id="what-to-do-what-to-do">What to do, what to do&hellip;</h2>
+<ul>
+<li>We must remember that measures designed to increase confidentiality and integrity necessarily decrease availability.</li>
+<li>We must be bold enough to consider eliminating confidentiality and integrity measures.</li>
+</ul>
+<p>Most of all, though,</p>
+<p><em><strong>We must always balance the risks related to confidentiality and integrity vs the risks to availability.</strong></em></p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2018%2f06%2fconfidentiality-and-integrity-vs-availability%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Confidentiality%20and%20Integrity%20vs%20Availability&amp;url=https%3a%2f%2fblog.notmet.net%2f2018%2f06%2fconfidentiality-and-integrity-vs-availability%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2018%2f06%2fconfidentiality-and-integrity-vs-availability%2f&title=Confidentiality%20and%20Integrity%20vs%20Availability" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

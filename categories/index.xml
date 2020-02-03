@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/categories/</link>
+    <description>Recent content in Categories on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Sun, 02 Feb 2020 10:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>https://blog.notmet.net/categories/blog/</link>
+      <pubDate>Sun, 02 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Baking</title>
+      <link>https://blog.notmet.net/categories/baking/</link>
+      <pubDate>Sat, 25 Jan 2020 08:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/categories/baking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smoker Log</title>
+      <link>https://blog.notmet.net/categories/smoker-log/</link>
+      <pubDate>Thu, 26 Dec 2019 15:22:42 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/categories/smoker-log/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cooking</title>
+      <link>https://blog.notmet.net/categories/cooking/</link>
+      <pubDate>Mon, 22 Apr 2019 11:45:53 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/categories/cooking/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archive on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/archive/</link>
+    <description>Recent content in Archive on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Sat, 25 Jan 2020 17:00:46 -0700</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/archive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

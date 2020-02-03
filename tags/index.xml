@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/</link>
+    <description>Recent content in Tags on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Sun, 02 Feb 2020 10:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Health</title>
+      <link>https://blog.notmet.net/tags/health/</link>
+      <pubDate>Sun, 02 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sanity</title>
+      <link>https://blog.notmet.net/tags/sanity/</link>
+      <pubDate>Sun, 02 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/sanity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://blog.notmet.net/tags/hugo/</link>
+      <pubDate>Fri, 31 Jan 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://blog.notmet.net/tags/programming/</link>
+      <pubDate>Fri, 31 Jan 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://blog.notmet.net/tags/python/</link>
+      <pubDate>Wed, 29 Jan 2020 16:15:37 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sourdough</title>
+      <link>https://blog.notmet.net/tags/sourdough/</link>
+      <pubDate>Sat, 25 Jan 2020 08:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/sourdough/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud</title>
+      <link>https://blog.notmet.net/tags/cloud/</link>
+      <pubDate>Fri, 03 Jan 2020 19:49:55 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>range</title>
+      <link>https://blog.notmet.net/tags/range/</link>
+      <pubDate>Fri, 03 Jan 2020 19:49:55 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/range/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Turkey</title>
+      <link>https://blog.notmet.net/tags/turkey/</link>
+      <pubDate>Thu, 26 Dec 2019 15:22:42 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/turkey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>brisket</title>
+      <link>https://blog.notmet.net/tags/brisket/</link>
+      <pubDate>Mon, 11 Nov 2019 01:03:38 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/brisket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>salmon</title>
+      <link>https://blog.notmet.net/tags/salmon/</link>
+      <pubDate>Sun, 20 Oct 2019 00:29:57 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/salmon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leadership</title>
+      <link>https://blog.notmet.net/tags/leadership/</link>
+      <pubDate>Sat, 19 Oct 2019 16:00:44 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/leadership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>things I hope I remember</title>
+      <link>https://blog.notmet.net/tags/things-i-hope-i-remember/</link>
+      <pubDate>Sat, 19 Oct 2019 16:00:44 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/things-i-hope-i-remember/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Air Force</title>
+      <link>https://blog.notmet.net/tags/air-force/</link>
+      <pubDate>Sun, 04 Aug 2019 22:36:06 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/air-force/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cyber</title>
+      <link>https://blog.notmet.net/tags/cyber/</link>
+      <pubDate>Sun, 04 Aug 2019 22:36:06 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/cyber/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stories</title>
+      <link>https://blog.notmet.net/tags/stories/</link>
+      <pubDate>Sun, 04 Aug 2019 22:36:06 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/stories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Android</title>
+      <link>https://blog.notmet.net/tags/android/</link>
+      <pubDate>Fri, 26 Jul 2019 21:00:07 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>https://blog.notmet.net/tags/google/</link>
+      <pubDate>Fri, 26 Jul 2019 21:00:07 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pixel</title>
+      <link>https://blog.notmet.net/tags/pixel/</link>
+      <pubDate>Fri, 26 Jul 2019 21:00:07 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/pixel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tech tips</title>
+      <link>https://blog.notmet.net/tags/tech-tips/</link>
+      <pubDate>Fri, 26 Jul 2019 21:00:07 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/tech-tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TOTP</title>
+      <link>https://blog.notmet.net/tags/totp/</link>
+      <pubDate>Fri, 26 Jul 2019 21:00:07 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/totp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>two factor authentication</title>
+      <link>https://blog.notmet.net/tags/two-factor-authentication/</link>
+      <pubDate>Fri, 26 Jul 2019 21:00:07 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/two-factor-authentication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uBreakIFix</title>
+      <link>https://blog.notmet.net/tags/ubreakifix/</link>
+      <pubDate>Fri, 26 Jul 2019 21:00:07 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/ubreakifix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jerky</title>
+      <link>https://blog.notmet.net/tags/jerky/</link>
+      <pubDate>Sat, 15 Jun 2019 21:58:57 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/jerky/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bread</title>
+      <link>https://blog.notmet.net/tags/bread/</link>
+      <pubDate>Sun, 05 May 2019 01:14:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/bread/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lamb</title>
+      <link>https://blog.notmet.net/tags/lamb/</link>
+      <pubDate>Mon, 22 Apr 2019 11:45:53 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/lamb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sous Vide</title>
+      <link>https://blog.notmet.net/tags/sous-vide/</link>
+      <pubDate>Mon, 22 Apr 2019 11:45:53 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/sous-vide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pork butt</title>
+      <link>https://blog.notmet.net/tags/pork-butt/</link>
+      <pubDate>Mon, 15 Apr 2019 01:10:29 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/pork-butt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Steak</title>
+      <link>https://blog.notmet.net/tags/steak/</link>
+      <pubDate>Sun, 31 Mar 2019 22:25:09 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/steak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beef</title>
+      <link>https://blog.notmet.net/tags/beef/</link>
+      <pubDate>Sun, 17 Mar 2019 20:21:24 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/beef/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chicken</title>
+      <link>https://blog.notmet.net/tags/chicken/</link>
+      <pubDate>Mon, 11 Mar 2019 00:57:18 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/chicken/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leaveweb</title>
+      <link>https://blog.notmet.net/tags/leaveweb/</link>
+      <pubDate>Sat, 16 Jun 2018 15:03:51 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/leaveweb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network security</title>
+      <link>https://blog.notmet.net/tags/network-security/</link>
+      <pubDate>Sat, 16 Jun 2018 15:03:51 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/network-security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ribs</title>
+      <link>https://blog.notmet.net/tags/ribs/</link>
+      <pubDate>Mon, 07 May 2018 00:22:54 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/ribs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lamb leg</title>
+      <link>https://blog.notmet.net/tags/lamb-leg/</link>
+      <pubDate>Sat, 24 Feb 2018 19:08:44 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/lamb-leg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>travel</title>
+      <link>https://blog.notmet.net/tags/travel/</link>
+      <pubDate>Tue, 17 Oct 2017 12:37:55 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I always feel like someone&#39;s watching me</title>
+      <link>https://blog.notmet.net/tags/i-always-feel-like-someones-watching-me/</link>
+      <pubDate>Sun, 15 Jul 2012 01:26:03 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/i-always-feel-like-someones-watching-me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hot hot heat</title>
+      <link>https://blog.notmet.net/tags/hot-hot-heat/</link>
+      <pubDate>Thu, 12 Jul 2012 15:04:23 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/hot-hot-heat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taliban rhymes with eatyourflan</title>
+      <link>https://blog.notmet.net/tags/taliban-rhymes-with-eatyourflan/</link>
+      <pubDate>Wed, 11 Jul 2012 03:05:40 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/taliban-rhymes-with-eatyourflan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php is not a fart</title>
+      <link>https://blog.notmet.net/tags/php-is-not-a-fart/</link>
+      <pubDate>Tue, 10 Jul 2012 20:44:18 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/php-is-not-a-fart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>this is not a tag</title>
+      <link>https://blog.notmet.net/tags/this-is-not-a-tag/</link>
+      <pubDate>Sun, 22 Jan 2012 21:18:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/this-is-not-a-tag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sql injection leads to infection</title>
+      <link>https://blog.notmet.net/tags/sql-injection-leads-to-infection/</link>
+      <pubDate>Thu, 28 Jul 2011 16:58:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/sql-injection-leads-to-infection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>a tag this is</title>
+      <link>https://blog.notmet.net/tags/a-tag-this-is/</link>
+      <pubDate>Fri, 22 Apr 2011 16:12:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/a-tag-this-is/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

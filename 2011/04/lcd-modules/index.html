@@ -1,0 +1,194 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="LCD Modules" />
+<meta property="og:description" content="I&rsquo;ve never built anything with an LCD on it before, but it seems like it&rsquo;d be useful. Here&rsquo;s some good info on creating an project with an LCD and an Arduino:
+http://arduino.cc/en/Reference/LiquidCrystal
+It&rsquo;s a library of functions that make it very easy to work with the LCD controller. The controller has to be compatible with the HD44780 controller&rsquo;s instruction set, but that&rsquo;s basically an industry standard. Mouser has a selection of 20x4 character displays:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2011/04/lcd-modules/" />
+<meta property="article:published_time" content="2011-04-01T15:38:00+00:00" />
+<meta property="article:modified_time" content="2011-04-01T15:38:00+00:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="LCD Modules"/>
+<meta name="twitter:description" content="I&rsquo;ve never built anything with an LCD on it before, but it seems like it&rsquo;d be useful. Here&rsquo;s some good info on creating an project with an LCD and an Arduino:
+http://arduino.cc/en/Reference/LiquidCrystal
+It&rsquo;s a library of functions that make it very easy to work with the LCD controller. The controller has to be compatible with the HD44780 controller&rsquo;s instruction set, but that&rsquo;s basically an industry standard. Mouser has a selection of 20x4 character displays:"/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2011/04/lcd-modules/">LCD Modules</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2011-04-01">2011.04.01</time>
+
+</span>
+</footer>
+
+        <p>I&rsquo;ve never built anything with an LCD on it before, but it seems like it&rsquo;d be useful.  Here&rsquo;s some good info on creating an project with an LCD and an Arduino:</p>
+<p><a href="http://arduino.cc/en/Reference/LiquidCrystal">http://arduino.cc/en/Reference/LiquidCrystal</a></p>
+<p>It&rsquo;s a library of functions that make it very easy to work with the LCD controller.  The controller has to be compatible with the HD44780 controller&rsquo;s instruction set, but that&rsquo;s basically an industry standard.  Mouser has a selection of 20x4 character displays:</p>
+<p><a href="http://www.mouser.com/Optoelectronics/Displays/LCD-Displays/LCD-Character-Display-Modules/_/N-6j737?P=1z0wula&amp;Ns=Pricing%7C0">http://www.mouser.com/Optoelectronics/Displays/LCD-Displays/LCD-Character-Display-Modules/_/N-6j737?P=1z0wula&amp;Ns;=Pricing|0</a></p>
+<p>Probably most of these are compatible with HD44780, but one brand that I&rsquo;ve seen a couple good comments on is Newhaven Displays.  Here are two of their products which people say are compatible with HD44780:</p>
+<p><a href="http://www.mouser.com/ProductDetail/Newhaven-Display/NHD-0420H1Z-FL-GBW-3V3/?qs=sGAEpiMZZMt7dcPGmvnkBkF%252b4jg01Mq8pANutZBT3Fk%3D">http://www.mouser.com/ProductDetail/Newhaven-Display/NHD-0420H1Z-FL-GBW-3V3/?qs=sGAEpiMZZMt7dcPGmvnkBkF%252b4jg01Mq8pANutZBT3Fk%3d</a><br>
+<a href="http://www.mouser.com/ProductDetail/Newhaven-Display/NHD-0420H1Z-FSW-GBW/?qs=sGAEpiMZZMt7dcPGmvnkBq9RSAvEJGmR8NQyR9CrIfw%3D">http://www.mouser.com/ProductDetail/Newhaven-Display/NHD-0420H1Z-FSW-GBW/?qs=sGAEpiMZZMt7dcPGmvnkBq9RSAvEJGmR8NQyR9CrIfw%3d</a></p>
+<p>The difference seems to be in the background color and input voltage: the first link is 3.3V, the second is 5V.  Here&rsquo;s some more info from Wikipedia:</p>
+<p><a href="http://en.wikipedia.org/wiki/HD44780_Character_LCD">http://en.wikipedia.org/wiki/HD44780_Character_LCD</a></p>
+<p>And here is Hitachi&rsquo;s info on the command set for their oh-so-popular chip:</p>
+<p><a href="http://lcd-linux.sourceforge.net/pdfdocs/hd44780.pdf">http://lcd-linux.sourceforge.net/pdfdocs/hd44780.pdf</a></p>
+<p>One thing I&rsquo;m motivated to build with these guys is a computer-controlled thermostat.  I&rsquo;ll have to have a temperature sensor (thermistor maybe?), perhaps a wireless connection (XBee?), maybe one of these LCDs to describe the current settings, and if there&rsquo;s an LCD then definitely some buttons to allow setting the temp without firing up a web browser.</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2011%2f04%2flcd-modules%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=LCD%20Modules&amp;url=https%3a%2f%2fblog.notmet.net%2f2011%2f04%2flcd-modules%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2011%2f04%2flcd-modules%2f&title=LCD%20Modules" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

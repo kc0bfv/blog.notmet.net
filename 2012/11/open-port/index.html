@@ -1,0 +1,224 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Open Port" />
+<meta property="og:description" content="Every now and then when I&rsquo;m at a coffee shop I wonder what ports I&rsquo;ve got open on my home network. Normally I don&rsquo;t have any ports open within Nmap&rsquo;s default port list.
+Starting Nmap 6.01 Initiating SYN Stealth Scan at 16:41 Scanning myRouter [1000 ports] Discovered open port 1111/tcp on myRouter Completed SYN Stealth Scan (1000 total ports) Not shown: 999 filtered ports PORT STATE SERVICE 1111/tcp open lmsocialserver Read data files from: /usr/local/bin/." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2012/11/open-port/" />
+<meta property="article:published_time" content="2012-11-11T15:20:53+00:00" />
+<meta property="article:modified_time" content="2012-11-11T15:20:53+00:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Open Port"/>
+<meta name="twitter:description" content="Every now and then when I&rsquo;m at a coffee shop I wonder what ports I&rsquo;ve got open on my home network. Normally I don&rsquo;t have any ports open within Nmap&rsquo;s default port list.
+Starting Nmap 6.01 Initiating SYN Stealth Scan at 16:41 Scanning myRouter [1000 ports] Discovered open port 1111/tcp on myRouter Completed SYN Stealth Scan (1000 total ports) Not shown: 999 filtered ports PORT STATE SERVICE 1111/tcp open lmsocialserver Read data files from: /usr/local/bin/."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2012/11/open-port/">Open Port</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2012-11-11">2012.11.11</time>
+
+</span>
+</footer>
+
+        <p>Every now and then when I&rsquo;m at a coffee shop I wonder what ports I&rsquo;ve got open on my home network.  Normally I don&rsquo;t have any ports open within Nmap&rsquo;s default port list.</p>
+<pre><code>Starting Nmap 6.01
+Initiating SYN Stealth Scan at 16:41
+Scanning myRouter [1000 ports]
+Discovered open port 1111/tcp on myRouter
+Completed SYN Stealth Scan (1000 total ports)
+Not shown: 999 filtered ports
+PORT STATE SERVICE
+1111/tcp open lmsocialserver
+
+
+
+
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 184.69 seconds
+ Raw packets sent: 1999 (87.956KB) | Rcvd: 3 (212B)
+</code></pre>
+<p>Crap.  What&rsquo;s that?  Port 1111 should not be open.  It wasn&rsquo;t last time I checked, less than a month ago I think.</p>
+<pre><code>ssh myRouter
+user@myRouter:user# netstat -ln
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address Foreign Address State 
+tcp 0 0 0.0.0.0:ssh 0.0.0.0:* LISTEN 
+tcp 0 0 192.168.1.1:80 0.0.0.0:* LISTEN 
+tcp 0 0 0.0.0.0:53 0.0.0.0:* LISTEN 
+udp 0 0 0.0.0.0:53 0.0.0.0:* 
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags Type State I-Node Path
+
+
+
+
+user@myRouter:user# netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address Foreign Address State 
+tcp 0 48 myRouter:ssh coffeeShop:10493 ESTABLISHED
+</code></pre>
+<p>Well, netstat on the router doesn&rsquo;t show anything weird (these are cut down a bit).  SSH is listening, the webserver is listening on, domain is listening, and my current SSH connection is open.</p>
+<p>I have to forward a port on my laptop through a computer at home to access the router&rsquo;s admin webpage, but when I do I don&rsquo;t find anything unusual.  I find nothing that suggests that port 1111 is forwarded anywhere.  Running iptables on the router doesn&rsquo;t show anything unusual, either.</p>
+<p>Furthermore, netcatting to 1111 from the router yields a &ldquo;connection refused&rdquo;, as does netcatting to it from any computer internal to the home network.  Netcatting to 1111 from the coffee shop, however, yields a completed connection but no obvious clues as to what the remote server is.</p>
+<p>I use the router&rsquo;s admin webpage to forward port 1110 to a home server, on which I&rsquo;m running a listening netcat.  I&rsquo;m able to connect to the internal netcat from the coffee shop.  I try that again on ports from 1111 to 1113 and find that I connect to the strange remote server when 1111 is &ldquo;forwarded&rdquo;, the connection times out on port 1112, and the connection works again when 1113 is forwarded.</p>
+<p>So, what could it be?  Perhaps the router has a rootkit, or some strange feature I didn&rsquo;t know about, that listens on port 1111, blackholes 1112, and doesn&rsquo;t permit me to see the port configuration on the router itself or from inside the network.  Alternatively, the cable modem has some administration server set up on 1111 and blackholes 1112.  There&rsquo;s some evidence for this option, as other folks have noted cable modem admin software running on port 1111.  A third option is that my Internet provider has something listening on that port at some other point along the connection.  This seems least likely, but not impossible.  (I guess a fourth option is that the coffee shop&rsquo;s ISP had something listening there).</p>
+<p>Both of the last two options suggest some kind of misconfiguration on my Internet provider&rsquo;s part.  Now I&rsquo;d like to listen to the packets between my cable modem and router, but I&rsquo;m at a coffee shop.  Instead, I tell the router to reboot and try to SSH into it (and a server internal to the network for good measure) and port 1111 at the same time.  I find that the port 1111 connection completes, but both SSH connections fail.  Now it&rsquo;s almost certain that the port 1111 connection is not to anything I own.</p>
+<p>Unfortunately, by the time I got home later that evening the port 1111 listener had disappeared.  I used my cellphone&rsquo;s Internet connection and a remote server to verify the disappearance.  The trail had run dry, but at least I was fairly certain that odd connection didn&rsquo;t signify a rootkit on my network.</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2012%2f11%2fopen-port%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Open%20Port&amp;url=https%3a%2f%2fblog.notmet.net%2f2012%2f11%2fopen-port%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2012%2f11%2fopen-port%2f&title=Open%20Port" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

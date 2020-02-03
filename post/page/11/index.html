@@ -1,0 +1,342 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Posts &middot; Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Posts" />
+<meta property="og:description" content="Karl&#39;s blog of randomness and programming" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://blog.notmet.net/post/" />
+<meta property="og:updated_time" content="2020-02-02T10:00:00-07:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content="Karl&#39;s blog of randomness and programming"/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Karl&#39;s Blog" />
+        <link href="/post/index.xml" rel="feed" type="application/rss+xml" title="Karl&#39;s Blog" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+    
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2011/07/advanced-sql-injection/">Advanced SQL Injection</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2011-07-28">2011.07.28</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/sql-injection-leads-to-infection">sql injection leads to infection</a>
+        
+    
+
+</span>
+</footer>
+
+    <p>Ok, here’s a great blog post by Chris Shiflett about a crazy-creative SQL injection technique: <a href="http://shiflett.org/blog/2006/jan/addslashes-versus-mysql-real-escape-string">http://shiflett.org/blog/2006/jan/addslashes-versus-mysql-real-escape-string</a>
+Very cool. His technique relies on tricking addslashes into breaking up a two byte character with a slash, creating a valid two byte character followed by a valid one byte character. He mentions that this (specific attack) is impossible with UTF-8 because all two (or more) byte characters have continuation bytes that start with 0b10.&hellip;</p>
+    <a href="https://blog.notmet.net/2011/07/advanced-sql-injection/" title="Advanced SQL Injection">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2011/04/yoda-conditions/">&#34;Yoda&#34; Conditions</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2011-04-22">2011.04.22</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/a-tag-this-is">a tag this is</a>
+        
+    
+
+</span>
+</footer>
+
+    <p>Here’s a creative idea I’d never considered before. I’ve written code like this, but accidentally, and then it looks wrong so I change it back. Here’s a quick example:
+if ( 42 == myInt ) as opposed to if ( myInt == 42 )
+The former may be better to use because occasionally we all forget to put that second “=” in there, and we accidentally turn our comparison operator into an assignment operator.&hellip;</p>
+    <a href="https://blog.notmet.net/2011/04/yoda-conditions/" title="&#34;Yoda&#34; Conditions">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2011/04/lcd-modules/">LCD Modules</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2011-04-01">2011.04.01</time>
+
+</span>
+</footer>
+
+    <p>I’ve never built anything with an LCD on it before, but it seems like it’d be useful. Here’s some good info on creating an project with an LCD and an Arduino:
+<a href="http://arduino.cc/en/Reference/LiquidCrystal">http://arduino.cc/en/Reference/LiquidCrystal</a>
+It’s a library of functions that make it very easy to work with the LCD controller. The controller has to be compatible with the HD44780 controller’s instruction set, but that’s basically an industry standard. Mouser has a selection of 20x4 character displays:&hellip;</p>
+    <a href="https://blog.notmet.net/2011/04/lcd-modules/" title="LCD Modules">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2011/03/css-div-tag-webpage-layout/">CSS / Div Tag Webpage Layout</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2011-03-16">2011.03.16</time>
+
+</span>
+</footer>
+
+    <p><a href="http://960.gs/">http://960.gs/</a>
+960 Grid System seems like a great, easy way to setup the layout of a webpage using modern HTML and CSS techniques. Very cool.
+<a href="http://www.blueprintcss.org/">http://www.blueprintcss.org/</a>
+Blueprint CSS is also something to check out.&hellip;</p>
+    <a href="https://blog.notmet.net/2011/03/css-div-tag-webpage-layout/" title="CSS / Div Tag Webpage Layout">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2011/03/mingw-and-cygwin-to-build-a-windows-dll/">MinGW and Cygwin to build a Windows DLL</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2011-03-06">2011.03.06</time>
+
+</span>
+</footer>
+
+    <p>I was writing C++ in Linux - gvim + aterm is my development environment of choice. I needed to turn my code into a Windows DLL, though, and the following webpage was really helpful.
+<a href="http://www.mingw.org/wiki/sampleDLL">http://www.mingw.org/wiki/sampleDLL</a>
+I installed Cygwin in a Windows XP virtual machine, used Cygwin to install MinGW, modded my code and Makefile a bit based on the samples on that page, then ran “make windows” in that virtual machine.&hellip;</p>
+    <a href="https://blog.notmet.net/2011/03/mingw-and-cygwin-to-build-a-windows-dll/" title="MinGW and Cygwin to build a Windows DLL">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2011/02/c-faq/">C&#43;&#43; FAQ</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2011-02-03">2011.02.03</time>
+
+</span>
+</footer>
+
+    <p>Marshall Cline’s C++ FAQ is great - very comprehensive. It covers topics useful to everyone from beginners to intermediate/advanced users. It’s at:
+<a href="http://www.parashift.com/c++-faq-lite/">http://www.parashift.com/c++-faq-lite/</a>&hellip;</p>
+    <a href="https://blog.notmet.net/2011/02/c-faq/" title="C&#43;&#43; FAQ">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2011/02/hooking-netfilter-with-a-linux-kernel-module/">Hooking Netfilter with a Linux Kernel Module</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2011-02-02">2011.02.02</time>
+
+</span>
+</footer>
+
+    <p><a href="http://www.linuxjournal.com/article/7184">http://www.linuxjournal.com/article/7184</a>
+This is a great Linux Journal article where they write a kernel module to hook Netfilter. It’ll probably be useful to me at some point.
+What other things in the kernel can be hooked? I’m sure the list is freakin long, but this would be fun to experiment with.&hellip;</p>
+    <a href="https://blog.notmet.net/2011/02/hooking-netfilter-with-a-linux-kernel-module/" title="Hooking Netfilter with a Linux Kernel Module">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2009/08/comp-sec-sites/">Comp Sec Sites</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2009-08-03">2009.08.03</time>
+
+</span>
+</footer>
+
+    <p>I’m gonna use this to record interesting/useful information on computer security. Starting off with a post on switch hardening - these are complex switches we’re talking about:
+<a href="http://isc.sans.org/diary.html?storyid=6910&amp;amp;rss;">http://isc.sans.org/diary.html?storyid=6910&amp;amp;rss;</a>&hellip;</p>
+    <a href="https://blog.notmet.net/2009/08/comp-sec-sites/" title="Comp Sec Sites">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2009/05/geotagging-photos/">Geotagging Photos</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2009-05-24">2009.05.24</time>
+
+</span>
+</footer>
+
+    <p>Well, I’m disappointed by the way Picasa handles geotagging photos in Linux. It looks like the newest version doesn’t support geotagging. Not only that, but when it resizes images to upload to Picasa on the web, it kills any EXIF information that may have specified a location. What the heck Picasa? Why you gotta clobber my shit?
+I can preserve the geotags by uploading directly from my G1 (slow), or by going to the Picasa website and uploading from there (can’t do a batch upload, also can’t resize automatically).&hellip;</p>
+    <a href="https://blog.notmet.net/2009/05/geotagging-photos/" title="Geotagging Photos">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2009/04/current-chili-recipe/">Current Chili Recipe</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2009-04-26">2009.04.26</time>
+
+</span>
+</footer>
+
+    <p>Here’s my current chili recipe. This one is going to be awesome when it’s all done. It’s good enough right now that I have a hard time sticking to my plan to make it awesome without the spiciness, then add the spicy in later. The last few times I’ve made it I’ve added in the peppers… Shame on me. It’s just too tasty to resist.
+1 can bush kidney beans 1/2 can bush pinto beans 1 lb browned ground beef 1 can hunts diced tomatoes 1.&hellip;</p>
+    <a href="https://blog.notmet.net/2009/04/current-chili-recipe/" title="Current Chili Recipe">Read more &raquo;</a>
+</article>
+
+    
+    <div class="pagination">
+<nav>
+
+    
+	<a class="btn newer" href="/post/page/10/" title="Newer">&laquo; Newer</a>
+	
+
+	<p class="counter">Page 11 of 12</p>
+
+
+	
+	<a class="btn older" href="/post/page/12/" title="Older">Older &raquo;</a>
+	
+
+</nav>
+</div>
+
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

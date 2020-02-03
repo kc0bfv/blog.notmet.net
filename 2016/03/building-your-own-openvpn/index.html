@@ -1,0 +1,305 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Building Your Own OpenVPN" />
+<meta property="og:description" content="I&rsquo;ve wanted to have a VPN setup for a while - I&rsquo;ve never been entirely comfortable when using public wifi, even secured public wifi&hellip; Open wifi? I feel a little crazy every time I connect. But I usually console myself that I&rsquo;m not a target, I can make sure important connections are encrypted, and I can just avoid doing some things while on public wifi.
+A VPN though, that could make things much easier!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2016/03/building-your-own-openvpn/" />
+<meta property="article:published_time" content="2016-03-26T20:38:22+00:00" />
+<meta property="article:modified_time" content="2016-03-26T20:38:22+00:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Building Your Own OpenVPN"/>
+<meta name="twitter:description" content="I&rsquo;ve wanted to have a VPN setup for a while - I&rsquo;ve never been entirely comfortable when using public wifi, even secured public wifi&hellip; Open wifi? I feel a little crazy every time I connect. But I usually console myself that I&rsquo;m not a target, I can make sure important connections are encrypted, and I can just avoid doing some things while on public wifi.
+A VPN though, that could make things much easier!"/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2016/03/building-your-own-openvpn/">Building Your Own OpenVPN</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016-03-26">2016.03.26</time>
+
+</span>
+</footer>
+
+        <p>I&rsquo;ve wanted to have a VPN setup for a while - I&rsquo;ve never been entirely comfortable when using public wifi, even secured public wifi&hellip;  Open wifi?  I feel a little crazy every time I connect.  But I usually console myself that I&rsquo;m not a target, I can make sure important connections are encrypted, and I can just avoid doing some things while on public wifi.</p>
+<p>A VPN though, that could make things much easier!  All communications would be encrypted between the device I&rsquo;m using and my VPN endpoint.  If I set it up myself, the VPN endpoint would be my home Internet connection.  This essentially makes all my browsing look like it&rsquo;s coming from home, with solid protection between the coffee shop and home&hellip;  I could do any browsing I wanted without worry!  Also, I would essentially be connected to my home network, giving me access to all my devices there.</p>
+<p>OpenVPN seems like the popular self-setup VPN, it&rsquo;s open-source, and there are plenty of tutorials&hellip;  OpenVPN, that sounds friendly!</p>
+<p>It was not.</p>
+<p>If you have tried to set this beast up yourself, you know what I&rsquo;m talking about.</p>
+<p>The purpose of this post is to document what I&rsquo;ve done.  This will help me when I, inevitably, have to redo the setup in the future.  It may help you if you&rsquo;re trying to do something similar.  First of all, let&rsquo;s talk about hardware:</p>
+<ul>
+<li>Netgear WNDR3400</li>
+<li>Early 2011 MacBook Pro running OS X El Capitan</li>
+<li>Samsung Galaxy S5</li>
+</ul>
+<p>Here&rsquo;s the software I ended up using on each of these devices to get OpenVPN working:</p>
+<ul>
+<li><a href="http://www.dd-wrt.com/site/index">DD-WRT</a> v24 &ldquo;big&rdquo;</li>
+<li><a href="https://tunnelblick.net/">Tunnelblick</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=net.openvpn.openvpn&amp;hl=en">OpenVPN Connect</a></li>
+</ul>
+<p>&ldquo;Big&rdquo; versions of DD-WRT have an OpenVPN server built-in!  I&rsquo;ve been using DD-WRT for years, previously on a few WRT-54G&rsquo;s, but now I&rsquo;ve got this N-Netgear (which is great) which also runs DD-WRT.  Lucky me!</p>
+<p><strong>First</strong> - get the above software installed.  You&rsquo;re going to need to do some configuration on each of them, so I&rsquo;ll describe that next.</p>
+<p><strong>Second</strong> - generate some keys!  Your VPN is going to use cryptographic certificates to secure the communications between all the parts.</p>
+<p><strong>Third</strong> - setup the server.  This is the DD-WRT router, in this case.</p>
+<p><strong>Fourth</strong> - setup the Mac client.  Or whatever client you want&hellip;</p>
+<p><strong>Fifth</strong> - setup the Android client.</p>
+<h2 id="how-do-these-certificate-things-work">How Do These Certificate Things Work?</h2>
+<p>Here&rsquo;s how it&rsquo;s going to work - there&rsquo;s a &ldquo;server&rdquo; end (the router at home - the thing running DD-WRT) and multiple &ldquo;client&rdquo; ends (my Mac and my Android).  Every one of these parts will have a unique certificate - in my setup I&rsquo;ve got three certificates.  Each client needs its own certificate or OpenVPN will barf - don&rsquo;t cheap out on me!  I learned this from experience.</p>
+<p>A certificate sounds like a piece of paper, and you can imagine it that way&hellip;  It&rsquo;s like a piece of paper with a big number written on it, that number is a &ldquo;public&rdquo; key.  There&rsquo;s a companion piece of info called the &ldquo;private&rdquo; key.  You can give anyone the public key&hellip;  It&rsquo;s like a physical key, that they can use to lock a secret message in a box.  BUT - the public key won&rsquo;t open the box back up once the secret message is in there - because math.  The message writer can hand the box to anybody, but no key will open that box again except the private key.</p>
+<p>YOU DIDN&rsquo;T GIVE ANYONE THE PRIVATE KEY, DID YOU?  Don&rsquo;t.  The private key opens the box and you can get the message.</p>
+<p>So, you could write your certificate out on the Internet and then folks can send you secret messages!  That&rsquo;s how OpenVPN does its thing.  Later on, when this thing starts working, you&rsquo;ll connect to the server and it&rsquo;ll send you its certificate (so you can send it your browsing requests secretly) and you&rsquo;ll send the server your certificate (so it can send you the responses to your requests secretly).  Again - OpenVPN needs a separate certificate for each client because it&rsquo;s needly like that.</p>
+<p>OpenVPN does another cool thing with these certificates - it determines who&rsquo;s allowed to connect and use the system.  For this purpose you need a fourth certificate called a &ldquo;certificate authority&rdquo; (CA) cert.  This one is not special, it is the same as the other ones, but OpenVPN uses it backwards.  You generate the CA public and private key, and then you encrypt other certificates with that CA private key!  Before, remember, we sent secret messages by encrypting (locking the box) with the public key, then only the private key could open the box (decrypt).  By encrypting with the private key, now only the public key can decrypt - and nothing can re-encrypt.</p>
+<p>This is cool because anybody can open the box and make sure that someone who holds the CA private key wrote the message inside!  If anybody changes the message inside, everybody else will know that the new message wasn&rsquo;t the original.  This is called &ldquo;digitally signing&rdquo; something.  Nobody can change the document you put the CA&rsquo;s signature on.</p>
+<h2 id="how-do-we-make-certificates">How Do We Make Certificates?</h2>
+<p>Ok!  So, that&rsquo;s how it works, but now how do we set it up on a Mac?  Just an aside - this is much easier on a Debian box, and you use the same tools.</p>
+<p>Open up a terminal.</p>
+<pre><code>mkdir OpenVPNKeys
+cp -R /Applications/Tunnelblick.app/Contents/Resources/easy-rsa-tunnelblick/* ./
+</code></pre><p>This makes a place to store everything, and copies over a bunch of tools that will make the job easier.  Specifically, this thing called Easy-RSA.  Now we need setup some configuration for Easy-RSA.  It&rsquo;s essentially a set of scripts, so we&rsquo;re going to edit a file with some shell variables in it, then source that file so the variables become part of the environment.  I&rsquo;ll walk you through it.</p>
+<p>Edit the &ldquo;vars&rdquo; file that&rsquo;s now in your directory.  I prefer vi, maybe you like nano, but use whatever text file editor you want.  Leave almost everything as it is, but scroll to the bottom.  Change your country, province/state, city, org[anization], and email to be whatever you want, whatever makes sense.  Something legit maybe?  (maybe?)  You don&rsquo;t have to change most of these things.</p>
+<p>There are now the CN, OU and Name fields.  Don&rsquo;t put spaces in these things.  Maybe that&rsquo;s just superstition, but I wouldn&rsquo;t do it.  These fields don&rsquo;t seem to matter much unless you&rsquo;re trying to organize a large set of keys across an organization&hellip;  If you&rsquo;re reading this you probably aren&rsquo;t, so you can just leave them alone.</p>
+<pre><code>. ./vars
+./clean-all
+</code></pre><p>That brings all those variables into the environment so the other scripts can use them, and clears out old config.</p>
+<pre><code>./build-ca
+./build-dh
+</code></pre><p>These setup the certificate authority certificate and some stuff for the Diffie-Hellman key exchange (<a href="https://wiki.openssl.org/index.php/Diffie-Hellman_parameters">look it up suckah</a>!).  The first command will ask you a bunch of questions with default answers set to what you put in vars.  You can probably just hit enter right through them.  This next one is going to ask you some questions too, but again, enter will probably be fine.</p>
+<pre><code>./build-key-pkcs12 --pass [someUniqueNameForTheKey]
+</code></pre><p>This step is going to build a certificate for your client to use, you&rsquo;re eventually going to take what the command outputs and put it on your phone, tablet or laptop.  Again, each client needs its own certificate.  Replace &ldquo;someUniqueNameForTheKey&rdquo; with something related to the client you&rsquo;re going to put the certificate on - something without spaces in it.</p>
+<p>This step is going to ask you for two passwords.  The first is the &ldquo;challenge password&rdquo;.  &ldquo;Leave it blank&rdquo;, everyone says!  Fools.  Leave it blank, I say!  Fools run the planet, they seem to know what they&rsquo;re doing well enough.</p>
+<p>No really, leave the first one blank.  The second password is the &ldquo;Export Password&rdquo;.  I recommend putting in a password here&hellip;  Clients generally ask for this password the first time they use the cert, then don&rsquo;t need it again.  The export password seems to prevent against someone finding the cert and using it, but don&rsquo;t slow you down from using it.</p>
+<p>Build as many certificates as you need.  Each of them will be stored in the &ldquo;keys&rdquo; directory as a &ldquo;.p12&rdquo; file.  One cert per client.</p>
+<h2 id="how-do-we-setup-the-server">How Do We Setup The Server?</h2>
+<p>Alright, certs are built, now how do we setup our DD-WRT?  Login to your router, go to Services-&gt;VPN, and make that page look like the one below.  (Click on it to get a big version&hellip;)</p>
+<p><a href="http://blog.notmet.net/wp-content/uploads/2016/03/DDWRTPage.png"><img src="http://blog.notmet.net/wp-content/uploads/2016/03/DDWRTPage-648x1024.png" alt="DDWRTPage">
+</a></p>
+<p>Ok - that image explained where to get the values you need for the crypto settings, but there are a couple other values you should consider changing from my setup&hellip;  Literally, only two!  Easy stuff.</p>
+<p>First - you need to change something in the first &ldquo;Additional Config&rdquo; line.  You need to make this line reflect your internal LAN.  You can find that info on the &ldquo;Setup&rdquo; tab (don&rsquo;t forget to save your settings before switching over there!).  Take &ldquo;Local IP Address&rdquo; and &ldquo;Subnet Mask&rdquo; from &ldquo;Setup&rdquo;-&gt;&quot;Basic Setup&rdquo;-&gt;&quot;Network Setup&rdquo;-&gt;&quot;Router IP&rdquo; and put it in that first &ldquo;Additional Config&rdquo; line in that order.</p>
+<p>Next - decide what subnet you want VPN clients to be on.  I recommend picking something weird like &ldquo;192.168.8.0&rdquo;.  This should be different from your internal LAN (see the previous step).  If your internal LAN isn&rsquo;t .8.0, just use the settings I show in the screenshot.  To change your VPN client LAN, change &ldquo;Network&rdquo; on the VPN page, and change the third line of &ldquo;Additional Config&rdquo;.</p>
+<p>What is &ldquo;Additional Config&rdquo; doing, anyway?  It&rsquo;s telling the server to send any clients that connect (to &ldquo;push&rdquo; them) some networking information.  Specifically, it&rsquo;s telling clients how to talk to the internal network and to use the router as the DNS server.</p>
+<p>Save the configuration and apply it now.</p>
+<p>We&rsquo;ve got a couple steps left to finish the router configuration, but we&rsquo;ll need some more information.  Specifically, we need to know what the router calls your &ldquo;tunneling&rdquo; network adapter.  This is a software-based network device that all the traffic is going to flow through.  It&rsquo;s kindof a complicated concept, but it&rsquo;s like a network connection within a network connection - like it a connection tunneling through your existing connection.</p>
+<p>It&rsquo;s easy to find though.  Go to &ldquo;Administration&rdquo;-&gt;&quot;Commands&rdquo; on the router admin page.  Enter &ldquo;ifconfig&rdquo; in the &ldquo;Commands&rdquo; box and click &ldquo;Run Commands&rdquo;.  This will refresh the page slowly and output a bunch of information.  Look for a block of text that starts with something like &ldquo;tun0&rdquo; or &ldquo;tun1&rdquo; and that has your VPN client subnet info near it.  It could be any number after &ldquo;tun&rdquo;.  Mine is &ldquo;tun0&rdquo;, so that&rsquo;s what you&rsquo;ll see in the rest of this tutorial.  Just replace every &ldquo;tun0&rdquo; with your specific &ldquo;tun&rdquo; entry!</p>
+<p>While you&rsquo;re here, also note what bridge network your local LAN is using.  This is probably near the top of the ifconfig output and will be called &ldquo;br0&rdquo; or something and will have your local LAN info near it.  You just need the basic device, not anything with a colon in it (your router will get colon cancer if you use the colonnaded one (that wordplay was hardcore terrible!)).</p>
+<p>So, now we need to fix up the DNS server a little.  Go to &ldquo;Services&rdquo;-&gt;&quot;Services&rdquo; on your router config.  Enable DNSMasq, disable Local DNS, enable &ldquo;No DNS Rebind&rdquo;, enter &ldquo;interface=tun0&rdquo; in the Additional DNSMasq Options.  Remember - use the &ldquo;tun&rdquo; you got from the router, don&rsquo;t just blindly use &ldquo;tun0&rdquo;.</p>
+<p>Save and apply your configuration.</p>
+<p>Now we need to setup some firewall stuff.  Go back to &ldquo;Administration&rdquo;-&gt;&quot;Commands&rdquo; and enter the following block of text in the &ldquo;Commands&rdquo; box.  We&rsquo;re going to edit it a little before running it, though.</p>
+<pre><code>iptables -I INPUT 1 -p tcp --dport 1194 -j ACCEPT
+iptables -I FORWARD 1 --source 192.168.8.0/24 -j ACCEPT
+iptables -I FORWARD -i br0 -o tun0 -j ACCEPT
+iptables -I FORWARD -i tun0 -o br0 -j ACCEPT
+iptables -t nat -A POSTROUTING -s 192.168.8.0/24 -j MASQUERADE
+</code></pre><p>First - change &ldquo;192.168.8.0&rdquo; on the second and fifth lines to be whatever you set your VPN client subnet info to.  Why does it have a &ldquo;/24&rdquo; afterwards?  This is a short way of specifying the subnet mask 255.255.255.0.  Hopefully you used that subnet mask with the VPN client subnet&hellip;  Otherwise you&rsquo;re on your own suckah!  (If you used a different subnet, you can calculate the right &ldquo;/&rdquo; to put in there, it&rsquo;s called CIDR Notation, and <a href="http://www.subnet-calculator.com/cidr.php">here&rsquo;s a calculator for you</a>)</p>
+<p>Second - change the instances of &ldquo;br0&rdquo; and &ldquo;tun0&rdquo; on the third and fourth lines to reflect your router&rsquo;s bridge and tunnel interfaces.</p>
+<p>Run commands, save firewall, now the new firewall config should show up right below the &ldquo;Commands&rdquo; box.</p>
+<p>Ok, so that took a while, but hopefully it was pretty much straightforward.  We&rsquo;re done with the router!</p>
+<h2 id="setup-the-mac-client">Setup the Mac Client</h2>
+<p>Tunnelblick is not tough to use, and neither is the Android client.  Many OpenVPN clients use the configuration filetype &ldquo;.ovpn&rdquo;.  We&rsquo;re going to build a version that will work for both Tunnelblick and Android, and all you&rsquo;ll have to do is change the certificate file name.</p>
+<p>I had to use a bunch of trial-and-error and Internet tutorials to figure this out and make it work, but I think the configuration below will work for most OpenVPN clients.</p>
+<p>Make a file with the following contents:</p>
+<pre><code>client
+dev tun
+proto udp
+port 1194
+remote yourRoutersExternalAddress
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+remote-cert-tls server
+comp-lzo
+verb 1
+reneg-sec 0
+pull
+
+pkcs12 clientKeyFileHere.p12
+
+cipher AES-128-CBC
+link-mtu 1570
+auth SHA256
+</code></pre><p>Change the line &ldquo;pkcs12&rdquo; to be the name of one of your client .p12 certificate/key files.  Change the line &ldquo;remote&rdquo; to reflect your router&rsquo;s external Internet address - the address other folks on the Internet can use to talk to your router.  Save this configuration file with a name like &ldquo;macbookConfiguration.ovpn&rdquo;.</p>
+<p>Alright - back to the Mac specific part!  Copy the ovpn and p12 files for your Mac to the Mac.  Double click the ovpn file.  Tunnelblick will open up and import the configuration.  Click &ldquo;connect&rdquo; in Tunnelblick.  It will ask you for the &ldquo;export password&rdquo; you put in when you created this client certificate - enter that.  Tunnelblick should connect to your VPN now .(Probably don&rsquo;t try this stuff on your local LAN, although that might work just fine.  Probably try it at a nearby coffee shop with wifi, or on your neighbor&rsquo;s wifi.)</p>
+<p>That&rsquo;s it.  Your Mac is setup and VPN&rsquo;d to your home Internet connection!  Prove it by going to Google and searching for &ldquo;what is my IP address&rdquo;.  Google should give you the same IP address now, when you&rsquo;re not physically at home but VPN&rsquo;d there, as it does when you&rsquo;re at home.</p>
+<h2 id="setup-the-android-client">Setup the Android Client</h2>
+<p>Build an &ldquo;ovpn&rdquo; file in the same way we did for the Mac, but using your Android certificate.  Copy the ovpn and p12 files over to your Android.  Open &ldquo;OpenVPN Connect&rdquo; on your Android, and click the &ldquo;&hellip;&rdquo; up in the upper right.  Click &ldquo;Import&rdquo;.  Select &ldquo;Import PKCS #12 from SD card&rdquo;.  Browse to your p12 file and click it.  Enter the password.  Go back to the OpenVPN Connect home screen and click the &ldquo;&hellip;&rdquo; again.  Click Import and this time &ldquo;Import Profile from SD card&rdquo;.  Select the ovpn file you copied over.</p>
+<p>Click &ldquo;Connect&rdquo; on the OpenVPN Connect home screen.</p>
+<p>That&rsquo;s it!  Your Android is setup!  Prove it using the google IP address trick we used in the Mac section at the end.</p>
+<p>Something to watch out for - if you connect to the VPN while you&rsquo;re on your cell network, then you move in range of a wifi network and intend to use that network, you must disconnect from the VPN, wait a second, and reconnect.  After reconnecting the VPN it should be running over the wifi network.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>So, I hope I gave you enough detail and walkthrough to figure out how to setup your VPN successfully.  It took me a pretty significant amount of research and time to set the damn thing up, so hopefully I&rsquo;ve saved you some time.  There are a lot of tutorials out there that cover parts of this setup, but this is the first I&rsquo;ve seen that goes all the way start to finish explaining each step.</p>
+<p>What if this doesn&rsquo;t work for you?  Well, you can email me.  I&rsquo;ll try to help.  Probably.  If I&rsquo;m not busy.  Better - try to troubleshoot it.  This VPN is a system of systems, so lots of parts can go wrong.  Let&rsquo;s walk through a few.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p><strong>I got the server and clients setup, but neither client will connect to the server</strong> - Cool, I bet this is a server problem!  First step - remember that the server is your home router.  Is it working and connected to the Internet at home?  Did the router change addresses since you built your OVPN file (dynamic DNS services can help solve this problem, but that&rsquo;s for a different tutorial)?  Can you ping your router while you&rsquo;re not at home (you&rsquo;ll have to disable &ldquo;Block Anonymous WAN Requests (ping)&rdquo; under &ldquo;Security&rdquo;-&gt;&quot;Firewall&rdquo; to try this, enable it again when pings work from the outside, because enabling this setting is a little more secure)?</p>
+<p>Second step - use Tunnelblick&rsquo;s &ldquo;Log&rdquo; tab to help you figure out what is breaking and where.  Some of the output is right there in the tab, some of the output is spit into a separate file that is referenced there on the log tab.  Search for the warnings and errors and Google them.  Here are some of the things this log can help you fix, in the order that you should check/fix them.</p>
+<p>2.1 - Can Tunnelblick start talking to your home router, or does the connection break before that even happened?</p>
+<p>2.2 - Can Tunnelblick start the exchange of session parameters?  This is where your client tells the server what kind of stuff it will accept, and the server tells the client the same.  Do you see that kind of exchange happening?</p>
+<p>2.3 - Are the server and the client telling each other they can use the same session parameters?  In my experience, the client and server had to be specifying the exact same parameters.</p>
+<p>2.4 - Is the crypto all working out?  Maybe the certificates are in the wrong place on the server&hellip;</p>
+<p>The router also has a server log on it, and that can help too.  It will tell you some similar things.</p>
+<p><strong>I got the server and clients setup, but one of the clients won&rsquo;t connect and the other will!</strong></p>
+<p>The problem probably lies with the broken client.  Maybe Googling stuff in its log file will help you?</p>
+<p><strong>One of the clients connects, but when I connect the second client it boots the first off after a short period!</strong></p>
+<p>You probably are trying to use the same certificate/key for both clients.  Don&rsquo;t do that.</p>
+<hr>
+<h3 id="comments">Comments:</h3>
+<h4 id="heading"></h4>
+<p>finity - Mar 6, 2016</p>
+<p>I am pretty careless with the difference between certificates and keys&hellip; For folks that are new to this - there is a difference. A certificate contains a key. The private keys here don&rsquo;t have certificates.</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2016%2f03%2fbuilding-your-own-openvpn%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Building%20Your%20Own%20OpenVPN&amp;url=https%3a%2f%2fblog.notmet.net%2f2016%2f03%2fbuilding-your-own-openvpn%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2016%2f03%2fbuilding-your-own-openvpn%2f&title=Building%20Your%20Own%20OpenVPN" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/02/a-january-experiment-intermittent-fasting/</loc>
+    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/blog/</loc>
+    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/</loc>
+    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/health/</loc>
+    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/post/</loc>
+    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/sanity/</loc>
+    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/</loc>
+    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/01/archive-pages/</loc>
+    <lastmod>2020-01-31T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/hugo/</loc>
+    <lastmod>2020-01-31T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/programming/</loc>
+    <lastmod>2020-01-31T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/python/</loc>
+    <lastmod>2020-01-29T16:15:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/01/syntax-errors/</loc>
+    <lastmod>2020-01-29T16:15:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/archive/</loc>
+    <lastmod>2020-01-25T17:00:46-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/</loc>
+    <lastmod>2020-01-25T17:00:46-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/baking/</loc>
+    <lastmod>2020-01-25T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/sourdough/</loc>
+    <lastmod>2020-01-25T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/01/sourdough-with-the-wrong-ingredients/</loc>
+    <lastmod>2020-01-25T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/01/thoughts-on-swap/</loc>
+    <lastmod>2020-01-08T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/cloud/</loc>
+    <lastmod>2020-01-03T19:49:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/01/providing-cloud-services-in-the-air-force/</loc>
+    <lastmod>2020-01-03T19:49:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/range/</loc>
+    <lastmod>2020-01-03T19:49:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/smoker-log/</loc>
+    <lastmod>2019-12-26T15:22:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/12/smokin-a-turkey/</loc>
+    <lastmod>2019-12-26T15:22:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/turkey/</loc>
+    <lastmod>2019-12-26T15:22:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/brisket/</loc>
+    <lastmod>2019-11-11T01:03:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/11/brisket-sourdough/</loc>
+    <lastmod>2019-11-11T01:03:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/11/cybatiworks-pi-running-on-qemu/</loc>
+    <lastmod>2019-11-01T20:20:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/10/blockchain-use-in-software-code-signing-malware-c2/</loc>
+    <lastmod>2019-10-31T16:09:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/10/sir-sour/</loc>
+    <lastmod>2019-10-28T02:42:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/salmon/</loc>
+    <lastmod>2019-10-20T00:29:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/10/smoking-salmon-in-idaho/</loc>
+    <lastmod>2019-10-20T00:29:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/leadership/</loc>
+    <lastmod>2019-10-19T16:00:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/10/pitching-success-co-star/</loc>
+    <lastmod>2019-10-19T16:00:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/things-i-hope-i-remember/</loc>
+    <lastmod>2019-10-19T16:00:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/10/meet-differently/</loc>
+    <lastmod>2019-10-12T21:38:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/09/consider-how-well-defined-a-problem-is-when-building-teams/</loc>
+    <lastmod>2019-09-03T16:00:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/08/build-on-my-peoples-strengths/</loc>
+    <lastmod>2019-08-29T16:00:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/08/mastermind-meetings/</loc>
+    <lastmod>2019-08-26T23:00:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/08/perceptions-sometimes-count-and-facts-may-not/</loc>
+    <lastmod>2019-08-22T23:00:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/08/know-your-why/</loc>
+    <lastmod>2019-08-19T23:00:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/08/personality-inprocessing/</loc>
+    <lastmod>2019-08-15T23:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/air-force/</loc>
+    <lastmod>2019-08-04T22:36:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/cyber/</loc>
+    <lastmod>2019-08-04T22:36:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/stories/</loc>
+    <lastmod>2019-08-04T22:36:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/08/the-cyber-sim/</loc>
+    <lastmod>2019-08-04T22:36:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/08/broken-windows/</loc>
+    <lastmod>2019-08-02T13:39:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/08/mission-qualified/</loc>
+    <lastmod>2019-08-01T18:38:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/android/</loc>
+    <lastmod>2019-07-26T21:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/google/</loc>
+    <lastmod>2019-07-26T21:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/pixel/</loc>
+    <lastmod>2019-07-26T21:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/tech-tips/</loc>
+    <lastmod>2019-07-26T21:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/07/the-broken-phone-and-recovery/</loc>
+    <lastmod>2019-07-26T21:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/totp/</loc>
+    <lastmod>2019-07-26T21:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/two-factor-authentication/</loc>
+    <lastmod>2019-07-26T21:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/ubreakifix/</loc>
+    <lastmod>2019-07-26T21:00:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/07/things-i-hope-i-remember/</loc>
+    <lastmod>2019-07-26T20:17:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/jerky/</loc>
+    <lastmod>2019-06-15T21:58:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/06/jerky-and-sourdough/</loc>
+    <lastmod>2019-06-15T21:58:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/06/even-more-sourdough/</loc>
+    <lastmod>2019-06-10T12:29:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/06/more-sourdough/</loc>
+    <lastmod>2019-06-02T01:25:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/05/computer-fluency-assessment/</loc>
+    <lastmod>2019-05-22T22:56:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/05/sourdough-part-trace/</loc>
+    <lastmod>2019-05-19T13:45:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/05/sourdough-part-doughs/</loc>
+    <lastmod>2019-05-12T22:03:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/bread/</loc>
+    <lastmod>2019-05-05T01:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/05/sourdough-bread/</loc>
+    <lastmod>2019-05-05T01:14:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/cooking/</loc>
+    <lastmod>2019-04-22T11:45:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/lamb/</loc>
+    <lastmod>2019-04-22T11:45:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/04/lambtastic/</loc>
+    <lastmod>2019-04-22T11:45:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/sous-vide/</loc>
+    <lastmod>2019-04-22T11:45:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/pork-butt/</loc>
+    <lastmod>2019-04-15T01:10:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/04/pork-butt-for-friends/</loc>
+    <lastmod>2019-04-15T01:10:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/03/smoked-steaks/</loc>
+    <lastmod>2019-03-31T22:25:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/steak/</loc>
+    <lastmod>2019-03-31T22:25:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/beef/</loc>
+    <lastmod>2019-03-17T20:21:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/03/more-jerky/</loc>
+    <lastmod>2019-03-17T20:21:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/chicken/</loc>
+    <lastmod>2019-03-11T00:57:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/03/grilling-a-whole-chicken/</loc>
+    <lastmod>2019-03-11T00:57:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/03/smoking-salmon/</loc>
+    <lastmod>2019-03-03T22:17:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/03/trying-out-beef-jerky/</loc>
+    <lastmod>2019-03-03T00:06:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2019/02/writing-about-writing-secure-shell-scripts/</loc>
+    <lastmod>2019-02-07T02:27:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/12/brisket-and-salmon-again/</loc>
+    <lastmod>2019-01-01T01:48:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/11/wedding-photos/</loc>
+    <lastmod>2018-11-18T14:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/09/brisket-and-salmon-2/</loc>
+    <lastmod>2018-09-15T22:31:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/07/brisket-numero-quatro/</loc>
+    <lastmod>2018-07-23T22:27:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/07/brisket-numero-tres/</loc>
+    <lastmod>2018-07-14T16:50:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/07/introducing-the-hitchcock/</loc>
+    <lastmod>2018-07-13T03:12:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/06/confidentiality-and-integrity-vs-availability/</loc>
+    <lastmod>2018-06-16T15:03:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/leaveweb/</loc>
+    <lastmod>2018-06-16T15:03:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/network-security/</loc>
+    <lastmod>2018-06-16T15:03:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/05/bbq-chicken/</loc>
+    <lastmod>2018-05-28T17:55:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/ribs/</loc>
+    <lastmod>2018-05-07T00:22:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/05/ribs-and-salmon/</loc>
+    <lastmod>2018-05-07T00:22:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/04/drupal-exploited-like-crazy/</loc>
+    <lastmod>2018-04-18T10:11:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/04/early-virus-total-catch/</loc>
+    <lastmod>2018-04-04T10:12:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/03/brisket-and-salmon/</loc>
+    <lastmod>2018-03-26T02:42:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/02/pork-butt-baby-shower/</loc>
+    <lastmod>2018-02-25T23:49:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/lamb-leg/</loc>
+    <lastmod>2018-02-24T19:08:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/02/sous-vide-lamb-leg/</loc>
+    <lastmod>2018-02-24T19:08:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/02/smokin-chicken-and-salmon-too/</loc>
+    <lastmod>2018-02-11T21:40:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/02/sous-vide-burgers/</loc>
+    <lastmod>2018-02-07T23:07:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2018/01/third-smoking-pork-butts-and-salmon/</loc>
+    <lastmod>2018-01-23T14:21:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/12/second-smoking-brisket-and-salmon/</loc>
+    <lastmod>2017-12-31T18:31:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/12/first-smoking-salmon/</loc>
+    <lastmod>2017-12-17T18:26:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/travel/</loc>
+    <lastmod>2017-10-17T12:37:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/10/uk-2017-summary/</loc>
+    <lastmod>2017-10-17T12:37:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/10/uk-2017-odds-and-ends/</loc>
+    <lastmod>2017-10-17T12:22:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/10/cork-and-the-cliffs/</loc>
+    <lastmod>2017-10-17T12:02:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/10/dubsteppin-dublin/</loc>
+    <lastmod>2017-10-17T11:10:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/10/portree-isle-of-skye-scotland/</loc>
+    <lastmod>2017-10-16T17:15:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/10/leaving-london-and-going-to-scotland/</loc>
+    <lastmod>2017-10-16T16:47:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/10/seeing-london-sights-and-saving-some-pounds/</loc>
+    <lastmod>2017-10-06T22:12:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2017/10/foggy-london-town-day-2-34/</loc>
+    <lastmod>2017-10-05T17:37:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/</loc>
+    <lastmod>2016-08-20T00:14:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/</loc>
+    <lastmod>2016-08-19T23:16:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2016/03/building-your-own-openvpn/</loc>
+    <lastmod>2016-03-26T20:38:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2015/08/saturday-ramblings-of-a-frustrated-cybernerd/</loc>
+    <lastmod>2015-08-01T19:48:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2014/03/engineering-the-van-allen-belts/</loc>
+    <lastmod>2014-03-07T19:37:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2013/06/the-economist-on-us-surveillance/</loc>
+    <lastmod>2013-06-30T20:26:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2013/02/plunger/</loc>
+    <lastmod>2013-02-12T02:50:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2013/02/san-antonio-hackerspace/</loc>
+    <lastmod>2013-02-08T20:06:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2013/02/unix-awesomeness/</loc>
+    <lastmod>2013-02-04T17:00:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2013/01/how-to-have-an-awesome-weekend/</loc>
+    <lastmod>2013-01-31T17:00:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2013/01/more-to-life-than-being-happy/</loc>
+    <lastmod>2013-01-27T20:05:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2013/01/the-compro-flirt/</loc>
+    <lastmod>2013-01-08T03:25:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/12/bash-dictionary-terrible-hack-of-the-day/</loc>
+    <lastmod>2012-12-19T21:06:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/12/meteor-shower/</loc>
+    <lastmod>2012-12-14T16:27:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/11/its-wonderful/</loc>
+    <lastmod>2012-11-27T02:36:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/11/open-port/</loc>
+    <lastmod>2012-11-11T15:20:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/11/mustache-november/</loc>
+    <lastmod>2012-11-04T01:14:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/10/google-scholar-does-citations/</loc>
+    <lastmod>2012-10-31T19:21:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/10/pythons-super/</loc>
+    <lastmod>2012-10-05T14:17:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/10/james-bond-infographic/</loc>
+    <lastmod>2012-10-03T19:02:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/10/the-linux-graphics-stack-meta/</loc>
+    <lastmod>2012-10-02T15:13:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/08/screen-scrollback-buffer/</loc>
+    <lastmod>2012-08-31T17:05:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/08/apocalypse-not/</loc>
+    <lastmod>2012-08-19T22:58:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/08/orwell-quote/</loc>
+    <lastmod>2012-08-02T05:01:31+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/07/facebook-is-not-aff/</loc>
+    <lastmod>2012-08-01T03:29:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/07/star-trek-had-it-right/</loc>
+    <lastmod>2012-07-28T04:31:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/07/reading-list/</loc>
+    <lastmod>2012-07-20T23:59:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/07/starbucksmugs/</loc>
+    <lastmod>2012-07-20T18:57:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/i-always-feel-like-someones-watching-me/</loc>
+    <lastmod>2012-07-15T01:26:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/07/surveillance-art/</loc>
+    <lastmod>2012-07-15T01:26:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/hot-hot-heat/</loc>
+    <lastmod>2012-07-12T15:04:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/07/peppersandcoffee/</loc>
+    <lastmod>2012-07-12T15:04:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/07/middle-eastern-language-patterns/</loc>
+    <lastmod>2012-07-11T03:05:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/taliban-rhymes-with-eatyourflan/</loc>
+    <lastmod>2012-07-11T03:05:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/php-is-not-a-fart/</loc>
+    <lastmod>2012-07-10T20:44:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/07/php-the-right-way/</loc>
+    <lastmod>2012-07-10T20:44:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2012/01/simplify-your-writing/</loc>
+    <lastmod>2012-01-22T21:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/this-is-not-a-tag/</loc>
+    <lastmod>2012-01-22T21:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2011/07/advanced-sql-injection/</loc>
+    <lastmod>2011-07-28T16:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/sql-injection-leads-to-infection/</loc>
+    <lastmod>2011-07-28T16:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2011/04/yoda-conditions/</loc>
+    <lastmod>2011-04-22T16:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/a-tag-this-is/</loc>
+    <lastmod>2011-04-22T16:12:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2011/04/lcd-modules/</loc>
+    <lastmod>2011-04-01T15:38:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2011/03/css-div-tag-webpage-layout/</loc>
+    <lastmod>2011-03-16T14:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2011/03/mingw-and-cygwin-to-build-a-windows-dll/</loc>
+    <lastmod>2011-03-06T19:07:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2011/02/c-faq/</loc>
+    <lastmod>2011-02-03T17:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2011/02/hooking-netfilter-with-a-linux-kernel-module/</loc>
+    <lastmod>2011-02-02T04:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2009/08/comp-sec-sites/</loc>
+    <lastmod>2009-08-03T18:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2009/05/geotagging-photos/</loc>
+    <lastmod>2009-05-24T20:57:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2009/04/current-chili-recipe/</loc>
+    <lastmod>2009-04-26T19:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2009/03/movies-to-see/</loc>
+    <lastmod>2009-03-05T18:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2009/02/chiltepin-batch-1-day-1/</loc>
+    <lastmod>2009-02-22T23:20:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2008/01/wwi/</loc>
+    <lastmod>2008-01-27T07:16:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2008/01/public-service-announcement/</loc>
+    <lastmod>2008-01-26T18:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2008/01/ahhnold/</loc>
+    <lastmod>2008-01-18T02:31:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2008/01/cool-story-ideas-a-k-a-first-post/</loc>
+    <lastmod>2008-01-09T07:12:00+00:00</lastmod>
+  </url>
+  
+</urlset>

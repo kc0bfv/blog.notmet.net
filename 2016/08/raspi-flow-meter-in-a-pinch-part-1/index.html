@@ -1,0 +1,197 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="RasPi Flow Meter In A Pinch - Part 1" />
+<meta property="og:description" content="META: This first part is about the problem that caused me to build the solution. Part 2 is about the solution.
+My new place has an awesome feature that was disabled when I moved in - a reverse osmosis water filter! It&rsquo;s not a whole-house hookup, it&rsquo;s just for the refrigerator and a dedicated tap on the sink. We definitely wanted to use this thing! At first, I just turned it on and it seemed to work fine." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/" />
+<meta property="article:published_time" content="2016-08-19T23:16:50+00:00" />
+<meta property="article:modified_time" content="2016-08-19T23:16:50+00:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RasPi Flow Meter In A Pinch - Part 1"/>
+<meta name="twitter:description" content="META: This first part is about the problem that caused me to build the solution. Part 2 is about the solution.
+My new place has an awesome feature that was disabled when I moved in - a reverse osmosis water filter! It&rsquo;s not a whole-house hookup, it&rsquo;s just for the refrigerator and a dedicated tap on the sink. We definitely wanted to use this thing! At first, I just turned it on and it seemed to work fine."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/">RasPi Flow Meter In A Pinch - Part 1</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016-08-19">2016.08.19</time>
+
+</span>
+</footer>
+
+        <p>META: This first part is about the problem that caused me to build the solution.  <a href="https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/">Part 2</a> is about the solution.</p>
+<p>My new place has an awesome feature that was disabled when I moved in - a reverse osmosis water filter!  It&rsquo;s not a whole-house hookup, it&rsquo;s just for the refrigerator and a dedicated tap on the sink.  We definitely wanted to use this thing!  At first, I just turned it on and it seemed to work fine.  However, with a little time, I noticed that the output water from the filter never seemed to stop, and there was a small leak on the &ldquo;filtered water&rdquo; side&hellip;</p>
+<p><a href="https://blog.notmet.net/wp-content/uploads/2016/08/RO-Filter.jpg"><img src="https://blog.notmet.net/wp-content/uploads/2016/08/RO-Filter.jpg" alt="A marketing image of a reverse osmosis filter.  There&rsquo;s a storage tank that holds about four gallons on the left, there&rsquo;s a five stage filtering system on the right.  The first three stages are long tubes along the bottom, they filter out sediment and shit.  The fourth stage is the reverse osmosis membrane.  It&rsquo;s the branes of the operation, but it&rsquo;s hidden behind the fifth stage and sitting on a small platform just above those first three cylinders.  Stage four and five are squat horizontal cylinders.  Stage five modifies water flavor.">
+</a></p>
+<p>So - reverse osmosis filtering - it uses water flowing past a membrane to pull impurities out of the water on the other side of the membrane&hellip;  It uses water to filter water&hellip;  Pretty crazy.  That water that did the pulling, however, has to get dumped down the drain.  The filtering system wastes about 5 times as much water as we drink.  Not great, I know, but maybe I&rsquo;ll rig the thing up to water the plants later, or something.  It&rsquo;s not like the waste water got very dirty.</p>
+<p>Anyway - that waste water never stopped running.  It was very wasteful.  The parts didn&rsquo;t really have numbers on them so I couldn&rsquo;t lookup the system to figure out what was wrong&hellip;  I just called some dude who knew.</p>
+<p>And he wanted $340 to fix the thing!  Crazy.  I can figure this out.</p>
+<p>I decided to start by fixing the small leak.  Start small!  I figured out how the hoses worked, then figured out how to look the system and spare parts up online, then rejiggered the output hose, and the leak stopped.  Score!</p>
+<p>The waste water output is controlled by two valves.  One valve prevents backflow - when this is broken it frequently causes the waste water output to never stop.  The other valve is a pressure balance thing, so when the filtered water side pressure is close-enough to the input water pressure the valve closes off and it stops water from flowing through the filter.  Pretty slick!  When the pressure balance is broken it frequently causes the waste water output to never stop.  A little troubleshooting indicated that the pressure-balance valve was the real culprit.  Perhaps it was broken, or dirty, or just out of balance?</p>
+<p>It was at about this point in the troubleshooting that I realized the output water was not continuously running anymore - the entire system seemed to be working properly.  I think solving the small output leak caused the pressure on the filtered size to raise enough that it closed the pressure-balance valve.</p>
+<p>Problem solved!  Maybe&hellip;  I&rsquo;m never very confident when problems with systems I don&rsquo;t understand very well seem to solve themselves&hellip;  It&rsquo;s nice, but not ideal.  Plus, it&rsquo;s hard to tell if the output water is really running a sensible amount.  The system has this tank built in to store up water, so even after we dispense a normal amount, the pressure in the filtered side is still pretty high - it&rsquo;s still high enough that the system doesn&rsquo;t need to filter more water right away.  That sets up this very nice natural hysteresis, which is great for the system but not great for troubleshooting.</p>
+<p>To be confident everything is working, I need to monitor the waste water output for several days.  I do not want to watch the output valve for several days.  I need a data-recording flow meter.  Time to get nerdy!</p>
+<hr>
+<h3 id="comments">Comments:</h3>
+<h4 id="heading"></h4>
+<p><a href="https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/" title="">RasPi Flow Meter In A Pinch – Part 2 | blog.notmet.net</a> - Aug 5, 2016</p>
+<p>[…] ← Previous […]</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2016%2f08%2fraspi-flow-meter-in-a-pinch-part-1%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=RasPi%20Flow%20Meter%20In%20A%20Pinch%20-%20Part%201&amp;url=https%3a%2f%2fblog.notmet.net%2f2016%2f08%2fraspi-flow-meter-in-a-pinch-part-1%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2016%2f08%2fraspi-flow-meter-in-a-pinch-part-1%2f&title=RasPi%20Flow%20Meter%20In%20A%20Pinch%20-%20Part%201" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

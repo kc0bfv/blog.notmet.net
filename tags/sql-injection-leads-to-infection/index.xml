@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sql injection leads to infection on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/sql-injection-leads-to-infection/</link>
+    <description>Recent content in sql injection leads to infection on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Thu, 28 Jul 2011 16:58:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/sql-injection-leads-to-infection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Advanced SQL Injection</title>
+      <link>https://blog.notmet.net/2011/07/advanced-sql-injection/</link>
+      <pubDate>Thu, 28 Jul 2011 16:58:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2011/07/advanced-sql-injection/</guid>
+      <description>Ok, here&amp;rsquo;s a great blog post by Chris Shiflett about a crazy-creative SQL injection technique: http://shiflett.org/blog/2006/jan/addslashes-versus-mysql-real-escape-string
+Very cool. His technique relies on tricking addslashes into breaking up a two byte character with a slash, creating a valid two byte character followed by a valid one byte character. He mentions that this (specific attack) is impossible with UTF-8 because all two (or more) byte characters have continuation bytes that start with 0b10.</description>
+    </item>
+    
+  </channel>
+</rss>

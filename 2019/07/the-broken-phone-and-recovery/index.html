@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="The Broken Phone and Recovery" />
+<meta property="og:description" content="A couple tips about getting an Android phone working again when you&rsquo;re on the road are down below, along with tips about TOTP codes when your phone dies. I set those apart. But first, the background.
+Recently, my Google Pixel stopped working for phone calls. That&rsquo;s a big deal when you&rsquo;re trying to move across the country. Not to mention the fact that failing to work for phone calls is an existential crisis for a cell phone." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2019/07/the-broken-phone-and-recovery/" />
+<meta property="article:published_time" content="2019-07-26T21:00:07+00:00" />
+<meta property="article:modified_time" content="2019-07-26T21:00:07+00:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Broken Phone and Recovery"/>
+<meta name="twitter:description" content="A couple tips about getting an Android phone working again when you&rsquo;re on the road are down below, along with tips about TOTP codes when your phone dies. I set those apart. But first, the background.
+Recently, my Google Pixel stopped working for phone calls. That&rsquo;s a big deal when you&rsquo;re trying to move across the country. Not to mention the fact that failing to work for phone calls is an existential crisis for a cell phone."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2019/07/the-broken-phone-and-recovery/">The Broken Phone and Recovery</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2019-07-26">2019.07.26</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/android">android</a>, 
+        
+        <a href="https://blog.notmet.net/tags/google">google</a>, 
+        
+        <a href="https://blog.notmet.net/tags/pixel">pixel</a>, 
+        
+        <a href="https://blog.notmet.net/tags/tech-tips">tech tips</a>, 
+        
+        <a href="https://blog.notmet.net/tags/totp">totp</a>, 
+        
+        <a href="https://blog.notmet.net/tags/two-factor-authentication">two factor authentication</a>, 
+        
+        <a href="https://blog.notmet.net/tags/ubreakifix">ubreakifix</a>
+        
+    
+
+</span>
+</footer>
+
+        <p>A couple tips about getting an Android phone working again when you&rsquo;re on the road are down below, along with tips about TOTP codes when your phone dies.  I set those apart.  But first, the background.</p>
+<p>Recently, my Google Pixel stopped working for phone calls.  That&rsquo;s a big deal when you&rsquo;re trying to move across the country.  Not to mention the fact that failing to work for phone calls is an existential crisis for a cell phone.</p>
+<p>The speaker sometimes didn&rsquo;t work, the microphone didn&rsquo;t work&hellip;  Sometimes rebooting helped.  Then the problem got worse, and the speaker and microphone never worked, and sometimes it would reboot itself and still not work.</p>
+<p>This is a known issue with the Google Pixel devices.  It&rsquo;s a manufacturer&rsquo;s defect that they announced shortly after I purchased my device in late 2017.  My warranty ran out, then a year later my phone started acting up, and about that time Google lost a lawsuit about this issue.</p>
+<p>It was a big deal for them.  You&rsquo;d think their service folks would know this, and know the way the repair/refund process work.  If they did, they didn&rsquo;t tell me.</p>
+<p>They told me to go to uBreakIFix - great idea.  I&rsquo;ve had good luck with them in the past.  &ldquo;Will this repair be free?&rdquo;  I expressed my concern.  &ldquo;Just take it to uBreakIFix to get it fixed.&rdquo;  They failed to answer my concern.  &ldquo;I&rsquo;m moving across the country and really can&rsquo;t wait for it to be fixed at this time.&rdquo;  &ldquo;Just take it to uBreakIFix to get it fixed.&rdquo;</p>
+<p>I was not happy.</p>
+<p>I manage with the phone through my trip.  Typically, I don&rsquo;t need to make many phone calls.  However, while moving, I need to make several.  There&rsquo;s out-processing at my old unit.  There&rsquo;s in-processing at my new unit.  There&rsquo;s working with the apartment complex folks, the hotel folks, the old property management company, the old insurance company, the new insurance company for the apartment, the potential new insurance companies for my property, the gas company, the electric company, interviewing and feedback with my last boss, family and friends along the way, and that 911 call I made because some old guy was walking down the highway in the wrong direction in the middle of nowhere and my god if he was my grandpa I&rsquo;d hope someone would call 911 for him even if he doesn&rsquo;t look particularly distressed just a little confused.</p>
+<p>I had found a workaround - the phone mostly worked on Bluetooth if I rebooted it right before making a call.</p>
+<p>At my destination I ducked into uBreakIFix at my earliest opportunity.  They confirmed that the main board needed to be replaced, and that a new mainboard would appear the next afternoon.  They&rsquo;d keep the phone until the following evening, and I could get it back before closing.</p>
+<p>Most importantly, Google was paying for the replacement.</p>
+<p>Awesome!  If only Google&rsquo;s service reps had told me this on the phone, I wouldn&rsquo;t have emailed three of their managers!  If only the managers had told me this by email, I wouldn&rsquo;t have held a grudge for two weeks!  Well, less of a grudge.</p>
+<p>uBreakIFix fixed the phone and I went in for pickup.  At pickup they told me it was &ldquo;tested, and everything worked.&rdquo;  The battery was so close to dead I didn&rsquo;t touch the phone until I got back to my room.</p>
+<p>Back on the charger, the mobile network didn&rsquo;t seem to work.  I had zero bars, even outdoors where I&rsquo;d had bars the day prior, and the phone wasn&rsquo;t able to do anything with the network.  I wasn&rsquo;t able to login to the hotel WiFi because uBreakIFix had left it in the initial Android setup, and that wasn&rsquo;t handling the hotel portal page at all.  Android told me the new WiFi adapter MAC, but my Linux MacBook wasn&rsquo;t letting me emulate that MAC over WiFi for some reason (trying to bypass the portal on my laptop&hellip;).</p>
+<p>So, first tip:</p>
+<blockquote>
+<p>When you&rsquo;re stuck with no data, skip Android setup.  Don&rsquo;t specify an account, just let your phone be a blank slate.  Then, login to WiFi, factory reset your phone, and next time it starts up you can go through setup without being stuck at the hotel captive portal - your new MAC has already authenticated to it.</p>
+<blockquote>
+</blockquote>
+</blockquote>
+<p>Alright, so, easy fix.  My first thoughts were to go much more complicated, and at one point I thought I&rsquo;d have to find some open WiFi somewhere else to get things setup.  This fix simplified things, and let me setup the phone perfectly regardless.</p>
+<p>Mobile network still didn&rsquo;t work, and uBreakIFix was closed at this point.  &ldquo;We tested everything!&rdquo;  No they didn&rsquo;t.  If they didn&rsquo;t test the mobile network, they didn&rsquo;t even test phone calls - the one reason I actually brought the phone in.</p>
+<p>Then, I tried to login to my Google account.  The account provided multiple methods for two-factor authentication - Authenticator app code, text message, and backup code.  The first option was dead because uBreakIFix erased the app when they installed the new mainboard (I knew this would happen&hellip;).  I couldn&rsquo;t install a new Authenticator app because I would have to sign in to my Google account to get access to the app store (Catch-22).</p>
+<p>Text message two-factor was dead because I had no mobile network service.  This was really the option I counted on to never be broken&hellip;  It was broken.</p>
+<p>I had a fallback - the backup codes.  I&rsquo;ve saved them!  I pulled them out and - all failed.  I&rsquo;m not sure at which point I generated new codes, but I must have.  Bummer.</p>
+<p>So - a couple tips here for how I got moving past this&hellip;</p>
+<blockquote>
+<p>Each time you setup a new Time-based One Time Password (TOTP) token, such as, with Google Authenticator, record the key in your encrypted password storage solution!</p>
+<blockquote>
+</blockquote>
+</blockquote>
+<p>Hrm, I think we need a tip before that one&hellip;.</p>
+<blockquote>
+<p>Use an encrypted password storage solution!  One you can get at without needing two-factor authentication!  One that you can get to with only a password, or a couple passwords!</p>
+<blockquote>
+</blockquote>
+</blockquote>
+<p>Everyone should really be doing that at this point&hellip;  Not everyone is, I know.  I use KeePassXC in Linux, and KeePass2 on my Android.  I share the database file between both with DropBox.  This system works well for me, and is free.  I have a good password keeping these secrets safe.  I (now) put the TOTP keys in the password safe notes section, but KeePassXC also has a TOTP option.</p>
+<p>So - how can you generate TOTP tokens now?  You can use KeePassXC&rsquo;s option, or you can use the Linux command line.</p>
+<pre><code>oathtool --base32 --totp &quot;KEY HERE&quot;
+</code></pre><p><a href="https://thirld.com/blog/2016/01/16/generating-two-factor-authentication-codes-on-linux/">https://thirld.com/blog/2016/01/16/generating-two-factor-authentication-codes-on-linux/</a></p>
+<p>Install oathtool, drop the key there on the command line&hellip;  Hit enter.  This worked nicely.  Maybe stick a space before the oathtool command so your key isn&rsquo;t stored in command line history - or change the key again after you have to use this technique (the key was probably visible in the process list, at least to root on your box&hellip;).</p>
+<p>Regardless - this can get you past that initial TOTP need.</p>
+<p>My provider, GoogleFi, listed some troubleshooting procedures for this point.  Update Android as far as possible, update the Hangouts, GoogleFi, and Messages apps, try again.  uBreakIFix had left the phone at Android 7 instead of Android 9 - the update process took several hours that night and a couple the next morning.  It&rsquo;s not entirely labor-free, either.  I had to check it periodically, and had to stay in range of WiFi.</p>
+<p>The GoogleFi phone tech had few new suggestions.  I was able to call him via Hangouts on my laptop&hellip;</p>
+<p>uBreakIFix took the phone back the next day, checked connections, and told me a new mainboard would be in the following afternoon.</p>
+<p>They&rsquo;d call me when it was done!  I reminded them that my phone was broken, and an email might work better.  They agreed.</p>
+<p>The next day I heard nothing from them.  Late in the afternoon I stopped by to determine fix status - &ldquo;Oh, we didn&rsquo;t get the part today for some reason.&rdquo;  &ldquo;What reason?&rdquo; I asked.  &ldquo;We don&rsquo;t know.&rdquo;</p>
+<p>Ok - not the A team here.  I let them keep it another day, they thought the shipment would be in the next day.</p>
+<p>It wasn&rsquo;t.  They didn&rsquo;t just call me to let me know, or email me, for that matter.</p>
+<p>&ldquo;Well, our parts for Pixel are delayed until Tuesday.&rdquo;  They told me this after letting me wait to talk to someone for 20 minutes - techs walking in and out around me, knowing me.  I&rsquo;m that tall guy with the Pixel problem.</p>
+<p>&ldquo;I have to travel Tuesday guys.  I&rsquo;m gonna need my phone back.&rdquo;</p>
+<p>For their part, the uBreakIFix called the one in DC to let them know about my problem, and that I&rsquo;d need a new mainboard.</p>
+<p>The uBreakIFix DC location fixed my phone the day after I dropped it off, when the replacement part came in.  They were quick, and didn&rsquo;t leave me waiting unnecessarily.  They tested things before they gave them back to me.</p>
+<p>I still consider uBreakIFix to be pretty great at what they do - although maybe not Idaho&rsquo;s&hellip;</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2019%2f07%2fthe-broken-phone-and-recovery%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=The%20Broken%20Phone%20and%20Recovery&amp;url=https%3a%2f%2fblog.notmet.net%2f2019%2f07%2fthe-broken-phone-and-recovery%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2019%2f07%2fthe-broken-phone-and-recovery%2f&title=The%20Broken%20Phone%20and%20Recovery" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

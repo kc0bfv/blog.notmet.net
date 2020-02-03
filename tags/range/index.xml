@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>range on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/range/</link>
+    <description>Recent content in range on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Fri, 03 Jan 2020 19:49:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/range/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Providing Cloud Services in the Air Force</title>
+      <link>https://blog.notmet.net/2020/01/providing-cloud-services-in-the-air-force/</link>
+      <pubDate>Fri, 03 Jan 2020 19:49:55 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/01/providing-cloud-services-in-the-air-force/</guid>
+      <description>I was thinking this morning about how I might manage an Air Force unit that provides networked server management services. For some reason. I realized that, while I know a bit about some of the technology used to provide cloud services, and manage a server farm - or at least what’s used by some cloud providers - I don’t know much about how they organize their business. I started to wonder if someone from Rackspace, or AWS, or DigitalOcean had written a book about their management practices, or company organization.</description>
+    </item>
+    
+  </channel>
+</rss>

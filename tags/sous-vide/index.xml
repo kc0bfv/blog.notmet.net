@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sous Vide on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/sous-vide/</link>
+    <description>Recent content in Sous Vide on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Mon, 22 Apr 2019 11:45:53 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/sous-vide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lambtastic</title>
+      <link>https://blog.notmet.net/2019/04/lambtastic/</link>
+      <pubDate>Mon, 22 Apr 2019 11:45:53 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2019/04/lambtastic/</guid>
+      <description>This is lamb weekend. Some folks call it Easter weekend. I&amp;rsquo;m doing two legs of lamb - right leg and left leg. Both are about 4.7 lbs, $5.99 per pound. Today, Saturday, I&amp;rsquo;m going to smoke one based on this recipe, and tomorrow I&amp;rsquo;m going to Sous Vide one based on the same recipe I&amp;rsquo;ve used in the past. Sarah likes meat more well-done than I do, and with lamb I don&amp;rsquo;t mind that much, so my target is medium-well.</description>
+    </item>
+    
+  </channel>
+</rss>

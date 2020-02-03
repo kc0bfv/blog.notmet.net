@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>leaveweb on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/leaveweb/</link>
+    <description>Recent content in leaveweb on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Sat, 16 Jun 2018 15:03:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/leaveweb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Confidentiality and Integrity vs Availability</title>
+      <link>https://blog.notmet.net/2018/06/confidentiality-and-integrity-vs-availability/</link>
+      <pubDate>Sat, 16 Jun 2018 15:03:51 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2018/06/confidentiality-and-integrity-vs-availability/</guid>
+      <description>In computer security, there are three main axes for consideration - confidentiality, integrity, and availability (CIA). These are commonly thought of as things you desire out of a secure system. You want your communications to only be available to the intended agents, you want them to remain unchanged except when you intend them to change, and you want them to be available when you need them. Preferably, you want your communications to have all of those properties.</description>
+    </item>
+    
+  </channel>
+</rss>

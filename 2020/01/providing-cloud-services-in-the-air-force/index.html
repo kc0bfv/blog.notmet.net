@@ -1,0 +1,295 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Providing Cloud Services in the Air Force" />
+<meta property="og:description" content="I was thinking this morning about how I might manage an Air Force unit that provides networked server management services. For some reason. I realized that, while I know a bit about some of the technology used to provide cloud services, and manage a server farm - or at least what’s used by some cloud providers - I don’t know much about how they organize their business. I started to wonder if someone from Rackspace, or AWS, or DigitalOcean had written a book about their management practices, or company organization." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2020/01/providing-cloud-services-in-the-air-force/" />
+<meta property="article:published_time" content="2020-01-03T19:49:55+00:00" />
+<meta property="article:modified_time" content="2020-01-03T19:49:55+00:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Providing Cloud Services in the Air Force"/>
+<meta name="twitter:description" content="I was thinking this morning about how I might manage an Air Force unit that provides networked server management services. For some reason. I realized that, while I know a bit about some of the technology used to provide cloud services, and manage a server farm - or at least what’s used by some cloud providers - I don’t know much about how they organize their business. I started to wonder if someone from Rackspace, or AWS, or DigitalOcean had written a book about their management practices, or company organization."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.63.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2020/01/providing-cloud-services-in-the-air-force/">Providing Cloud Services in the Air Force</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2020-01-03">2020.01.03</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/cloud">cloud</a>, 
+        
+        <a href="https://blog.notmet.net/tags/range">range</a>
+        
+    
+
+</span>
+</footer>
+
+        <p>I was thinking this morning about how I might manage an Air Force unit that provides networked server management services. For some reason. I realized that, while I know a bit about some of the technology  used to provide cloud services, and manage a server farm - or at least what’s used by some cloud providers - I don’t know much about how they organize their business. I started to wonder if someone from Rackspace, or AWS, or DigitalOcean had written a book about their management  practices, or company organization.</p>
+<p>Searching, I found <a href="https://www.sec.gov/Archives/edgar/data/1107694/000119312508091225/ds1.htm">some Rackspace SEC filings</a> that seemed interesting. I’m just gonna put some notes here.</p>
+<p>The services they provide are:</p>
+<ul>
+<li>Dedicated Hosting: this looks like an option where a business
+gets full access to a computer on the Internet, and then does whatever
+they need with that server. They’re in charge of managing it themselves,
+generally, but have support staff to help out along the way.</li>
+<li>Managed Hosting: this option has Rackspace providing, “a
+dedicated team of experts who provide comprehensive design, engineering,
+management, and monitoring expertise”. This is specifically for
+customers who “lack the technical expertise to support [these services]
+in-house”. So, it seems like the customer would work with Rackspace to
+determine what’s needed, then Rackspace would do the build-out and
+support.</li>
+<li>Email Hosting: pretty obvious what this is. I’m not that interested in this, so I’m going to ignore it.</li>
+<li>Cloud Hosting: this “includes tools for customers to develop,
+manage, and deliver new web-based services”. And, it targets “customers
+that do not have in-house IT expertise to support the OS layer of their
+IT systems”, yet want to focus on the app-side. This looks like it
+encompasses everything from VPS to “server-less” tech, although this was
+written in 2008 so back then it may have just meant VPS…</li>
+<li>Platform Hosting: this was still “in-development” at the time,
+but seems to be colocation services +, where companies can move/buy-in
+infrastructure at Rackspace, take lots of responsibility in management
+and administration, take advantage of Rackspace support and facilities,
+and probably take easy advantage of other Rackspace capabilities.</li>
+</ul>
+<p>I can order these in terms of required customer technical interaction/expertise, increasing:</p>
+<ol>
+<li>Managed Hosting</li>
+<li>Cloud Hosting</li>
+<li>Dedicated Hosting</li>
+<li>Platform Hosting</li>
+</ol>
+<p>And in terms of price, for similar service, I suspect the list is the
+same but reversed, with Platform Hosting costing the least. However,
+each of these plans is really geared toward very different types of
+services… Platform Hosting customers would probably require a much
+greater amount of service than Managed Hosting users, and thus would pay
+a much greater amount. Cloud Hosting customers generally run the gamut,
+some generally requiring very little service and some generally
+requiring a great deal, but many also require the ability to rapidly
+scale from small to large resources.</p>
+<p>Rackspace’s customers numbered 29k, with 36k servers, and 32k cloud
+hosting domains. With that level of requirement, they had the following
+sales and marketing team:</p>
+<ul>
+<li>Direct sales: 180 folks working leads and such.</li>
+<li>Channel sales: 850 partners that, I presume, do customized IT services and like to use Rackspace for their customers.</li>
+<li>Marketing: No specific team numbers here, but the mission is clear.</li>
+</ul>
+<p>They outline their support team structure, which was about 700
+Rackers on teams of 12 to 20. One on the team was an account manager
+acting as a customer’s single point of contact, and at least some on
+each team were “technical specialists to meet ongoing customer needs.”</p>
+<p>Rackspace had R&amp;D efforts geared at deploying new tech to meet
+emerging trends, developing internal-use tools, and developing
+sales/support processes. These efforts also integrated management and
+ops personnel, but otherwise only involved 86 personnel.</p>
+<p>Regarding applicability to the Air Force, I suspect all of these
+service types, sales units, support activities and R&amp;D activities
+are relevant to a unit involved in managing and providing networked
+server services to other units.</p>
+<p>Regarding the service types, there’s a huge push to enable innovation
+within units. A service provider (SP) enabling cheap/free easy small
+hosting of specific services, perhaps only on internal networks, could
+be a huge step for enabling that innovation. The clients of this would
+be similar to low-level non-complex cloud hosting clients. They might
+agree to potentially low-availability services, and other service
+limits. With backend technology permitting these services to be given a
+very low priority, we might host such services in only the server time
+not required by higher priority customers. This capability might be
+funded by innovation funds. Mid and higher-level cloud hosting customers
+in the AF would probably result largely from innovation successes, and
+would be paid for by customers directly.</p>
+<p>Managed hosting is useful when customers need a set of IT services
+that they can define in English, with a set of documents, but that they
+cannot or will not build themselves. After working with a customer to
+define what’s required, internal technical experts would build out the
+services. This service would, at times, require huge amounts of manpower
+capable of interfacing with the customers then designing and building
+out capability.</p>
+<p>Dedicated hosting and platform hosting would primarily let AF
+customers take advantage of existing servers and networking capability,
+saving cost through economy of scale and centralization. Those customers
+would want nearly complete control over the devices or services they’ve
+deployed, and with that they’d take responsibility for management and
+security, but we might be responsible for physical requirement
+satisfaction (power, network, cooling…) and auditing.</p>
+<p>Sales and marketing is useful as a function, although the end-motive
+is very different, and perhaps no people would be dedicated to this
+purpose. “Direct sales” functions would correspond to networking with
+other units who require services like what we provide, and making sure
+they’re aware of our capabilities. “Channel sales” functions correspond
+to educating leadership, even across-service, and working with other
+similar service providers to ensure the military as a whole is
+maximizing capability and minimizing cost. “Marketing” looks like
+outreach and more networking at every opportunity. Do folks realize that
+there is a place they can go to make their network-based innovations
+real? That’s the job of a marketing function.</p>
+<p>The benefit of support teams is fairly obvious, the customer-focused
+rep seems like a fantastic organizational strategy, but a backup or
+other way for work to continue when someone’s out of the office is
+important. Small, cross-functional teams, are probably also a rewarding
+way for everyone to operate. The R&amp;D function is something I’m
+personally very interested in, and keeping such a function working is as
+vital as it is difficult.</p>
+<p>Ok. Thoughts on paper.</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2020%2f01%2fproviding-cloud-services-in-the-air-force%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Providing%20Cloud%20Services%20in%20the%20Air%20Force&amp;url=https%3a%2f%2fblog.notmet.net%2f2020%2f01%2fproviding-cloud-services-in-the-air-force%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2020%2f01%2fproviding-cloud-services-in-the-air-force%2f&title=Providing%20Cloud%20Services%20in%20the%20Air%20Force" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

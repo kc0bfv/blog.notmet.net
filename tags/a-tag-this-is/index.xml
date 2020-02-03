@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>a tag this is on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/a-tag-this-is/</link>
+    <description>Recent content in a tag this is on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Fri, 22 Apr 2011 16:12:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/a-tag-this-is/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>&#34;Yoda&#34; Conditions</title>
+      <link>https://blog.notmet.net/2011/04/yoda-conditions/</link>
+      <pubDate>Fri, 22 Apr 2011 16:12:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2011/04/yoda-conditions/</guid>
+      <description>Here&amp;rsquo;s a creative idea I&amp;rsquo;d never considered before. I&amp;rsquo;ve written code like this, but accidentally, and then it looks wrong so I change it back. Here&amp;rsquo;s a quick example:
+if ( 42 == myInt ) as opposed to if ( myInt == 42 )
+The former may be better to use because occasionally we all forget to put that second &amp;ldquo;=&amp;rdquo; in there, and we accidentally turn our comparison operator into an assignment operator.</description>
+    </item>
+    
+  </channel>
+</rss>
