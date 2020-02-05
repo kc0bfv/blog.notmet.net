@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>egineering on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/egineering/</link>
+    <description>Recent content in egineering on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Fri, 08 Feb 2013 20:06:11 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/egineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>San Antonio Hackerspace</title>
+      <link>https://blog.notmet.net/2013/02/san-antonio-hackerspace/</link>
+      <pubDate>Fri, 08 Feb 2013 20:06:11 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2013/02/san-antonio-hackerspace/</guid>
+      <description>Apparently San Antonio has a hackerspace now. Up until a few minutes ago, this image was alongside the rest of their &amp;ldquo;About Us&amp;rdquo; page. I think that by observing the page I changed it, so perhaps it&amp;rsquo;s a quantum webpage.
+ Leia&amp;rsquo;s going to cut her tongue if she&amp;rsquo;s not careful.
+  Anyway, these are a bunch of nerds interested in ham radio, building hardware and software, and talking about all these things.</description>
+    </item>
+    
+  </channel>
+</rss>

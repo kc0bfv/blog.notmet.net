@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shell on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/shell/</link>
+    <description>Recent content in shell on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Thu, 07 Feb 2019 02:27:44 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing About Writing Secure Shell Scripts</title>
+      <link>https://blog.notmet.net/2019/02/writing-about-writing-secure-shell-scripts/</link>
+      <pubDate>Thu, 07 Feb 2019 02:27:44 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2019/02/writing-about-writing-secure-shell-scripts/</guid>
+      <description>I recently read this cautionary tale about shell scripts. https://www.linuxjournal.com/content/writing-secure-shell-scripts
+It&amp;rsquo;s cautionary in two ways: it is intended to cause shell programmers caution, and I caution against you taking the article too seriously.
+One of the biggest threats to the shell in memory was the Shellshock vulnerability. This wasn&amp;rsquo;t typically a direct threat to shell scripts, but one caused by a bug in a shell, and by other programs exposing parts of the shell to external input, often in unexpected and unlikely places.</description>
+    </item>
+    
+  </channel>
+</rss>

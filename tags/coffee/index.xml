@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>coffee on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/coffee/</link>
+    <description>Recent content in coffee on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Fri, 20 Jul 2012 18:57:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/coffee/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Starbucks Mugs</title>
+      <link>https://blog.notmet.net/2012/07/starbucksmugs/</link>
+      <pubDate>Fri, 20 Jul 2012 18:57:18 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2012/07/starbucksmugs/</guid>
+      <description>&amp;ldquo;Here&amp;rsquo;s your coffee. I gave it to you in a large mug because I think I broke all the medium ones.&amp;rdquo;
+Laughing, &amp;ldquo;what?&amp;rdquo;
+&amp;ldquo;Yeah, well, we moved all the glasses down low, and whenever I open the cabinet one falls out.&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Public Service Announcement</title>
+      <link>https://blog.notmet.net/2008/01/public-service-announcement/</link>
+      <pubDate>Sat, 26 Jan 2008 18:17:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2008/01/public-service-announcement/</guid>
+      <description>PSA: Don&amp;rsquo;t follow Starbucks&amp;rsquo; directions for making coffee if you like it black.
+Backstory: I usually make four cups of coffee whenever I need some. I&amp;rsquo;m feeling particularly lazy (it&amp;rsquo;s a Saturday and I got excused from going into the office to get shot at) and I&amp;rsquo;d like to get some exercise, so I put a pot on. That&amp;rsquo;s four cups based on the coffee pot markings. Starbucks&amp;rsquo; directions say use 2 Tbsp (10 grams) per 6 fl oz.</description>
+    </item>
+    
+  </channel>
+</rss>

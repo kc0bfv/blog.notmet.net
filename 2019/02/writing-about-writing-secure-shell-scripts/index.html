@@ -23,7 +23,7 @@ It&rsquo;s cautionary in two ways: it is intended to cause shell programmers cau
 One of the biggest threats to the shell in memory was the Shellshock vulnerability. This wasn&rsquo;t typically a direct threat to shell scripts, but one caused by a bug in a shell, and by other programs exposing parts of the shell to external input, often in unexpected and unlikely places."/>
 <meta name="twitter:site" content="@kc0bfv"/>
 
-        <meta name="generator" content="Hugo 0.63.2" />
+        <meta name="generator" content="Hugo 0.64.0" />
         
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
@@ -87,6 +87,14 @@ One of the biggest threats to the shell in memory was the Shellshock vulnerabili
 
 <footer class="post-info">Posted on <span class="post-meta"><time datetime="2019-02-07">2019.02.07</time>
 
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/programming">programming</a>, 
+        
+        <a href="https://blog.notmet.net/tags/shell">shell</a>
+        
+    
+
 </span>
 </footer>
 
@@ -96,7 +104,9 @@ One of the biggest threats to the shell in memory was the Shellshock vulnerabili
 <p>That kind of topic is not what the Linux Journal article is about.</p>
 <p>Instead, it provides three cautions to people writing shell scripts:</p>
 <ul>
-<li>Know the utilities you invoke: fully specify program paths so you don&rsquo;t accidentally run something out of /tmp  * Don&rsquo;t store passwords in scripts: find your own other solution, good luck sucker!  * Beware of invoking anything the user inputs: with examples that work on no modern Linux</li>
+<li>Know the utilities you invoke: fully specify program paths so you don&rsquo;t accidentally run something out of /tmp</li>
+<li>Don&rsquo;t store passwords in scripts: find your own other solution, good luck sucker!</li>
+<li>Beware of invoking anything the user inputs: with examples that work on no modern Linux</li>
 </ul>
 <p>These are all fine recommendations, but are made in terrible ways.</p>
 <h2 id="know-the-utilities-you-invoke">Know the Utilities You Invoke</h2>

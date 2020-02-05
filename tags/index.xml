@@ -8,10 +8,28 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sun, 02 Feb 2020 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 10:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leadership</title>
+      <link>https://blog.notmet.net/tags/leadership/</link>
+      <pubDate>Tue, 04 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/leadership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Things I Hope I Remember</title>
+      <link>https://blog.notmet.net/tags/things-i-hope-i-remember/</link>
+      <pubDate>Tue, 04 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/things-i-hope-i-remember/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Health</title>
@@ -68,6 +86,15 @@
     </item>
     
     <item>
+      <title>air force</title>
+      <link>https://blog.notmet.net/tags/air-force/</link>
+      <pubDate>Wed, 08 Jan 2020 13:00:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/air-force/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>cloud</title>
       <link>https://blog.notmet.net/tags/cloud/</link>
       <pubDate>Fri, 03 Jan 2020 19:49:55 +0000</pubDate>
@@ -109,33 +136,6 @@
       <pubDate>Sun, 20 Oct 2019 00:29:57 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/salmon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>leadership</title>
-      <link>https://blog.notmet.net/tags/leadership/</link>
-      <pubDate>Sat, 19 Oct 2019 16:00:44 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/leadership/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>things I hope I remember</title>
-      <link>https://blog.notmet.net/tags/things-i-hope-i-remember/</link>
-      <pubDate>Sat, 19 Oct 2019 16:00:44 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/things-i-hope-i-remember/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Air Force</title>
-      <link>https://blog.notmet.net/tags/air-force/</link>
-      <pubDate>Sun, 04 Aug 2019 22:36:06 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/air-force/</guid>
       <description></description>
     </item>
     
@@ -293,6 +293,24 @@
     </item>
     
     <item>
+      <title>shell</title>
+      <link>https://blog.notmet.net/tags/shell/</link>
+      <pubDate>Thu, 07 Feb 2019 02:27:44 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wedding</title>
+      <link>https://blog.notmet.net/tags/wedding/</link>
+      <pubDate>Sun, 18 Nov 2018 14:37:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/wedding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>leaveweb</title>
       <link>https://blog.notmet.net/tags/leaveweb/</link>
       <pubDate>Sat, 16 Jun 2018 15:03:51 +0000</pubDate>
@@ -338,6 +356,87 @@
     </item>
     
     <item>
+      <title>engineering</title>
+      <link>https://blog.notmet.net/tags/engineering/</link>
+      <pubDate>Sat, 20 Aug 2016 00:14:23 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fun</title>
+      <link>https://blog.notmet.net/tags/fun/</link>
+      <pubDate>Tue, 12 Feb 2013 02:50:16 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/fun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>poetry</title>
+      <link>https://blog.notmet.net/tags/poetry/</link>
+      <pubDate>Tue, 12 Feb 2013 02:50:16 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>egineering</title>
+      <link>https://blog.notmet.net/tags/egineering/</link>
+      <pubDate>Fri, 08 Feb 2013 20:06:11 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/egineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://blog.notmet.net/tags/bash/</link>
+      <pubDate>Mon, 04 Feb 2013 17:00:16 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>https://blog.notmet.net/tags/latex/</link>
+      <pubDate>Mon, 04 Feb 2013 17:00:16 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>https://blog.notmet.net/tags/life/</link>
+      <pubDate>Sun, 27 Jan 2013 20:05:13 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://blog.notmet.net/tags/linux/</link>
+      <pubDate>Tue, 02 Oct 2012 15:13:04 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coffee</title>
+      <link>https://blog.notmet.net/tags/coffee/</link>
+      <pubDate>Fri, 20 Jul 2012 18:57:18 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/coffee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>I always feel like someone&#39;s watching me</title>
       <link>https://blog.notmet.net/tags/i-always-feel-like-someones-watching-me/</link>
       <pubDate>Sun, 15 Jul 2012 01:26:03 +0000</pubDate>
@@ -365,6 +464,15 @@
     </item>
     
     <item>
+      <title>php</title>
+      <link>https://blog.notmet.net/tags/php/</link>
+      <pubDate>Tue, 10 Jul 2012 20:44:18 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>php is not a fart</title>
       <link>https://blog.notmet.net/tags/php-is-not-a-fart/</link>
       <pubDate>Tue, 10 Jul 2012 20:44:18 +0000</pubDate>
@@ -379,6 +487,15 @@
       <pubDate>Sun, 22 Jan 2012 21:18:00 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/this-is-not-a-tag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sql</title>
+      <link>https://blog.notmet.net/tags/sql/</link>
+      <pubDate>Thu, 28 Jul 2011 16:58:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/sql/</guid>
       <description></description>
     </item>
     

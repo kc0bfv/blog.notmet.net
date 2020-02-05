@@ -35,6 +35,17 @@ Well - it&amp;rsquo;s not really on the print line. Folks who have done any amou
     </item>
     
     <item>
+      <title>Writing About Writing Secure Shell Scripts</title>
+      <link>https://blog.notmet.net/2019/02/writing-about-writing-secure-shell-scripts/</link>
+      <pubDate>Thu, 07 Feb 2019 02:27:44 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2019/02/writing-about-writing-secure-shell-scripts/</guid>
+      <description>I recently read this cautionary tale about shell scripts. https://www.linuxjournal.com/content/writing-secure-shell-scripts
+It&amp;rsquo;s cautionary in two ways: it is intended to cause shell programmers caution, and I caution against you taking the article too seriously.
+One of the biggest threats to the shell in memory was the Shellshock vulnerability. This wasn&amp;rsquo;t typically a direct threat to shell scripts, but one caused by a bug in a shell, and by other programs exposing parts of the shell to external input, often in unexpected and unlikely places.</description>
+    </item>
+    
+    <item>
       <title>RasPi Flow Meter In A Pinch - Part 2</title>
       <link>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/</link>
       <pubDate>Sat, 20 Aug 2016 00:14:23 +0000</pubDate>
@@ -43,6 +54,80 @@ Well - it&amp;rsquo;s not really on the print line. Folks who have done any amou
       <description>META: Part 1 describes the problem I&amp;rsquo;m trying to solve here.
 I need a way to monitor water flow through my water filter over several days, and I don&amp;rsquo;t want to sit and watch it.
 So - I took a Raspberry Pi I&amp;rsquo;ve got and a little Python and hacked a solution together. The basic idea was that I&amp;rsquo;d position a plastic cup below the output stream of the waste water, I&amp;rsquo;d put two wires into the cup, I&amp;rsquo;d put a voltage on one wire and attempt to see the voltage on the other.</description>
+    </item>
+    
+    <item>
+      <title>RasPi Flow Meter In A Pinch - Part 1</title>
+      <link>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/</link>
+      <pubDate>Fri, 19 Aug 2016 23:16:50 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/</guid>
+      <description>META: This first part is about the problem that caused me to build the solution. Part 2 is about the solution.
+My new place has an awesome feature that was disabled when I moved in - a reverse osmosis water filter! It&amp;rsquo;s not a whole-house hookup, it&amp;rsquo;s just for the refrigerator and a dedicated tap on the sink. We definitely wanted to use this thing! At first, I just turned it on and it seemed to work fine.</description>
+    </item>
+    
+    <item>
+      <title>Unix Text Editing Awesomeness</title>
+      <link>https://blog.notmet.net/2013/02/unix-awesomeness/</link>
+      <pubDate>Mon, 04 Feb 2013 17:00:16 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2013/02/unix-awesomeness/</guid>
+      <description>Oh, LaTeX acronym package, you won&amp;rsquo;t automatically alphabetize my list of acronyms? Strange&amp;hellip; Let&amp;rsquo;s see if Unix will&amp;hellip;
+$ echo &amp;quot;\acro{SCADA}{Supervisory Control And Data Acquisition} \acro{PLC}{Programmable Logic Controller} \acro{RTU}{Remote Terminal Unit} ...&amp;quot; &amp;gt; toSort $ for i in `cat toSort |sed &amp;quot;s/.*\\acro{\(.*\)}.*{.*}/\1/&amp;quot; | sort`; do grep &amp;quot;{$i}&amp;quot; toSort; done \acro{ADC}{analog to digital converter} \acro{API}{application programming interface} \acro{APT}{Advanced Persistent Threat} \acro{ASCII}{American Standard Code for Information Interchange} ... Unix, you rock my world.</description>
+    </item>
+    
+    <item>
+      <title>Bash Dictionary - Terrible Hack of the Day</title>
+      <link>https://blog.notmet.net/2012/12/bash-dictionary-terrible-hack-of-the-day/</link>
+      <pubDate>Wed, 19 Dec 2012 21:06:28 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2012/12/bash-dictionary-terrible-hack-of-the-day/</guid>
+      <description>So, I just had a reason to implement something like a dictionary in Bash. Of course, I could try to determine if such a feature exists already (it does in Bash 4, alas the default on OS X seems to be 3.2), but why not just try to hack something together?
+Here&amp;rsquo;s what I got initially:
+OFFSETDICTkeyUno=5 OFFSETDICTkeyDos=4 OFFSETDICTkeyTres=17 OFFSETDICTkeyQuatro=21 keyToLookup=&amp;quot;keyQuatro&amp;quot; value=&amp;quot;$(eval echo &#39;$OFFSETDICT&#39;${keyToLookup})&amp;quot; echo $value &amp;gt; 21 So, that&amp;rsquo;s ridiculous.</description>
+    </item>
+    
+    <item>
+      <title>Python&#39;s super()</title>
+      <link>https://blog.notmet.net/2012/10/pythons-super/</link>
+      <pubDate>Fri, 05 Oct 2012 14:17:45 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2012/10/pythons-super/</guid>
+      <description>I&amp;rsquo;ve been writing a lot of Python lately, and there are some things I love about it, some things I&amp;rsquo;m uncomfortable with, but nothing I hate. The super() builtin function makes life a lot easier when you&amp;rsquo;re using Python for object oriented code and have some inheritance going on. This blog post describes the best way I&amp;rsquo;ve seen it used so far.
+First of all, in Python3 you no longer need to write &amp;ldquo;super(CurrentClass, self).</description>
+    </item>
+    
+    <item>
+      <title>PHP: The Right Way</title>
+      <link>https://blog.notmet.net/2012/07/php-the-right-way/</link>
+      <pubDate>Tue, 10 Jul 2012 20:44:18 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2012/07/php-the-right-way/</guid>
+      <description>There are a lot of pitfalls to using PHP, and they bite new users quickly. &amp;ldquo;Spot the vulnerability&amp;rdquo; is a cool site which highlights examples of these pitfalls: http://spotthevuln.com/ (BROKEN NOW)
+Of course, PHP is a pretty speedy way to develop any type of server-side web code. Josh Lockhart has put together a list of best practices for PHP development and tailored it to new PHP developers: http://www.phptherightway.com/
+If developers would follow the recommendations in the databases section it would take care of so many vulnerabilities out there today.</description>
+    </item>
+    
+    <item>
+      <title>LCD Modules</title>
+      <link>https://blog.notmet.net/2011/04/lcd-modules/</link>
+      <pubDate>Fri, 01 Apr 2011 15:38:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2011/04/lcd-modules/</guid>
+      <description>I&amp;rsquo;ve never built anything with an LCD on it before, but it seems like it&amp;rsquo;d be useful. Here&amp;rsquo;s some good info on creating an project with an LCD and an Arduino:
+http://arduino.cc/en/Reference/LiquidCrystal
+It&amp;rsquo;s a library of functions that make it very easy to work with the LCD controller. The controller has to be compatible with the HD44780 controller&amp;rsquo;s instruction set, but that&amp;rsquo;s basically an industry standard. Mouser has a selection of 20x4 character displays:</description>
+    </item>
+    
+    <item>
+      <title>MinGW and Cygwin to build a Windows DLL</title>
+      <link>https://blog.notmet.net/2011/03/mingw-and-cygwin-to-build-a-windows-dll/</link>
+      <pubDate>Sun, 06 Mar 2011 19:07:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2011/03/mingw-and-cygwin-to-build-a-windows-dll/</guid>
+      <description>I was writing C++ in Linux - gvim + aterm is my development environment of choice. I needed to turn my code into a Windows DLL, though, and the following webpage was really helpful.
+http://www.mingw.org/wiki/sampleDLL
+I installed Cygwin in a Windows XP virtual machine, used Cygwin to install MinGW, modded my code and Makefile a bit based on the samples on that page, then ran &amp;ldquo;make windows&amp;rdquo; in that virtual machine.</description>
     </item>
     
   </channel>

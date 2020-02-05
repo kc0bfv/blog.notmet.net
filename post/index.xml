@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sun, 02 Feb 2020 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 04 Feb 2020 10:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Comparative Advantage</title>
+      <link>https://blog.notmet.net/2020/02/comparative-advantage/</link>
+      <pubDate>Tue, 04 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/02/comparative-advantage/</guid>
+      <description>This morning I finished Planet Money&amp;rsquo;s Episode 963: 13,000 Economists. 1 Question.. These fine folks make one of my favorite podcasts - each week is a different look at something weird from a weird perspective. It sounds like it&amp;rsquo;s very market/economy focused, but it&amp;rsquo;s really focused on everything economics. In the past decades economics has branched out to look at nearly every field of human endeavor with a mathematical eye. It&amp;rsquo;s not always very successful, but the economist perspective does make me look at things differently.</description>
+    </item>
     
     <item>
       <title>A January Experiment: Intermittent Fasting</title>
@@ -840,7 +849,7 @@ $ echo &amp;quot;\acro{SCADA}{Supervisory Control And Data Acquisition} \acro{PL
       <pubDate>Sun, 27 Jan 2013 20:05:13 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/2013/01/more-to-life-than-being-happy/</guid>
-      <description>This article in the Atlantic a chord with me. It&amp;rsquo;s about how, in life, searching for meaning can leave people more satisfied than searching for happiness.
+      <description>This article in the Atlantic struck a chord with me. It&amp;rsquo;s about how, in life, searching for meaning can leave people more satisfied than searching for happiness.
  As [Viktor Frankl] saw in the [concentration] camps, those who found meaning even in the most horrendous circumstances were far more resilient to suffering than those who did not. &amp;ldquo;Everything can be taken from a man but one thing&amp;rdquo;.
  Meaning, more than happiness, is long-term.</description>
     </item>
@@ -1059,7 +1068,7 @@ Laughing, &amp;ldquo;what?&amp;rdquo;
       <pubDate>Tue, 10 Jul 2012 20:44:18 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/2012/07/php-the-right-way/</guid>
-      <description>There are a lot of pitfalls to using PHP, and they bite new users quickly. &amp;ldquo;Spot the vulnerability&amp;rdquo; is a cool site which highlights examples of these pitfalls: http://spotthevuln.com/
+      <description>There are a lot of pitfalls to using PHP, and they bite new users quickly. &amp;ldquo;Spot the vulnerability&amp;rdquo; is a cool site which highlights examples of these pitfalls: http://spotthevuln.com/ (BROKEN NOW)
 Of course, PHP is a pretty speedy way to develop any type of server-side web code. Josh Lockhart has put together a list of best practices for PHP development and tailored it to new PHP developers: http://www.phptherightway.com/
 If developers would follow the recommendations in the databases section it would take care of so many vulnerabilities out there today.</description>
     </item>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>wedding on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/wedding/</link>
+    <description>Recent content in wedding on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Sun, 18 Nov 2018 14:37:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/wedding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wedding Photos</title>
+      <link>https://blog.notmet.net/2018/11/wedding-photos/</link>
+      <pubDate>Sun, 18 Nov 2018 14:37:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2018/11/wedding-photos/</guid>
+      <description>If you were at our wedding, you already know that you looked awesome. But now you can see it in photos, too! Wedding photos are done, come see how great you looked!
+https://sarahandkarl.sickendick.com/</description>
+    </item>
+    
+  </channel>
+</rss>

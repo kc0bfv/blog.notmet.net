@@ -21,7 +21,7 @@ Very cool. His technique relies on tricking addslashes into breaking up a two b
 Very cool. His technique relies on tricking addslashes into breaking up a two byte character with a slash, creating a valid two byte character followed by a valid one byte character. He mentions that this (specific attack) is impossible with UTF-8 because all two (or more) byte characters have continuation bytes that start with 0b10."/>
 <meta name="twitter:site" content="@kc0bfv"/>
 
-        <meta name="generator" content="Hugo 0.63.2" />
+        <meta name="generator" content="Hugo 0.64.0" />
         
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
@@ -87,7 +87,11 @@ Very cool. His technique relies on tricking addslashes into breaking up a two b
 
     &middot; Tagged in
         
-        <a href="https://blog.notmet.net/tags/sql-injection-leads-to-infection">sql injection leads to infection</a>
+        <a href="https://blog.notmet.net/tags/sql-injection-leads-to-infection">sql injection leads to infection</a>, 
+        
+        <a href="https://blog.notmet.net/tags/network-security">network security</a>, 
+        
+        <a href="https://blog.notmet.net/tags/sql">sql</a>
         
     
 
@@ -100,7 +104,7 @@ Very cool. His technique relies on tricking addslashes into breaking up a two b
 <p>Here&rsquo;s a thought that I need to do a little research on.  Where is the validity of a character checked?  Specifically this could cause a problem if the first byte of a UTF-8 character specifies a character length of, say, 3 bytes.  If, using the example of a SQL injection, nothing before the SQL server rejects a malformed character, then perhaps strange behavior by the SQL server&rsquo;s string handling functions could be used to trigger an exploit.  If the SQL server removed a malformed character from the string, then:</p>
 <ol>
 <li>The user could pass in some exploit in UTF-8 with one character malformed to have its last byte an ASCII apostrophe.</li>
-<li>PHP may addslashes or magic_quote that, mishandling the UTF-8 character just like in Chris&rsquo; blog post above.  Instead of generating a valid character, as happens in Chris&rsquo; post, it would generate a malformed UTF-8 character (similar to the user&rsquo;s input string) followed by an apostrophe.</li>
+<li>PHP may addslashes or <code>magic_quote</code> that, mishandling the UTF-8 character just like in Chris&rsquo; blog post above.  Instead of generating a valid character, as happens in Chris&rsquo; post, it would generate a malformed UTF-8 character (similar to the user&rsquo;s input string) followed by an apostrophe.</li>
 <li>PHP would pass that along to the SQL server which would drop that malformed character, leaving the apostrophe.</li>
 </ol>
 <p>So, this is really dependent on the behavior of the SQL server, which in many cases would be dependent on the underlying OS&rsquo; behavior.  I guess that&rsquo;s what I need to research - what do underlying OSes do with these multi-byte characters?  What do the standards say that they&rsquo;re supposed to do?  How could I build the chain of servers/clients such that this malformed character is passed to the SQL server and it benefits me?</p>

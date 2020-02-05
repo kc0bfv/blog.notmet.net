@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/linux/</link>
+    <description>Recent content in linux on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Tue, 02 Oct 2012 15:13:04 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Linux Graphics Stack - Meta</title>
+      <link>https://blog.notmet.net/2012/10/the-linux-graphics-stack-meta/</link>
+      <pubDate>Tue, 02 Oct 2012 15:13:04 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2012/10/the-linux-graphics-stack-meta/</guid>
+      <description>Jasper St. Pierre explains the Linux graphics stack in detail.
+I think X11 is the most complex piece of software I&amp;rsquo;ve ever tried to work with. It has been a long time since I&amp;rsquo;ve had to open up xorg.conf (and before that I think it was x11.conf) to fix something that&amp;rsquo;s broken, and that&amp;rsquo;s a testament to the quality of modern versions of Ubuntu and Debian. But there was a day when I had to open that massive config file up quite often to get the video card, or mouse, or keyboard or whatever working properly.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -21,7 +21,7 @@ One WordPress feature I liked was the listing of articles by year and month&hell
 One WordPress feature I liked was the listing of articles by year and month&hellip; My blog had a little timeline on the side with each year and month listed, annotated with the number of postings I made during each."/>
 <meta name="twitter:site" content="@kc0bfv"/>
 
-        <meta name="generator" content="Hugo 0.63.2" />
+        <meta name="generator" content="Hugo 0.64.0" />
         
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
@@ -143,6 +143,9 @@ One WordPress feature I liked was the listing of articles by year and month&hell
 </code></pre><p>I&rsquo;m using the <a href="https://github.com/gohugoio/hugo/issues/448">hugo-minimalist-theme</a> by digitalcraftsman, but most themes have a header and footer partial, and here it just does exactly what you&rsquo;d expect.</p>
 <p>This uses a couple scratch variables to keep track of the output state&hellip;  It sorts the posts chronologically first, then goes backwards over them.  When it notes a change in month or year, it closes the old unordered post list, outputs a header for the new year/month, then creates a new unordered list before outputting the post titles as list elements.  It must then keep track of whether a list is actually open or not.</p>
 <p>The result is the archive page you see linked on the left&hellip;  It&rsquo;s just a long list of year, sub-lists of months, then sub-lists of posts in chronological order.  This provides the same look-back ability in a way that is visually appealing, and also lets me <code>Ctrl+F</code> a post title&hellip;  Post title search was something else difficult with Hugo that is now solved.</p>
+<blockquote>
+<p>NOTE: You&rsquo;ll also need to create a file in <code>content/archive/_index.md</code> with at least the minimum front matter (title, I recommend&hellip;)</p>
+</blockquote>
 
         <ul class="share-buttons">
     <li>Share this article:</li>

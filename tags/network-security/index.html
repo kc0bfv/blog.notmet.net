@@ -18,7 +18,7 @@
 <meta name="twitter:description" content="Karl&#39;s blog of randomness and programming"/>
 <meta name="twitter:site" content="@kc0bfv"/>
 
-        <meta name="generator" content="Hugo 0.63.2" />
+        <meta name="generator" content="Hugo 0.64.0" />
         
         <link href="/tags/network-security/index.xml" rel="alternate" type="application/rss+xml" title="Karl&#39;s Blog" />
         <link href="/tags/network-security/index.xml" rel="feed" type="application/rss+xml" title="Karl&#39;s Blog" />
@@ -121,6 +121,73 @@
     <p>It looks like https://github.com/nixawk/labs/issues/19 is being exploited like crazy right now. I was getting hits trying to exploit it every 4 hours or so, then the rate sped up for a time. Each hit was trying to download drupal.php from http://51.254.219.134.
 Somebody has nulled out that file now, so infection rate will probably drop.&hellip;</p>
     <a href="https://blog.notmet.net/2018/04/drupal-exploited-like-crazy/" title="Drupal Exploited like Crazy">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2016/03/building-your-own-openvpn/">Building Your Own OpenVPN</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2016-03-26">2016.03.26</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/network-security">network security</a>
+        
+    
+
+</span>
+</footer>
+
+    <p>I’ve wanted to have a VPN setup for a while - I’ve never been entirely comfortable when using public wifi, even secured public wifi… Open wifi? I feel a little crazy every time I connect. But I usually console myself that I’m not a target, I can make sure important connections are encrypted, and I can just avoid doing some things while on public wifi.
+A VPN though, that could make things much easier!&hellip;</p>
+    <a href="https://blog.notmet.net/2016/03/building-your-own-openvpn/" title="Building Your Own OpenVPN">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2012/11/open-port/">Open Port</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2012-11-11">2012.11.11</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/network-security">network security</a>
+        
+    
+
+</span>
+</footer>
+
+    <p>Every now and then when I’m at a coffee shop I wonder what ports I’ve got open on my home network. Normally I don’t have any ports open within Nmap’s default port list.
+Starting Nmap 6.01 Initiating SYN Stealth Scan at 16:41 Scanning myRouter [1000 ports] Discovered open port 1111/tcp on myRouter Completed SYN Stealth Scan (1000 total ports) Not shown: 999 filtered ports PORT STATE SERVICE 1111/tcp open lmsocialserver Read data files from: /usr/local/bin/.&hellip;</p>
+    <a href="https://blog.notmet.net/2012/11/open-port/" title="Open Port">Read more &raquo;</a>
+</article>
+
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2011/07/advanced-sql-injection/">Advanced SQL Injection</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2011-07-28">2011.07.28</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/sql-injection-leads-to-infection">sql injection leads to infection</a>, 
+        
+        <a href="https://blog.notmet.net/tags/network-security">network security</a>, 
+        
+        <a href="https://blog.notmet.net/tags/sql">sql</a>
+        
+    
+
+</span>
+</footer>
+
+    <p>Ok, here’s a great blog post by Chris Shiflett about a crazy-creative SQL injection technique: <a href="http://shiflett.org/blog/2006/jan/addslashes-versus-mysql-real-escape-string">http://shiflett.org/blog/2006/jan/addslashes-versus-mysql-real-escape-string</a>
+Very cool. His technique relies on tricking addslashes into breaking up a two byte character with a slash, creating a valid two byte character followed by a valid one byte character. He mentions that this (specific attack) is impossible with UTF-8 because all two (or more) byte characters have continuation bytes that start with 0b10.&hellip;</p>
+    <a href="https://blog.notmet.net/2011/07/advanced-sql-injection/" title="Advanced SQL Injection">Read more &raquo;</a>
 </article>
 
     

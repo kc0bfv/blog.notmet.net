@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>engineering on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/engineering/</link>
+    <description>Recent content in engineering on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Sat, 20 Aug 2016 00:14:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RasPi Flow Meter In A Pinch - Part 2</title>
+      <link>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/</link>
+      <pubDate>Sat, 20 Aug 2016 00:14:23 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/</guid>
+      <description>META: Part 1 describes the problem I&amp;rsquo;m trying to solve here.
+I need a way to monitor water flow through my water filter over several days, and I don&amp;rsquo;t want to sit and watch it.
+So - I took a Raspberry Pi I&amp;rsquo;ve got and a little Python and hacked a solution together. The basic idea was that I&amp;rsquo;d position a plastic cup below the output stream of the waste water, I&amp;rsquo;d put two wires into the cup, I&amp;rsquo;d put a voltage on one wire and attempt to see the voltage on the other.</description>
+    </item>
+    
+    <item>
+      <title>RasPi Flow Meter In A Pinch - Part 1</title>
+      <link>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/</link>
+      <pubDate>Fri, 19 Aug 2016 23:16:50 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/</guid>
+      <description>META: This first part is about the problem that caused me to build the solution. Part 2 is about the solution.
+My new place has an awesome feature that was disabled when I moved in - a reverse osmosis water filter! It&amp;rsquo;s not a whole-house hookup, it&amp;rsquo;s just for the refrigerator and a dedicated tap on the sink. We definitely wanted to use this thing! At first, I just turned it on and it seemed to work fine.</description>
+    </item>
+    
+    <item>
+      <title>LCD Modules</title>
+      <link>https://blog.notmet.net/2011/04/lcd-modules/</link>
+      <pubDate>Fri, 01 Apr 2011 15:38:00 +0000</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2011/04/lcd-modules/</guid>
+      <description>I&amp;rsquo;ve never built anything with an LCD on it before, but it seems like it&amp;rsquo;d be useful. Here&amp;rsquo;s some good info on creating an project with an LCD and an Arduino:
+http://arduino.cc/en/Reference/LiquidCrystal
+It&amp;rsquo;s a library of functions that make it very easy to work with the LCD controller. The controller has to be compatible with the HD44780 controller&amp;rsquo;s instruction set, but that&amp;rsquo;s basically an industry standard. Mouser has a selection of 20x4 character displays:</description>
+    </item>
+    
+  </channel>
+</rss>

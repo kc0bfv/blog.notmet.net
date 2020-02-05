@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.notmet.net/2020/02/a-january-experiment-intermittent-fasting/</loc>
-    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/categories/blog/</loc>
-    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
+    <lastmod>2020-02-04T10:00:00-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.notmet.net/categories/</loc>
+    <lastmod>2020-02-04T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/02/comparative-advantage/</loc>
+    <lastmod>2020-02-04T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/leadership/</loc>
+    <lastmod>2020-02-04T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/post/</loc>
+    <lastmod>2020-02-04T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/</loc>
+    <lastmod>2020-02-04T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/things-i-hope-i-remember/</loc>
+    <lastmod>2020-02-04T10:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/02/a-january-experiment-intermittent-fasting/</loc>
     <lastmod>2020-02-02T10:00:00-07:00</lastmod>
   </url>
   
@@ -23,17 +48,7 @@
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/post/</loc>
-    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/tags/sanity/</loc>
-    <lastmod>2020-02-02T10:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/</loc>
     <lastmod>2020-02-02T10:00:00-07:00</lastmod>
   </url>
   
@@ -85,6 +100,11 @@
   <url>
     <loc>https://blog.notmet.net/2020/01/sourdough-with-the-wrong-ingredients/</loc>
     <lastmod>2020-01-25T08:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/air-force/</loc>
+    <lastmod>2020-01-08T13:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -158,17 +178,7 @@
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/tags/leadership/</loc>
-    <lastmod>2019-10-19T16:00:44+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/2019/10/pitching-success-co-star/</loc>
-    <lastmod>2019-10-19T16:00:44+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/things-i-hope-i-remember/</loc>
     <lastmod>2019-10-19T16:00:44+00:00</lastmod>
   </url>
   
@@ -205,11 +215,6 @@
   <url>
     <loc>https://blog.notmet.net/2019/08/personality-inprocessing/</loc>
     <lastmod>2019-08-15T23:00:07+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/air-force/</loc>
-    <lastmod>2019-08-04T22:36:06+00:00</lastmod>
   </url>
   
   <url>
@@ -398,6 +403,11 @@
   </url>
   
   <url>
+    <loc>https://blog.notmet.net/tags/shell/</loc>
+    <lastmod>2019-02-07T02:27:44+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.notmet.net/2019/02/writing-about-writing-secure-shell-scripts/</loc>
     <lastmod>2019-02-07T02:27:44+00:00</lastmod>
   </url>
@@ -405,6 +415,11 @@
   <url>
     <loc>https://blog.notmet.net/2018/12/brisket-and-salmon-again/</loc>
     <lastmod>2019-01-01T01:48:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/wedding/</loc>
+    <lastmod>2018-11-18T14:37:00+00:00</lastmod>
   </url>
   
   <url>
@@ -563,6 +578,11 @@
   </url>
   
   <url>
+    <loc>https://blog.notmet.net/tags/engineering/</loc>
+    <lastmod>2016-08-20T00:14:23+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/</loc>
     <lastmod>2016-08-20T00:14:23+00:00</lastmod>
   </url>
@@ -593,13 +613,38 @@
   </url>
   
   <url>
+    <loc>https://blog.notmet.net/tags/fun/</loc>
+    <lastmod>2013-02-12T02:50:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/poetry/</loc>
+    <lastmod>2013-02-12T02:50:16+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.notmet.net/2013/02/plunger/</loc>
     <lastmod>2013-02-12T02:50:16+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://blog.notmet.net/tags/egineering/</loc>
+    <lastmod>2013-02-08T20:06:11+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.notmet.net/2013/02/san-antonio-hackerspace/</loc>
     <lastmod>2013-02-08T20:06:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/bash/</loc>
+    <lastmod>2013-02-04T17:00:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/latex/</loc>
+    <lastmod>2013-02-04T17:00:16+00:00</lastmod>
   </url>
   
   <url>
@@ -610,6 +655,11 @@
   <url>
     <loc>https://blog.notmet.net/2013/01/how-to-have-an-awesome-weekend/</loc>
     <lastmod>2013-01-31T17:00:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/life/</loc>
+    <lastmod>2013-01-27T20:05:13+00:00</lastmod>
   </url>
   
   <url>
@@ -663,6 +713,11 @@
   </url>
   
   <url>
+    <loc>https://blog.notmet.net/tags/linux/</loc>
+    <lastmod>2012-10-02T15:13:04+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.notmet.net/2012/10/the-linux-graphics-stack-meta/</loc>
     <lastmod>2012-10-02T15:13:04+00:00</lastmod>
   </url>
@@ -695,6 +750,11 @@
   <url>
     <loc>https://blog.notmet.net/2012/07/reading-list/</loc>
     <lastmod>2012-07-20T23:59:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/coffee/</loc>
+    <lastmod>2012-07-20T18:57:18+00:00</lastmod>
   </url>
   
   <url>
@@ -733,6 +793,11 @@
   </url>
   
   <url>
+    <loc>https://blog.notmet.net/tags/php/</loc>
+    <lastmod>2012-07-10T20:44:18+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.notmet.net/tags/php-is-not-a-fart/</loc>
     <lastmod>2012-07-10T20:44:18+00:00</lastmod>
   </url>
@@ -754,6 +819,11 @@
   
   <url>
     <loc>https://blog.notmet.net/2011/07/advanced-sql-injection/</loc>
+    <lastmod>2011-07-28T16:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/sql/</loc>
     <lastmod>2011-07-28T16:58:00+00:00</lastmod>
   </url>
   
