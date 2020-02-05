@@ -7,6 +7,9 @@ type: post
 url: /2011/04/lcd-modules/
 categories:
 - Blog
+tags:
+- programming
+- engineering
 ---
 
 I've never built anything with an LCD on it before, but it seems like it'd be useful.  Here's some good info on creating an project with an LCD and an Arduino:  

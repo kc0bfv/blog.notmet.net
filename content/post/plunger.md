@@ -7,6 +7,9 @@ type: post
 url: /2013/02/plunger/
 categories:
 - Blog
+tags:
+- poetry
+- fun
 ---
 
 A wooden stick with a rubber cone on the end can solve so many problems.

@@ -7,6 +7,9 @@ type: post
 url: /2012/07/starbucksmugs/
 categories:
 - Blog
+tags:
+- fun
+- coffee
 ---
 
 "Here's your coffee.  I gave it to you in a large mug because I think I broke all the medium ones."

@@ -68,3 +68,5 @@ I'm using the [hugo-minimalist-theme](https://github.com/gohugoio/hugo/issues/44
 This uses a couple scratch variables to keep track of the output state...  It sorts the posts chronologically first, then goes backwards over them.  When it notes a change in month or year, it closes the old unordered post list, outputs a header for the new year/month, then creates a new unordered list before outputting the post titles as list elements.  It must then keep track of whether a list is actually open or not.
 
 The result is the archive page you see linked on the left...  It's just a long list of year, sub-lists of months, then sub-lists of posts in chronological order.  This provides the same look-back ability in a way that is visually appealing, and also lets me `Ctrl+F` a post title...  Post title search was something else difficult with Hugo that is now solved.
+
+> NOTE: You'll also need to create a file in `content/archive/_index.md` with at least the minimum front matter (title, I recommend...)

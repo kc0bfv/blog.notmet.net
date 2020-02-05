@@ -7,6 +7,10 @@ type: post
 url: /2013/02/unix-awesomeness/
 categories:
 - Blog
+tags:
+- programming
+- latex
+- bash
 ---
 
 Oh, LaTeX acronym package, you won't automatically alphabetize my list of acronyms?  Strange...  Let's see if Unix will...

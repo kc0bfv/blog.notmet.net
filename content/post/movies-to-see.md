@@ -7,6 +7,8 @@ type: post
 url: /2009/03/movies-to-see/
 categories:
 - Blog
+tags:
+- fun
 ---
 
 Here are a few movies I need to see:

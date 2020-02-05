@@ -7,6 +7,8 @@ type: post
 url: /2012/07/star-trek-had-it-right/
 categories:
 - Blog
+tags:
+- air force
 ---
 
 Star Trek had it right.  They were a bunch of peace loving (except for Worf) scientists  roaming the universe in a war ship.  They always kept their cool when someone faced them down, but if they needed to Jean Luc had no problem blasting the enemy out of the sky.

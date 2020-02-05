@@ -7,6 +7,8 @@ type: post
 url: /2012/10/the-linux-graphics-stack-meta/
 categories:
 - Blog
+tags:
+- linux
 ---
 
 Jasper St. Pierre [explains the Linux graphics stack](http://blog.mecheye.net/2012/06/the-linux-graphics-stack/) in detail.

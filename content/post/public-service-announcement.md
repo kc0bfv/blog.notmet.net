@@ -7,6 +7,8 @@ type: post
 url: /2008/01/public-service-announcement/
 categories:
 - Blog
+tags:
+- coffee
 ---
 
 PSA:  Don't follow Starbucks' directions for making coffee if you like it black.  

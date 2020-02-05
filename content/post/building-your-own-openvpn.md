@@ -7,6 +7,8 @@ type: post
 url: /2016/03/building-your-own-openvpn/
 categories:
 - Blog
+tags:
+- network security
 ---
 
 I've wanted to have a VPN setup for a while - I've never been entirely comfortable when using public wifi, even secured public wifi...  Open wifi?  I feel a little crazy every time I connect.  But I usually console myself that I'm not a target, I can make sure important connections are encrypted, and I can just avoid doing some things while on public wifi.

@@ -7,6 +7,8 @@ type: post
 url: /2012/11/open-port/
 categories:
 - Blog
+tags:
+- network security
 ---
 
 Every now and then when I'm at a coffee shop I wonder what ports I've got open on my home network.  Normally I don't have any ports open within Nmap's default port list.

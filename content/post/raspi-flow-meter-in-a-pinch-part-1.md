@@ -7,6 +7,9 @@ type: post
 url: /2016/08/raspi-flow-meter-in-a-pinch-part-1/
 categories:
 - Blog
+tags:
+- engineering
+- programming
 ---
 
 META: This first part is about the problem that caused me to build the solution.  [Part 2](https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/) is about the solution.

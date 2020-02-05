@@ -7,6 +7,9 @@ type: post
 url: /2012/12/bash-dictionary-terrible-hack-of-the-day/
 categories:
 - Blog
+tags:
+- programming
+- bash
 ---
 
 So, I just had a reason to implement something like a dictionary in Bash.  Of course, I could try to determine if such a feature exists already (it does in Bash 4, alas the default on OS X seems to be 3.2), but why not just try to hack something together?

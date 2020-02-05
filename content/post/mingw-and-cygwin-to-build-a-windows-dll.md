@@ -7,6 +7,8 @@ type: post
 url: /2011/03/mingw-and-cygwin-to-build-a-windows-dll/
 categories:
 - Blog
+tags:
+- programming
 ---
 
 I was writing C++ in Linux - gvim + aterm is my development environment of choice.  I needed to turn my code into a Windows DLL, though, and the following webpage was really helpful.  

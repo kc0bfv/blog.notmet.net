@@ -7,9 +7,11 @@ type: post
 url: /2013/01/more-to-life-than-being-happy/
 categories:
 - Blog
+tags:
+- life
 ---
 
-[This article](http://www.theatlantic.com/health/archive/2013/01/theres-more-to-life-than-being-happy/266805/) in the Atlantic a chord with me.  It's about how, in life, searching for meaning can leave people more satisfied than searching for happiness.
+[This article](http://www.theatlantic.com/health/archive/2013/01/theres-more-to-life-than-being-happy/266805/) in the Atlantic struck a chord with me.  It's about how, in life, searching for meaning can leave people more satisfied than searching for happiness.
 
 
 > As [Viktor Frankl] saw in the [concentration] camps, those who found meaning even in the most horrendous circumstances were far more resilient to suffering than those who did not. "Everything can be taken from a man but one thing".

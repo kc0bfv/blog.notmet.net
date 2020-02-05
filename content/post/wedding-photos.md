@@ -7,6 +7,8 @@ type: post
 url: /2018/11/wedding-photos/
 categories:
 - Blog
+tags:
+- wedding
 ---
 
 

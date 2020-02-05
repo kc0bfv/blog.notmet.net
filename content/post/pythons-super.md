@@ -7,6 +7,9 @@ type: post
 url: /2012/10/pythons-super/
 categories:
 - Blog
+tags:
+- programming
+- python
 ---
 
 I've been writing a lot of Python lately, and there are some things I love about it, some things I'm uncomfortable with, but nothing I hate.  The super() builtin function makes life a lot easier when you're using Python for object oriented code and have some inheritance going on.  [This blog post](http://rhettinger.wordpress.com/2011/05/26/super-considered-super/) describes the best way I've seen it used so far.

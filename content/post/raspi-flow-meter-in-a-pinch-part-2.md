@@ -8,7 +8,9 @@ url: /2016/08/raspi-flow-meter-in-a-pinch-part-2/
 categories:
 - Blog
 tags:
+- engineering
 - programming
+- python
 ---
 
 META: [Part 1](https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-1/) describes the problem I'm trying to solve here.

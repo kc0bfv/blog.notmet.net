@@ -7,6 +7,8 @@ type: post
 url: /2013/02/san-antonio-hackerspace/
 categories:
 - Blog
+tags:
+- egineering
 ---
 
 Apparently [San Antonio has a hackerspace](http://www.10bitworks.com/) now.  Up until a few minutes ago, this image was alongside the rest of their "About Us" page.  I think that by observing the page I changed it, so perhaps it's a quantum webpage.

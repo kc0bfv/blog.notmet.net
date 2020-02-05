@@ -7,6 +7,9 @@ type: post
 url: /2008/01/wwi/
 categories:
 - Blog
+tags:
+- poetry
+- fun
 ---
 
 Grenade in Foxhole  

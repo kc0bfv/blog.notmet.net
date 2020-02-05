@@ -7,6 +7,8 @@ type: post
 url: /2020/01/thoughts-on-swap/
 categories:
 - Blog
+tags:
+- air force
 ---
 
 
