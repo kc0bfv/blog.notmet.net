@@ -1,0 +1,304 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Deploying Github to Dreamhost" />
+<meta property="og:description" content="One feature I lost moving from Wordpress to Hugo for this blog was the ability to write a blog post from anywhere. I really liked being able to do that&hellip; I could be riding in the car, or smoking brisket at 2 AM, or on vacation without a computer, and just login and write something.
+I wanted that back - a posting solution from my cellphone.
+The reason I lost that ability is because the simplest update process for Hugo is:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2020/02/deploying-github-to-dreamhost/" />
+<meta property="article:published_time" content="2020-02-08T10:00:00-07:00" />
+<meta property="article:modified_time" content="2020-02-08T10:00:00-07:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Deploying Github to Dreamhost"/>
+<meta name="twitter:description" content="One feature I lost moving from Wordpress to Hugo for this blog was the ability to write a blog post from anywhere. I really liked being able to do that&hellip; I could be riding in the car, or smoking brisket at 2 AM, or on vacation without a computer, and just login and write something.
+I wanted that back - a posting solution from my cellphone.
+The reason I lost that ability is because the simplest update process for Hugo is:"/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.64.0" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2020/02/deploying-github-to-dreamhost/">Deploying Github to Dreamhost</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2020-02-08">2020.02.08</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/hugo">hugo</a>, 
+        
+        <a href="https://blog.notmet.net/tags/programming">programming</a>, 
+        
+        <a href="https://blog.notmet.net/tags/shell">shell</a>, 
+        
+        <a href="https://blog.notmet.net/tags/php">php</a>
+        
+    
+
+</span>
+</footer>
+
+        <p>One feature I lost moving from Wordpress to Hugo for this blog was the ability to write a blog post from anywhere.  I really liked being able to do that&hellip;  I could be riding in the car, or smoking brisket at 2 AM, or on vacation without a computer, and just login and write something.</p>
+<p>I wanted that back - a posting solution from my cellphone.</p>
+<p>The reason I lost that ability is because the simplest update process for Hugo is:</p>
+<ol>
+<li>Create a new markdown file in the correct directory</li>
+<li>Write markdown in it</li>
+<li>Run hugo to recompile your site</li>
+<li>Package the site for upload</li>
+<li>Upload the site to your webhost</li>
+<li>Unpack the site into the correct directory</li>
+</ol>
+<p>My actual process differed a little, and I had some ways to do some of those things automatically, but the important thing is:</p>
+<blockquote>
+<p><strong>All resources are on my computer</strong></p>
+</blockquote>
+<p>With Wordpress everything was in the cloud.</p>
+<p>Some solutions:</p>
+<ol>
+<li>Use GitHub for storage and editing, Travis CI to rebuild, and GitHub Pages for publishing</li>
+<li><a href="https://robinforest.net/post/hugo-questions/">Put a copy of Hugo on my Dreamhost account</a>, then create, edit, run hugo, and deploy via SSH (I can do that from my phone)</li>
+<li>Write in my email, then update when I get back to my computer</li>
+<li>Rig some stuff up</li>
+</ol>
+<p>I didn&rsquo;t want to use GitHub Pages - they&rsquo;re great and I use all of option one for project websites, but I wanted my stuff hosted via Dreamhost since I&rsquo;m using them&hellip;</p>
+<p>I didn&rsquo;t love number 2 because the editing solution over SSH on the cellphone is really awkward.  And, that binary of Hugo is just one more thing to keep up-to-date.</p>
+<p>Number 3 is just giving up.</p>
+<p>I went with option number 4.  This post is about rigging things up.</p>
+<h1 id="rigging-what">Rigging What?</h1>
+<p>Target end-state:</p>
+<ol>
+<li>Blog repo storage on GitHub</li>
+<li>File creation and editing via GitHub, or in a draft email then I paste it into GitHub</li>
+<li>Travis CI to build with Hugo</li>
+<li>After build, signal my Dreamhost server that a new build is available</li>
+<li>Git pull the repo onto Dreamhost to update the site</li>
+</ol>
+<p>So - steps 1 and 2 are built-in to GitHub.  I created a repo on GitHub, then updated the repo on my computer to point to it, and pushed everything onto GitHub.  This is a publicly-available blog, so the source is public too.  It&rsquo;s pretty easy to create a new file in a spot within a repo, but saving it generates a new commit.  I&rsquo;ll probably generally edit in email then paste in so I only make one commit.</p>
+<h1 id="setting-up-travis-ci-to-build">Setting Up Travis CI to Build</h1>
+<p>Step 3 I&rsquo;ve already had success with previously.  To set this up, first add Travis CI to your GitHub account.  Create a branch named <code>gh-pages</code> (make it empty, preferrably, but this is not necessary).  Create a &ldquo;Personal Access Token&rdquo; on GitHub (Profile Settings-&gt;Developer Settings-&gt;Personal Access Token).  Save that token code as <code>GITHUB_TOKEN</code> under the repo&rsquo;s settings&rsquo; Environment Variables section on Travis CI (go to Travis CI&rsquo;s webpage, login, select your repo on the left, select the hamburger menu on right, then settings).  Then, create and commit this file into your repo:</p>
+<p><code>.travis.yml</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">language</span>: generic
+<span style="color:#66d9ef">install</span>:
+  - sudo snap install hugo
+
+<span style="color:#66d9ef">script</span>:
+  - hugo
+
+<span style="color:#66d9ef">deploy</span>:
+  <span style="color:#66d9ef">provider</span>: pages
+  <span style="color:#66d9ef">skip_cleanup</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#66d9ef">github_token</span>: $GITHUB_TOKEN
+  <span style="color:#66d9ef">keep_history</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#66d9ef">local_dir</span>: public
+  <span style="color:#66d9ef">on</span>:
+    <span style="color:#66d9ef">branch</span>: master
+</code></pre></div><p>That&rsquo;ll build your site and deploy it into the &ldquo;gh-pages&rdquo; branch (the one typically for GitHub Pages, but don&rsquo;t set that up and GitHub will ignore it).</p>
+<h1 id="signalling-dreamhost-and-git-pulling">Signalling Dreamhost and Git-Pulling</h1>
+<p>Steps 4 and 5 were the slightly trickier part.  The best thing I came up with was a PHP file located on the server in a spot that wouldn&rsquo;t get overwritten by site updates&hellip;  I have a separate domain on there that I used.  The PHP file looks like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+  $trigger_code <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;PUT SOMETHING NOBODY WILL GUESS HERE&#34;</span>;
+  <span style="color:#66d9ef">if</span>( $_POST[<span style="color:#e6db74">&#34;code&#34;</span>] <span style="color:#f92672">==</span> $trigger_code ) {
+    <span style="color:#a6e22e">shell_exec</span>(<span style="color:#e6db74">&#34;/PULL/SCRIPT/PATH/pull_script.sh&#34;</span>);
+    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;triggered&#34;</span>;
+  } <span style="color:#66d9ef">else</span> {
+    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;!triggered&#34;</span>;
+  }
+<span style="color:#75715e">?&gt;</span>
+</code></pre></div><p>Basically - when someone does a POST request to this script&rsquo;s URL, and they include <code>code=YOUR TRIGGER CODE</code> as POST data, this script will run <code>pull_script.sh</code>.  Pull script looks like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
+</span><span style="color:#75715e"></span>EXECUTION_OUTPUT<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo <span style="color:#e6db74">&#34;DEPLOYING SITE 1&#34;</span> <span style="color:#f92672">&amp;&amp;</span> cd ~/SITE_DIRECTORY_1 <span style="color:#f92672">&amp;&amp;</span> git pull<span style="color:#e6db74">`</span>
+EXECUTION_OUTPUT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$EXECUTION_OUTPUT<span style="color:#e6db74">\n\n\n</span><span style="color:#66d9ef">$(</span>echo DEPLOYING SITE <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span> cd ~/SITE_DIRECTORY_2 &amp; git pull<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+echo -e <span style="color:#e6db74">&#34;</span>$EXECUTION_OUTPUT<span style="color:#e6db74">&#34;</span> | mail -s <span style="color:#e6db74">&#34;Execution output&#34;</span> YOUR_EMAIL@EMAIL.COM
+</code></pre></div><p>When the PHP runs the pull script it&rsquo;ll change into the correct directory and run a git pull.  If you have multiple sites, that second line will deploy a second, then you can use it more times as needed.  The output will get emailed to you so you can see what&rsquo;s up.</p>
+<p>Make sure you fill in the necessary directories, paths, script names, a trigger code (I made this a long random hash - nobody will guess it), and your email address.</p>
+<p>Oh yeah - you need to set your Dreamhost website directory up&hellip;  So, your site is going to get messed up for a minute (you can get around this problem by renaming things later&hellip;  you can figure that part out).  Set up your directory by moving/removing the current one (delete <code>~/blog.notmet.net</code>, or whatever your site directory is).  Now <code>git clone</code> your GitHub repo into Dreamhost home directory.  Rename that repo clone as your site directory, if it isn&rsquo;t already.  Now CD in there and <code>git checkout gh-pages</code>.  You should be on the <code>gh-pages</code> branch now.</p>
+<blockquote>
+<p>This exposes your site&rsquo;s <code>.git</code> directory to everyone on the web, which may be a security issue - see the end of this for info</p>
+</blockquote>
+<p>OK!  Now we just need to tell Travis CI to make a POST request to this URL with the right code after a build is successful.</p>
+<p>First - add two more environment variables to Travis CI on your repo:</p>
+<ul>
+<li><code>PULL_CODE</code> - make this the <code>trigger_code</code> you made up for your PHP script</li>
+<li><code>PULL_ENDPOINT</code> - make this the URL to your PHP script</li>
+</ul>
+<p>Now update your <code>.travis.yml</code> file to have a blank line followed by this at the very bottom:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">after_deploy</span>:
+  - curl -d <span style="color:#e6db74">&#34;code=$PULL_CODE&#34;</span> $PULL_ENDPOINT
+</code></pre></div><p>Travis CI images have curl installed by default.</p>
+<p>Pushing this updated file to your GitHub repo should cause a site build.  Then the <code>after_deploy</code> curl trigger to Dreamhost.  Then Dreamhost should <code>git pull</code> the build.  Then it should email you the output from the pull&hellip;  Then you should see your website!</p>
+<p>Only gotta set this up once, fortunately.  I think it&rsquo;s pretty slick.</p>
+<h1 id="git-directory-exposure">Git Directory Exposure</h1>
+<p>So, <a href="https://en.internetwache.org/dont-publicly-expose-git-or-how-we-downloaded-your-websites-sourcecode-an-analysis-of-alexas-1m-28-07-2015/">exposing the <code>.git</code> directory can be a vulnerability</a>.  <strong>Can</strong> is an important word in that sentence, though.  If you set your GitHub sourcecode repo up as &ldquo;public&rdquo;, I don&rsquo;t think exposing your <code>.git</code> directory reveals anything to attackers.</p>
+<p>But if you have something in your history that might be sensitive, it&rsquo;s visible if the .git directory is accessible.</p>
+<p>So - let&rsquo;s block access.  It&rsquo;s easy enough.</p>
+<p>Add this line into your site&rsquo;s <code>/static/.htaccess</code> file:</p>
+<pre><code class="language-htaccess" data-lang="htaccess">RedirectMatch 404 ^/.git/.*$
+</code></pre><p>My full <code>.htaccess</code> file looks like:</p>
+<pre><code class="language-htaccess" data-lang="htaccess">&lt;IfModule mod_rewrite.c&gt;
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+&lt;/IfModule&gt;
+
+Redirect /feed/ /index.xml
+RewriteRule ^wp-content/(.*)$ https://static.notmet.net/wp-content/$1 [R=301,NC,L]
+RedirectMatch 404 ^/.git/.*$
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
+Options -Indexes
+</code></pre><p>That makes sure users are on HTTPS, and redirects some old Wordpress directories to fit the new Hugo setup.  Then I block <code>.git</code> directory access, setup the error response documents, and disable directory indexing.</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2020%2f02%2fdeploying-github-to-dreamhost%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Deploying%20Github%20to%20Dreamhost&amp;url=https%3a%2f%2fblog.notmet.net%2f2020%2f02%2fdeploying-github-to-dreamhost%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2020%2f02%2fdeploying-github-to-dreamhost%2f&title=Deploying%20Github%20to%20Dreamhost" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

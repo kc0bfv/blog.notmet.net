@@ -8,10 +8,46 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Thu, 06 Feb 2020 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 10:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugo</title>
+      <link>https://blog.notmet.net/tags/hugo/</link>
+      <pubDate>Sat, 08 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://blog.notmet.net/tags/php/</link>
+      <pubDate>Sat, 08 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://blog.notmet.net/tags/programming/</link>
+      <pubDate>Sat, 08 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://blog.notmet.net/tags/shell/</link>
+      <pubDate>Sat, 08 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/shell/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>things I hope I remember</title>
@@ -46,24 +82,6 @@
       <pubDate>Sun, 02 Feb 2020 10:00:00 -0700</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/sanity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://blog.notmet.net/tags/hugo/</link>
-      <pubDate>Fri, 31 Jan 2020 10:00:00 -0700</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://blog.notmet.net/tags/programming/</link>
-      <pubDate>Fri, 31 Jan 2020 10:00:00 -0700</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/programming/</guid>
       <description></description>
     </item>
     
@@ -293,15 +311,6 @@
     </item>
     
     <item>
-      <title>shell</title>
-      <link>https://blog.notmet.net/tags/shell/</link>
-      <pubDate>Thu, 07 Feb 2019 02:27:44 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>wedding</title>
       <link>https://blog.notmet.net/tags/wedding/</link>
       <pubDate>Sun, 18 Nov 2018 14:37:00 +0000</pubDate>
@@ -460,15 +469,6 @@
       <pubDate>Wed, 11 Jul 2012 03:05:40 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/taliban-rhymes-with-eatyourflan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php</title>
-      <link>https://blog.notmet.net/tags/php/</link>
-      <pubDate>Tue, 10 Jul 2012 20:44:18 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/php/</guid>
       <description></description>
     </item>
     
