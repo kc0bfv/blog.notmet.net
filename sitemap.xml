@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.notmet.net/categories/blog/</loc>
-    <lastmod>2020-02-08T10:00:00-07:00</lastmod>
+    <loc>https://blog.notmet.net/categories/</loc>
+    <lastmod>2020-02-08T18:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/categories/</loc>
+    <loc>https://blog.notmet.net/2020/02/idaho-pork-butt/</loc>
+    <lastmod>2020-02-08T18:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/pork-butt/</loc>
+    <lastmod>2020-02-08T18:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/post/</loc>
+    <lastmod>2020-02-08T18:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/smoker-log/</loc>
+    <lastmod>2020-02-08T18:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/</loc>
+    <lastmod>2020-02-08T18:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/blog/</loc>
     <lastmod>2020-02-08T10:00:00-07:00</lastmod>
   </url>
   
@@ -28,22 +53,12 @@
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/post/</loc>
-    <lastmod>2020-02-08T10:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/tags/programming/</loc>
     <lastmod>2020-02-08T10:00:00-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.notmet.net/tags/shell/</loc>
-    <lastmod>2020-02-08T10:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/</loc>
     <lastmod>2020-02-08T10:00:00-07:00</lastmod>
   </url>
   
@@ -145,11 +160,6 @@
   <url>
     <loc>https://blog.notmet.net/tags/range/</loc>
     <lastmod>2020-01-03T19:49:55+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/categories/smoker-log/</loc>
-    <lastmod>2019-12-26T15:22:42+00:00</lastmod>
   </url>
   
   <url>
@@ -370,11 +380,6 @@
   <url>
     <loc>https://blog.notmet.net/tags/sous-vide/</loc>
     <lastmod>2019-04-22T11:45:53+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/pork-butt/</loc>
-    <lastmod>2019-04-15T01:10:29+00:00</lastmod>
   </url>
   
   <url>

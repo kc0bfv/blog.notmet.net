@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sat, 08 Feb 2020 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 18:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Smoker Log</title>
+      <link>https://blog.notmet.net/categories/smoker-log/</link>
+      <pubDate>Sat, 08 Feb 2020 18:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/categories/smoker-log/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Blog</title>
@@ -28,15 +37,6 @@
       <pubDate>Sat, 25 Jan 2020 08:00:00 -0700</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/categories/baking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Smoker Log</title>
-      <link>https://blog.notmet.net/categories/smoker-log/</link>
-      <pubDate>Thu, 26 Dec 2019 15:22:42 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/categories/smoker-log/</guid>
       <description></description>
     </item>
     
