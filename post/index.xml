@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sat, 08 Feb 2020 18:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2020 10:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Scope: Not Just Mouthwash</title>
+      <link>https://blog.notmet.net/2020/02/scope-not-just-mouthwash/</link>
+      <pubDate>Mon, 10 Feb 2020 10:00:00 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/02/scope-not-just-mouthwash/</guid>
+      <description>I&amp;rsquo;m teaching a Python class which acts as an introduction to programming, for most of the students there. This is an awesome experience - for me personally because I enjoy this, and for my resume. I hope to do this full-time someday, but today I&amp;rsquo;ve just got 3 sections of the same class.
+We&amp;rsquo;re doing a lot of cool things that I should write about some other time - one of them is using a free, open source textbook called, Runestone - How to Think Like a Computer Scientist.</description>
+    </item>
     
     <item>
       <title>Idaho Pork Butt</title>

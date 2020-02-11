@@ -1,0 +1,228 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Scope: Not Just Mouthwash" />
+<meta property="og:description" content="I&rsquo;m teaching a Python class which acts as an introduction to programming, for most of the students there. This is an awesome experience - for me personally because I enjoy this, and for my resume. I hope to do this full-time someday, but today I&rsquo;ve just got 3 sections of the same class.
+We&rsquo;re doing a lot of cool things that I should write about some other time - one of them is using a free, open source textbook called, Runestone - How to Think Like a Computer Scientist." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2020/02/scope-not-just-mouthwash/" />
+<meta property="article:published_time" content="2020-02-10T10:00:00-07:00" />
+<meta property="article:modified_time" content="2020-02-10T10:00:00-07:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Scope: Not Just Mouthwash"/>
+<meta name="twitter:description" content="I&rsquo;m teaching a Python class which acts as an introduction to programming, for most of the students there. This is an awesome experience - for me personally because I enjoy this, and for my resume. I hope to do this full-time someday, but today I&rsquo;ve just got 3 sections of the same class.
+We&rsquo;re doing a lot of cool things that I should write about some other time - one of them is using a free, open source textbook called, Runestone - How to Think Like a Computer Scientist."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.64.1" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2020/02/scope-not-just-mouthwash/">Scope: Not Just Mouthwash</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2020-02-10">2020.02.10</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/programming">programming</a>, 
+        
+        <a href="https://blog.notmet.net/tags/python">python</a>
+        
+    
+
+</span>
+</footer>
+
+        <p>I&rsquo;m teaching a Python class which acts as an introduction to programming, for most of the students there.  This is an awesome experience - for me personally because I enjoy this, and for my resume.  I hope to do this full-time someday, but today I&rsquo;ve just got 3 sections of the same class.</p>
+<p>We&rsquo;re doing a lot of cool things that I should write about some other time - one of them is using a free, open source textbook called, <em>Runestone - How to Think Like a Computer Scientist</em>.  It&rsquo;s interactive for students, so not only is it free for them but it&rsquo;s also a better resource.</p>
+<p>Anyway, what I wanted to write about here was an example I came up with to help explain variable scoping to an audience who was encountering it for the first time.</p>
+<p>I wanted something relatable - a comparison to a concept they&rsquo;d be familiar with from everyday life.</p>
+<p>Groups of friends was what I came up with&hellip;</p>
+<p>So, I&rsquo;ve got several groups of friends, most of them don&rsquo;t know each other because I&rsquo;ve met them in different places and at different times in my life.</p>
+<p><strong>High School Buddies</strong></p>
+<ul>
+<li>Peter</li>
+<li>Jesse</li>
+<li>Brent</li>
+</ul>
+<p><strong>College Buddies</strong></p>
+<ul>
+<li>Dustin</li>
+<li>Kevin</li>
+<li>Adam</li>
+</ul>
+<p><strong>Air Force Buddies</strong></p>
+<ul>
+<li>Dave</li>
+<li>Ben</li>
+<li>Mon</li>
+</ul>
+<p>These folks don&rsquo;t know each other&hellip;  So if I&rsquo;m hanging out with my High School Buddies and mention Kevin, they&rsquo;ll think I&rsquo;m talking about some totally different Kevin that we went to high school with.  That&rsquo;s the wrong Kevin!</p>
+<p>Each of these groups of friends has a different scope.  They only know about the names in their scope, and not about the others.</p>
+<p>Now, I also have a dog, his name is Clapton.</p>
+<p><strong>Karl&rsquo;s Friends</strong></p>
+<ul>
+<li>Dog - Clapton</li>
+<li>High School Buddies</li>
+<li>College Buddies</li>
+<li>Air Force Buddies</li>
+</ul>
+<p>All of my friends know my dog&rsquo;s name.  We go hiking and stuff and I put pictures on Facebook.  All my friends know him.</p>
+<p>Clapton doesn&rsquo;t know any of these guys.  The dog doesn&rsquo;t read Facebook.  He and I are in Idaho and all these groups of friends are in other places.</p>
+<p>They all know his name, but he doesn&rsquo;t know any of theirs&hellip;</p>
+<p>This is a different type of scope - Clapton&rsquo;s in my global scope.</p>
+<p>Those smaller scopes have access to the larger, global scope, but the global scope can&rsquo;t just look down into the more specific scopes.</p>
+<p>This analogy can&rsquo;t go too much further than this&hellip;  Actually - in class I used my wife in the global scope, but this breaks down a bit because my wife actually knows all these folks in the friends groups&hellip;</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2020%2f02%2fscope-not-just-mouthwash%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Scope%3a%20Not%20Just%20Mouthwash&amp;url=https%3a%2f%2fblog.notmet.net%2f2020%2f02%2fscope-not-just-mouthwash%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2020%2f02%2fscope-not-just-mouthwash%2f&title=Scope%3a%20Not%20Just%20Mouthwash" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+
