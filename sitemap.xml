@@ -4,17 +4,32 @@
   
   <url>
     <loc>https://blog.notmet.net/categories/blog/</loc>
-    <lastmod>2020-02-10T10:00:00-07:00</lastmod>
+    <lastmod>2020-02-22T12:54:30-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.notmet.net/categories/</loc>
-    <lastmod>2020-02-10T10:00:00-07:00</lastmod>
+    <lastmod>2020-02-22T12:54:30-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/everyday/</loc>
+    <lastmod>2020-02-22T12:54:30-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/02/hidden-in-public/</loc>
+    <lastmod>2020-02-22T12:54:30-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.notmet.net/post/</loc>
-    <lastmod>2020-02-10T10:00:00-07:00</lastmod>
+    <lastmod>2020-02-22T12:54:30-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/</loc>
+    <lastmod>2020-02-22T12:54:30-07:00</lastmod>
   </url>
   
   <url>
@@ -29,11 +44,6 @@
   
   <url>
     <loc>https://blog.notmet.net/2020/02/scope-not-just-mouthwash/</loc>
-    <lastmod>2020-02-10T10:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/</loc>
     <lastmod>2020-02-10T10:00:00-07:00</lastmod>
   </url>
   
@@ -118,12 +128,12 @@
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/archive/</loc>
+    <loc>https://blog.notmet.net/</loc>
     <lastmod>2020-01-25T17:00:46-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/</loc>
+    <loc>https://blog.notmet.net/archive/</loc>
     <lastmod>2020-01-25T17:00:46-07:00</lastmod>
   </url>
   

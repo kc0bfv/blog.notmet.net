@@ -8,10 +8,26 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Mon, 10 Feb 2020 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 12:54:30 -0700</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hidden in Public</title>
+      <link>https://blog.notmet.net/2020/02/hidden-in-public/</link>
+      <pubDate>Sat, 22 Feb 2020 12:54:30 -0700</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/02/hidden-in-public/</guid>
+      <description>&lt;figure&gt;
+    &lt;img src=&#34;https://blog.notmet.net/2020/02/hidden-in-public/string-cheese.png&#34;
+         alt=&#34;A string cheese in plastic, sitting on a pillar in a breezeway&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;The cheese stands alone&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;How long can this string cheese sit here at the hospital entryway?&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Scope: Not Just Mouthwash</title>
