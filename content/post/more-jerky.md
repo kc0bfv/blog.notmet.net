@@ -8,7 +8,6 @@ url: /2019/03/more-jerky/
 categories:
 - Smoker Log
 tags:
-- Beef
 - Jerky
 ---
 
