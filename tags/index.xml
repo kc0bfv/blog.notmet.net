@@ -8,10 +8,28 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sat, 22 Feb 2020 12:54:30 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2020 12:33:04 -0600</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>brisket</title>
+      <link>https://blog.notmet.net/tags/brisket/</link>
+      <pubDate>Mon, 23 Mar 2020 12:33:04 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/brisket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jerky</title>
+      <link>https://blog.notmet.net/tags/jerky/</link>
+      <pubDate>Mon, 23 Mar 2020 12:33:04 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/jerky/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Everyday</title>
@@ -158,15 +176,6 @@
     </item>
     
     <item>
-      <title>brisket</title>
-      <link>https://blog.notmet.net/tags/brisket/</link>
-      <pubDate>Mon, 11 Nov 2019 01:03:38 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/brisket/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>salmon</title>
       <link>https://blog.notmet.net/tags/salmon/</link>
       <pubDate>Sun, 20 Oct 2019 00:29:57 +0000</pubDate>
@@ -257,15 +266,6 @@
     </item>
     
     <item>
-      <title>Jerky</title>
-      <link>https://blog.notmet.net/tags/jerky/</link>
-      <pubDate>Sat, 15 Jun 2019 21:58:57 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/jerky/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bread</title>
       <link>https://blog.notmet.net/tags/bread/</link>
       <pubDate>Sun, 05 May 2019 01:14:00 +0000</pubDate>
@@ -298,15 +298,6 @@
       <pubDate>Sun, 31 Mar 2019 22:25:09 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/steak/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Beef</title>
-      <link>https://blog.notmet.net/tags/beef/</link>
-      <pubDate>Sun, 17 Mar 2019 20:21:24 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/beef/</guid>
       <description></description>
     </item>
     
