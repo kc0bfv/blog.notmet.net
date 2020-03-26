@@ -38,6 +38,18 @@ With the jerky, I got a 3 pounder.  I used mostly the [original recipe](https://
 
 I'll marinade it until the brisket's done then smoke at 175℉ for 4 or 5 hours.
 
-23 March 2020, 1230: Brisket is on the smoker!
+23 March, 1230: Brisket is on the smoker!
 
 1300: Jerky is in the marinade.
+
+24 March, 0445: Brisket's out!  Flat is 204℉, point was 202℉.
+
+0800: Sliced it all up - it's delicious.
+
+25 March, 1000: Jerky is on the smoker!  I forgot to start it yesterday until it was too late, so it got an extra day of marinade.
+
+1400: I generally just cook the jerky by time.  After 4 hours it's a safe bet that everything is up to temperature, and most pieces are dry enough.  That proved true again today, and I took most of the meat off at this time.  I set the smoker at 225℉ to dry out some of the fattier pieces more quickly.
+
+1500: I took the fattier pieces off at this time.
+
+{{< figure src="IMG_20200326_144236.jpg" link="IMG_20200326_144236.jpg" alt="A piece of jerky" caption="Sarah again called this the best jerky I've made 🤣." >}}
