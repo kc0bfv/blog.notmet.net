@@ -1,9 +1,13 @@
 ---
 title: "One-File Tools"
 date: 2020-03-26T15:20:15-06:00
-draft: true
+draft: false
 categories:
+- Blog
 tags:
+- Programming
+- Anti-Cloud
+- JavaScript
 ---
 
 Many of us use computers that are locked-down by some corporate policy.  The restrictions prevent you from downloading software, or running anything that's not pre-approved.  Most of us have used workarounds of some type - Excel spreadsheets created by that one guy in the office, Word documents with macros, Sharepoint sites, maybe even the occasional Powershell script...
