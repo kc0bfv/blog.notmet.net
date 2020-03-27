@@ -8,10 +8,37 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Mon, 23 Mar 2020 12:33:04 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2020 15:20:15 -0600</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Anti-Cloud</title>
+      <link>https://blog.notmet.net/tags/anti-cloud/</link>
+      <pubDate>Thu, 26 Mar 2020 15:20:15 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/anti-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://blog.notmet.net/tags/javascript/</link>
+      <pubDate>Thu, 26 Mar 2020 15:20:15 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://blog.notmet.net/tags/programming/</link>
+      <pubDate>Thu, 26 Mar 2020 15:20:15 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/programming/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>brisket</title>
@@ -37,15 +64,6 @@
       <pubDate>Sat, 22 Feb 2020 12:54:30 -0700</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/everyday/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://blog.notmet.net/tags/programming/</link>
-      <pubDate>Mon, 10 Feb 2020 10:00:00 -0700</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/programming/</guid>
       <description></description>
     </item>
     

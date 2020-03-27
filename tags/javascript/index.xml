@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/javascript/</link>
+    <description>Recent content in JavaScript on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Thu, 26 Mar 2020 15:20:15 -0600</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>One-File Tools</title>
+      <link>https://blog.notmet.net/2020/03/one-file-tools/</link>
+      <pubDate>Thu, 26 Mar 2020 15:20:15 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/03/one-file-tools/</guid>
+      <description>&lt;p&gt;Many of us use computers that are locked-down by some corporate policy.  The restrictions prevent you from downloading software, or running anything that&amp;rsquo;s not pre-approved.  Most of us have used workarounds of some type - Excel spreadsheets created by that one guy in the office, Word documents with macros, Sharepoint sites, maybe even the occasional Powershell script&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;One-File Tools are open-source self-contained one-file utilities implemented as a webpage.  These are easily shared, easily used, their saved versions may contain your user data.  They don&amp;rsquo;t require an Internet connection.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
