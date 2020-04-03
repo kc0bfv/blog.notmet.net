@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Thu, 26 Mar 2020 15:20:15 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2020 12:48:25 -0600</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>things I hope I remember</title>
+      <link>https://blog.notmet.net/tags/things-i-hope-i-remember/</link>
+      <pubDate>Fri, 03 Apr 2020 12:48:25 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/things-i-hope-i-remember/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Anti-Cloud</title>
@@ -109,15 +118,6 @@
       <pubDate>Sat, 08 Feb 2020 10:00:00 -0700</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>things I hope I remember</title>
-      <link>https://blog.notmet.net/tags/things-i-hope-i-remember/</link>
-      <pubDate>Thu, 06 Feb 2020 10:00:00 -0700</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/things-i-hope-i-remember/</guid>
       <description></description>
     </item>
     
