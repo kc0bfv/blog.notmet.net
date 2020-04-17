@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.notmet.net/categories/</loc>
+    <lastmod>2020-04-16T15:29:01-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/lamb/</loc>
+    <lastmod>2020-04-16T15:29:01-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/04/late-lamb/</loc>
+    <lastmod>2020-04-16T15:29:01-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/post/</loc>
+    <lastmod>2020-04-16T15:29:01-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/smoker-log/</loc>
+    <lastmod>2020-04-16T15:29:01-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/</loc>
+    <lastmod>2020-04-16T15:29:01-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.notmet.net/categories/blog/</loc>
     <lastmod>2020-04-03T12:48:25-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/categories/</loc>
-    <lastmod>2020-04-03T12:48:25-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/2020/04/change-leads-to-grieving/</loc>
-    <lastmod>2020-04-03T12:48:25-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/post/</loc>
-    <lastmod>2020-04-03T12:48:25-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/</loc>
     <lastmod>2020-04-03T12:48:25-06:00</lastmod>
   </url>
   
@@ -64,11 +79,6 @@
   
   <url>
     <loc>https://blog.notmet.net/2020/03/quarantine-brisket/</loc>
-    <lastmod>2020-03-23T12:33:04-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/categories/smoker-log/</loc>
     <lastmod>2020-03-23T12:33:04-06:00</lastmod>
   </url>
   
@@ -408,11 +418,6 @@
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/tags/lamb/</loc>
-    <lastmod>2019-04-22T11:45:53+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/2019/04/lambtastic/</loc>
     <lastmod>2019-04-22T11:45:53+00:00</lastmod>
   </url>
@@ -550,11 +555,6 @@
   <url>
     <loc>https://blog.notmet.net/2018/02/pork-butt-baby-shower/</loc>
     <lastmod>2018-02-25T23:49:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/lamb-leg/</loc>
-    <lastmod>2018-02-24T19:08:44+00:00</lastmod>
   </url>
   
   <url>

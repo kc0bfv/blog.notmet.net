@@ -8,10 +8,19 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Fri, 03 Apr 2020 12:48:25 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 15:29:01 -0600</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lamb</title>
+      <link>https://blog.notmet.net/tags/lamb/</link>
+      <pubDate>Thu, 16 Apr 2020 15:29:01 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/lamb/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>things I hope I remember</title>
@@ -293,15 +302,6 @@
     </item>
     
     <item>
-      <title>Lamb</title>
-      <link>https://blog.notmet.net/tags/lamb/</link>
-      <pubDate>Mon, 22 Apr 2019 11:45:53 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/lamb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Sous Vide</title>
       <link>https://blog.notmet.net/tags/sous-vide/</link>
       <pubDate>Mon, 22 Apr 2019 11:45:53 +0000</pubDate>
@@ -361,15 +361,6 @@
       <pubDate>Mon, 07 May 2018 00:22:54 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/ribs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lamb leg</title>
-      <link>https://blog.notmet.net/tags/lamb-leg/</link>
-      <pubDate>Sat, 24 Feb 2018 19:08:44 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/lamb-leg/</guid>
       <description></description>
     </item>
     
