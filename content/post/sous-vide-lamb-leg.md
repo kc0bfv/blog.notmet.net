@@ -8,7 +8,7 @@ url: /2018/02/sous-vide-lamb-leg/
 categories:
 - Cooking
 tags:
-- lamb leg
+- lamb
 ---
 
 Well, I've got a couple cooking projects going on today.  I'm planning to be home all day, so I've started up a lamb leg in the Sous Vide.  It's a 5 lbs New Zealand lamb leg from Costco, all tied up.
