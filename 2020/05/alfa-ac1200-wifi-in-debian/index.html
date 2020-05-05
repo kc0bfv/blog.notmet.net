@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alfa AC1200 WiFi in Debian &middot; Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Alfa AC1200 WiFi in Debian" />
+<meta property="og:description" content="I recently built a new desktop computer, and wanted a WiFi adapter that worked well for all kinds of Linux-y things&hellip; I&rsquo;m not normally able to plug the desktop in over Ethernet, so WiFi is a simple choice. After my first purchase on Amazon got delayed and screwed up, I went with the USB Alfa Network AC1200 - full model number AWUS036ACH. This is reviewed pretty well, and folks say the drivers are capable of all kinds of things." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2020/05/alfa-ac1200-wifi-in-debian/" />
+<meta property="article:published_time" content="2020-05-05T16:50:00-06:00" />
+<meta property="article:modified_time" content="2020-05-05T16:50:00-06:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Alfa AC1200 WiFi in Debian"/>
+<meta name="twitter:description" content="I recently built a new desktop computer, and wanted a WiFi adapter that worked well for all kinds of Linux-y things&hellip; I&rsquo;m not normally able to plug the desktop in over Ethernet, so WiFi is a simple choice. After my first purchase on Amazon got delayed and screwed up, I went with the USB Alfa Network AC1200 - full model number AWUS036ACH. This is reviewed pretty well, and folks say the drivers are capable of all kinds of things."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.69.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2020/05/alfa-ac1200-wifi-in-debian/">Alfa AC1200 WiFi in Debian</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2020-05-05">2020.05.05</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/debian">debian</a>, 
+        
+        <a href="https://blog.notmet.net/tags/linux-drivers">linux drivers</a>
+        
+    
+
+</span>
+</footer>
+
+        <p>I recently built a new desktop computer, and wanted a WiFi adapter that worked well for all kinds of Linux-y things&hellip;  I&rsquo;m not normally able to plug the desktop in over Ethernet, so WiFi is a simple choice.  After my first purchase on Amazon got delayed and screwed up, I went with the USB Alfa Network AC1200 - full model number AWUS036ACH.  This is reviewed pretty well, and folks say the drivers are capable of all kinds of things.</p>
+<p>Anyway, plugging it in, the drivers are not immediately present in Debian.</p>
+<p>At this point I had a few options:</p>
+<ol>
+<li>try to find an official deb package containing the driver</li>
+<li>try to find some unofficial deb package with the driver</li>
+<li>build from source</li>
+</ol>
+<p>It looks like Debian has no package for this, so option 1 is out.</p>
+<p>Option 2 is never my preference, since this can introduce dependency issues to the distro.  Option 3 will probably require me to rebuild the driver every time Debian updates the kernel - which has been happening fairly frequently recently.  That would be extremely frustrating.</p>
+<p>Kali has support for the driver in a package called realtek-rtl88xxau-dkms.  Kali is a Debian-based distro, but adding their full apt source was not appealing for the likelihood of accidental dependency issues.  I was able to <a href="http://archive.kali.org/kali/pool/contrib/r/realtek-rtl88xxau-dkms/">download the package from their package pool</a>.  I downloaded the .deb file.</p>
+<blockquote>
+<p>Debian will build the module for whatever Kernel version I need</p>
+</blockquote>
+<p>This fact is what induced me to write this post.  After downloading the package, I used apt to install it and Debian built exactly what I needed automatically.  It looks to me like Debian will automatically rebuild the module later when the kernel updates, too.</p>
+<p>This really blows my mind - it&rsquo;s exactly what I was hoping to find, an easy way to install the driver and keep it installed across kernel updates.</p>
+<p>After installing via apt, I unplugged the adapter and plugged it back in, it was automatically detected and the kernel module loaded, and I had WiFi.  Very cool.</p>
+<p>The caveat is - if I want to actually update the driver I will need to re-download it.  Since I did not install the apt source I have to do that part.  This is less important to me than getting the kernel updated and having everything keep working.</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2020%2f05%2falfa-ac1200-wifi-in-debian%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Alfa%20AC1200%20WiFi%20in%20Debian&amp;url=https%3a%2f%2fblog.notmet.net%2f2020%2f05%2falfa-ac1200-wifi-in-debian%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2020%2f05%2falfa-ac1200-wifi-in-debian%2f&title=Alfa%20AC1200%20WiFi%20in%20Debian" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+
+<li><a href="mailto:kc0bfv@notmet.net" class="icon-mail" title="Email" aria-label="Email"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

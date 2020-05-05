@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debian on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/debian/</link>
+    <description>Recent content in Debian on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Tue, 05 May 2020 16:50:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alfa AC1200 WiFi in Debian</title>
+      <link>https://blog.notmet.net/2020/05/alfa-ac1200-wifi-in-debian/</link>
+      <pubDate>Tue, 05 May 2020 16:50:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/05/alfa-ac1200-wifi-in-debian/</guid>
+      <description>I recently built a new desktop computer, and wanted a WiFi adapter that worked well for all kinds of Linux-y things&amp;hellip; I&amp;rsquo;m not normally able to plug the desktop in over Ethernet, so WiFi is a simple choice. After my first purchase on Amazon got delayed and screwed up, I went with the USB Alfa Network AC1200 - full model number AWUS036ACH. This is reviewed pretty well, and folks say the drivers are capable of all kinds of things.</description>
+    </item>
+    
+  </channel>
+</rss>
