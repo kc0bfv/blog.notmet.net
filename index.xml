@@ -14,6 +14,24 @@
     
     
     <item>
+      <title>Reflections on Teaching Intro to Programming</title>
+      <link>https://blog.notmet.net/2020/05/reflections-on-teaching-intro-to-programming/</link>
+      <pubDate>Thu, 07 May 2020 14:11:08 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/05/reflections-on-teaching-intro-to-programming/</guid>
+      <description>&lt;p&gt;Over the last semester I had the pleasure of teaching programming as an adjunct professor at a local major university.  I sought out this opportunity because I genuinely enjoy teaching, I knew I&amp;rsquo;d have a little extra time on my hands, and I think it&amp;rsquo;s valuable to my current assignment to be in the community putting a face to the Air Force.  I cold-called the computer science department and asked around just prior to the fall semester, and they were interested in bringing me on for the spring semester.  More than that - they wanted someone to turn their existing Intro to Programming (in Python) course into an Internet-based course.  Python is my jam, so this sounded good.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://blog.notmet.net/2020/05/reflections-on-teaching-intro-to-programming/1024px-Python_image.jpg&#34;
+         alt=&#34;Python code on a computer screen, from https://commons.wikimedia.org/wiki/File:Python_image.jpg&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Python lookin sharp.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I learned a lot while teaching this class, about teaching, about students, about learning Python, and about learning programming in-general.  I wanted to put my thoughts down because they&amp;rsquo;ve been bubbling around in my head.  I think this would be a great talk topic for some nerd conference too, so it makes sense to take the notes while they&amp;rsquo;re fresh.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Alfa AC1200 WiFi in Debian</title>
       <link>https://blog.notmet.net/2020/05/alfa-ac1200-wifi-in-debian/</link>
       <pubDate>Tue, 05 May 2020 16:50:00 -0600</pubDate>

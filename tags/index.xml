@@ -8,10 +8,28 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Tue, 05 May 2020 16:50:00 -0600</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 14:11:08 -0600</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>programming</title>
+      <link>https://blog.notmet.net/tags/programming/</link>
+      <pubDate>Thu, 07 May 2020 14:11:08 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://blog.notmet.net/tags/teaching/</link>
+      <pubDate>Thu, 07 May 2020 14:11:08 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/teaching/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Debian</title>
@@ -73,15 +91,6 @@
       <pubDate>Thu, 26 Mar 2020 15:20:15 -0600</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://blog.notmet.net/tags/programming/</link>
-      <pubDate>Thu, 26 Mar 2020 15:20:15 -0600</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/programming/</guid>
       <description></description>
     </item>
     

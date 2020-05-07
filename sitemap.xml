@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.notmet.net/2020/05/alfa-ac1200-wifi-in-debian/</loc>
-    <lastmod>2020-05-05T16:50:00-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/categories/blog/</loc>
-    <lastmod>2020-05-05T16:50:00-06:00</lastmod>
+    <lastmod>2020-05-07T14:11:08-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.notmet.net/categories/</loc>
+    <lastmod>2020-05-07T14:11:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/post/</loc>
+    <lastmod>2020-05-07T14:11:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/programming/</loc>
+    <lastmod>2020-05-07T14:11:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/05/reflections-on-teaching-intro-to-programming/</loc>
+    <lastmod>2020-05-07T14:11:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/</loc>
+    <lastmod>2020-05-07T14:11:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/teaching/</loc>
+    <lastmod>2020-05-07T14:11:08-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/05/alfa-ac1200-wifi-in-debian/</loc>
     <lastmod>2020-05-05T16:50:00-06:00</lastmod>
   </url>
   
@@ -29,16 +54,6 @@
   
   <url>
     <loc>https://blog.notmet.net/tags/linux-drivers/</loc>
-    <lastmod>2020-05-05T16:50:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/post/</loc>
-    <lastmod>2020-05-05T16:50:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/</loc>
     <lastmod>2020-05-05T16:50:00-06:00</lastmod>
   </url>
   
@@ -79,11 +94,6 @@
   
   <url>
     <loc>https://blog.notmet.net/2020/03/one-file-tools/</loc>
-    <lastmod>2020-03-26T15:20:15-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/programming/</loc>
     <lastmod>2020-03-26T15:20:15-06:00</lastmod>
   </url>
   
