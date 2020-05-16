@@ -5,6 +5,8 @@ draft: false
 categories:
 - Blog
 tags:
+- Cloud
+- Nextcloud
 ---
 
 [Google Music is disappearing](https://arstechnica.com/gadgets/2020/05/google-play-music-dies-this-year-yt-music-library-imports-begin-today/) - it's time to find a new way to host music in the cloud.  Google wants folks to move to YouTube Music as their music locker, but I'm tired of being jerked around.
