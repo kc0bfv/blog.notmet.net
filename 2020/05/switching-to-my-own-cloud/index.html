@@ -1,0 +1,288 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Switching to My Own Cloud &middot; Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Switching to My Own Cloud" />
+<meta property="og:description" content="Google Music is disappearing - it&rsquo;s time to find a new way to host music in the cloud.  Google wants folks to move to YouTube Music as their music locker, but I&rsquo;m tired of being jerked around.
+To get away from Google Music I needed the following capabilities:
+
+Cloud-based method of storing music
+Browser-based method for listening to that music
+Android app for listening to music, with method for downloading some music to device storage
+
+
+
+     
+
+
+Nextcloud hosted on Dreamhost with Dreamobjects is the solution I chose.  This post will talk about how I settled on this, and how I made it work well." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2020/05/switching-to-my-own-cloud/" />
+<meta property="article:published_time" content="2020-05-16T14:21:18-06:00" />
+<meta property="article:modified_time" content="2020-05-16T14:21:18-06:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Switching to My Own Cloud"/>
+<meta name="twitter:description" content="Google Music is disappearing - it&rsquo;s time to find a new way to host music in the cloud.  Google wants folks to move to YouTube Music as their music locker, but I&rsquo;m tired of being jerked around.
+To get away from Google Music I needed the following capabilities:
+
+Cloud-based method of storing music
+Browser-based method for listening to that music
+Android app for listening to music, with method for downloading some music to device storage
+
+
+
+     
+
+
+Nextcloud hosted on Dreamhost with Dreamobjects is the solution I chose.  This post will talk about how I settled on this, and how I made it work well."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.70.0" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2020/05/switching-to-my-own-cloud/">Switching to My Own Cloud</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2020-05-16">2020.05.16</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/cloud">cloud</a>, 
+        
+        <a href="https://blog.notmet.net/tags/nextcloud">nextcloud</a>
+        
+    
+
+</span>
+</footer>
+
+        <p><a href="https://arstechnica.com/gadgets/2020/05/google-play-music-dies-this-year-yt-music-library-imports-begin-today/">Google Music is disappearing</a> - it&rsquo;s time to find a new way to host music in the cloud.  Google wants folks to move to YouTube Music as their music locker, but I&rsquo;m tired of being jerked around.</p>
+<p>To get away from Google Music I needed the following capabilities:</p>
+<ul>
+<li>Cloud-based method of storing music</li>
+<li>Browser-based method for listening to that music</li>
+<li>Android app for listening to music, with method for downloading some music to device storage</li>
+</ul>
+
+<figure>
+    <img src="/2020/05/switching-to-my-own-cloud/next.gif"
+         alt="Judge Judy saying &#39;next&#39;, with a confused look on her face."/> 
+</figure>
+
+<p><a href="https://nextcloud.com/">Nextcloud</a> hosted on Dreamhost with Dreamobjects is the solution I chose.  This post will talk about how I settled on this, and how I made it work well.</p>
+<h1 id="picking-a-solution">Picking a Solution</h1>
+<p>I need a cloud-based solution because:</p>
+<ul>
+<li>my music doesn&rsquo;t all fit on my phone</li>
+<li>I hop between several operating systems and computers</li>
+<li>I don&rsquo;t want to spend time replicating my setup on different devices</li>
+</ul>
+<p>Storing music in the cloud avoids those.  I could serve music directly from my home computers, but this lets me get away from exposing my personal devices to the Internet, lets me listen even when those computers are disconnected from the Internet, and is a more efficient use of electricity I suspect.</p>
+<p>It took me some searching to settle on Nextcloud.  At first I thought - &ldquo;all my music is already backed up on S3, surely there&rsquo;s some way to stream directly from there.&rdquo;  I couldn&rsquo;t find any good solution for this.  There are some old Flash-based players&hellip;  I thought about building a website to solve this - store S3 info in a cookie, use CORS requests to load and play music.  One complication to building a tool like this is that you&rsquo;ve got to build a catalog of available music, and that takes time and significant bucket download because you&rsquo;ve got to parse every song&rsquo;s ID3 tag.  I&rsquo;d want to cache that catalog somewhere.  I&rsquo;d probably cache it there in the same S3 bucket, and use a simple-to-parse format so others could build on it too.  Building my own player wasn&rsquo;t a project I have time for right now.</p>
+<p>Others trying to solve the same problem had recommendations for Cloudbeats (Android app), and Subsonic and Ampache (cloud music server standards).  Cloudbeats put me on the trail of Nextcloud and ownCloud, and Subsonic and Ampache standards were also supported by the Nextcloud/ownCloud music app.  There are a number of Android apps supporting Subsonic and Ampache, so it seemed like if I could get the server setup I&rsquo;d be able to find something that worked on the Android side.</p>
+<p>Nextcloud is the more open-source choice between the two, and otherwise they&rsquo;re extremely similar, so I went with it.  What is Nextcloud?  It&rsquo;s a self-hosted cloud storage solution.  It is a Dropbox you host yourself.  These days it is so much more - Nextcloud includes apps that let you collaborate on document editing, host your calendar and email, and more.  And of course stream music.</p>
+<p>Now - where to setup Nextcloud?  The options were:</p>
+<ul>
+<li>on a personal computer</li>
+<li>on my existing shared-hosting service, Dreamhost</li>
+<li>on an AWS EC2 instance, or some other service&rsquo;s cloud computing instance</li>
+</ul>
+<p>I already decided that running Nextcloud from my home desktop or server computer wasn&rsquo;t the best choice.  My 26 GB of music isn&rsquo;t a huge collection, and Dreamhost offers &ldquo;unlimited&rdquo; storage, but reading through some discussion, that unlimited data isn&rsquo;t really supposed to cover my use-case.  Using an EC2 instance or similar would cost $10 a month or so, and I wanted to avoid paying that if possible.  For $10 a month I&rsquo;ll just pay Spotify and get more music.</p>
+<p>Fortunately Nextcloud has an &ldquo;external storage&rdquo; plugin that supports S3 storage.  It lets you use an S3 bucket just like a folder, even for the other apps supported by Nextcloud like the music player.  Dreamhost has a Ceph-based S3 storage offering called Dreamobjects that I calculate will cost me $2 per month tops - that&rsquo;s downright reasonable.</p>
+<h1 id="setting-up-nextcloud">Setting up Nextcloud</h1>
+<p>The most helpful resource I found was <a href="https://techstuffer.com/install-nextcloud-shared-server/">this tutorial by Parvez Shaikh</a>.  In short:</p>
+<ul>
+<li>Create a subdomain (give it a new username)</li>
+<li>Setup a dedicated database (give it its own username too)</li>
+<li>wget Nextcloud onto Dreamhost and unpack - it will unpack into a &ldquo;nextcloud&rdquo; directory</li>
+<li>Visit &ldquo;https://domain/nextcloud&rdquo; before anybody else does and go through the web-based setup</li>
+</ul>
+<p>It&rsquo;s that easy.  The storage by default is in the &ldquo;nextcloud/data&rdquo; directory, and I saw no reason to change that.  It&rsquo;s possible to setup S3 as your default storage, but I decided to use some S3 buckets as folders.  This lets me choose at run-time whether to put data in S3 (a little slower) or on the shared-hosting disk (don&rsquo;t want to put big files there).</p>
+<p>Setting up S3 / Dreamobjects was also easy - you must know the Dreamobjects hostname, region, and that it requires &ldquo;path style access&rdquo;.  <a href="https://help.dreamhost.com/hc/en-us/articles/215987867-Connecting-ownCloud-to-DreamObjects">Here&rsquo;s an easy walkthrough from Dreamhost</a> - it&rsquo;s for ownCloud but Nextcloud works the same.  There is one major difference in where you find the External Storage app&hellip;</p>
+<ul>
+<li>Setup a bucket from the Dreamhost panel (it&rsquo;s under Cloud Services on the left)</li>
+<li>Don&rsquo;t put underscores in your bucket name, and keep track of the server, access key, and secret key displayed there</li>
+<li>In Nextcloud enable the &ldquo;External Storage&rdquo; app by clicking your user profile in the top right, then clicking &ldquo;Apps&rdquo;, then finding &ldquo;External Storage Support&rdquo; in the list and clicking &ldquo;Enable&rdquo;</li>
+<li>Configure external storage in Nextcloud by specifying the data for your bucket, region &ldquo;us-east-1&rdquo;, &ldquo;enable SSL&rdquo;, and &ldquo;enable path style&rdquo;</li>
+</ul>
+<p>That&rsquo;s the basics&hellip;  But unfortunately you&rsquo;re still going to have some problems if you&rsquo;re on Nextcloud 18.  Nextcloud 19 (currently in beta) fixes some problems with streaming from S3, so update to that.  In the Nextcloud settings - administration - overview change your update channel to &ldquo;Beta&rdquo;.  After refreshing the page and searching for updates the page should show one.  You can try to update directly via the web interface, but I had problems with that.  I had to SSH into my host, change to the &ldquo;nextcloud&rdquo; folder, and run this command:</p>
+<p><code>php -d memory_limit=156M updater.phar</code></p>
+<p>The memory limit was necessary for me, or after spending 4 minutes backing everything up PHP would run out of memory.  Dreamhost&rsquo;s default memory settings are only about 96 MB.</p>
+<p>After the update completes you can switch back to the &ldquo;Stable&rdquo; update channel to fall back in sync next time a stable version is released that&rsquo;s greater than what you just installed.</p>
+<p>At this point you can use Nextcloud for all kinds of things.</p>
+<h1 id="setting-up-streaming">Setting up Streaming</h1>
+<p>I recommend the &ldquo;Music&rdquo; app for Nextcloud - it builds your music catalog and stores it on the Nextcloud instance.  It provides a browser-based music player and playlist builder, and is an endpoint for Subsonic and Ampache apps.</p>
+<p>Cloudbeats has great reviews - my major problem with it is that it builds and stores your catalog on your device.  This means that if you move devices or use multiple you must build a new catalog.  It also means you don&rsquo;t have shared playlists.  In my experience, the S3 storage has been significantly slower through Nextcloud, and Cloudbeats had to go through that slow connection to build the catalog, which caused issues.</p>
+<p>The Music app can be installed from the Nextcloud web-based app store.  After installing, it will notice your music folder and offer to scan your music collection via the web interface.</p>
+<p>Scanning my music collection to build the catalog took over a day - I did not do this through the web interface due to timeouts.  This slow process is due to the S3 setup, and is made faster in Nextcloud 19, but at least only needs to be done once.</p>
+<p>I SSHed into my Dreamhost instance, changed to the Nextcloud directory, started up a &ldquo;screen&rdquo; instance and ran the following command:</p>
+<p><code>php ./occ music:scan --all</code></p>
+<p>I disconnected from the screen instance (Ctrl+a d) and let that run in the background for a day.  After that completed, my collection was cataloged and easy to stream.</p>
+<h1 id="android-and-desktop-apps">Android and Desktop Apps</h1>
+<p>Desktop apps for Nextcloud use: Debian&rsquo;s nextcloud-client package is great.</p>
+<p>Android has a Nextcloud client, it&rsquo;s great too.</p>
+<p>Android apps for playing music: DSub has worked best for me.  Perhaps start with the free &ldquo;subsonic&rdquo; app, and make sure your music is streaming well-enough.  But the $5 DSub app had much better usability for me than subsonic, so I went with it instead.  DSub started really eating my battery, so I disabled periodic sync and &ldquo;DLNA&rdquo; in the settings.</p>
+<h1 id="problems">Problems</h1>
+<ul>
+<li>S3 is slower than I&rsquo;d like through Nextcloud, but in normal use I don&rsquo;t notice this much</li>
+<li>Nextcloud requires quite a bit of debugging and command-line usage so far, it&rsquo;s not a layperson&rsquo;s solution yet</li>
+<li>I&rsquo;m currently having trouble with Dreamobjects connectivity from Dreamhost - I&rsquo;ve tracked this to an IPV6 issue and notified Dreamhost</li>
+<li>I have more sync errors with Nextcloud than I did with Dropbox - although with Dropbox they were always silent, and Nextcloud at least notifies me that <strong>something</strong> bad happened</li>
+</ul>
+<h1 id="summary">Summary</h1>
+<p>If this solution continues to work as well as it is today, I&rsquo;ll be extremely happy with it.  I went looking for a music streaming solution, but I found a whole self-hosted cloud solution.  I&rsquo;m moving off Dropbox, I&rsquo;ve decided to use it when I need to share things with others.  Nextcloud supports sharing like that, but I&rsquo;d prefer to keep it out of that usage.  I&rsquo;ll probably try to get my wife using it for her data so we can back everything up more easily.</p>
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2020%2f05%2fswitching-to-my-own-cloud%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Switching%20to%20My%20Own%20Cloud&amp;url=https%3a%2f%2fblog.notmet.net%2f2020%2f05%2fswitching-to-my-own-cloud%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2020%2f05%2fswitching-to-my-own-cloud%2f&title=Switching%20to%20My%20Own%20Cloud" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+
+<li><a href="mailto:kc0bfv@notmet.net" class="icon-mail" title="Email" aria-label="Email"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

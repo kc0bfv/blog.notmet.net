@@ -8,10 +8,32 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Fri, 03 Jan 2020 19:49:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 14:21:18 -0600</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Switching to My Own Cloud</title>
+      <link>https://blog.notmet.net/2020/05/switching-to-my-own-cloud/</link>
+      <pubDate>Sat, 16 May 2020 14:21:18 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/05/switching-to-my-own-cloud/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://arstechnica.com/gadgets/2020/05/google-play-music-dies-this-year-yt-music-library-imports-begin-today/&#34;&gt;Google Music is disappearing&lt;/a&gt; - it&amp;rsquo;s time to find a new way to host music in the cloud.  Google wants folks to move to YouTube Music as their music locker, but I&amp;rsquo;m tired of being jerked around.&lt;/p&gt;
+&lt;p&gt;To get away from Google Music I needed the following capabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cloud-based method of storing music&lt;/li&gt;
+&lt;li&gt;Browser-based method for listening to that music&lt;/li&gt;
+&lt;li&gt;Android app for listening to music, with method for downloading some music to device storage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure&gt;
+    &lt;img src=&#34;https://blog.notmet.net/2020/05/switching-to-my-own-cloud/next.gif&#34;
+         alt=&#34;Judge Judy saying &amp;#39;next&amp;#39;, with a confused look on her face.&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://nextcloud.com/&#34;&gt;Nextcloud&lt;/a&gt; hosted on Dreamhost with Dreamobjects is the solution I chose.  This post will talk about how I settled on this, and how I made it work well.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Providing Cloud Services in the Air Force</title>
