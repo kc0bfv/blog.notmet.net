@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/education/</link>
+    <description>Recent content in Education on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Tue, 26 May 2020 10:13:45 -0600</lastBuildDate>
+    
+	<atom:link href="https://blog.notmet.net/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ten Dimensions of Cyber Threat</title>
+      <link>https://blog.notmet.net/2020/05/ten-dimensions-of-cyber-threat/</link>
+      <pubDate>Tue, 26 May 2020 10:13:45 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/05/ten-dimensions-of-cyber-threat/</guid>
+      <description>&lt;p&gt;Dr. Kamal Jabbour and Dr. Erich Devendorf &lt;a href=&#34;https://cyberdefensereview.army.mil/Portals/6/Documents/CDR%20Journal%20Articles/Cyber%20Threat%20Characterization_Jabbour_Devendorf.pdf?ver=2018-07-31-093724-720&#34;&gt;have characterized the cyber threat the DoD faces&lt;/a&gt;.  They describe threats as having these ten characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Highly educated on the science of information assurance&lt;/li&gt;
+&lt;li&gt;Doctrinally trained on the art of cyber warfare&lt;/li&gt;
+&lt;li&gt;Adequately resourced in talent, time, and treasure&lt;/li&gt;
+&lt;li&gt;Thoroughly briefed on target missions and systems&lt;/li&gt;
+&lt;li&gt;Mathematically specialized in architectural properties&lt;/li&gt;
+&lt;li&gt;Superiorly skilled in byzantine failure analysis&lt;/li&gt;
+&lt;li&gt;Intricately involved in protocol specification and analysis&lt;/li&gt;
+&lt;li&gt;Critically embedded in the supply chain&lt;/li&gt;
+&lt;li&gt;Strategically postured in command and control&lt;/li&gt;
+&lt;li&gt;Conveniently situated for access and persistence&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The paper uses these points to demonstrate how an adversary thinks about attacking our systems.  However, I see a lot of ways in which these should coerce the DoD to make serious changes in how we build and maintain our cyber professional workforce.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

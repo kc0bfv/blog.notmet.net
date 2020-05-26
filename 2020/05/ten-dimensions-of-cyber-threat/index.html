@@ -1,0 +1,257 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ten Dimensions of Cyber Threat &middot; Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Ten Dimensions of Cyber Threat" />
+<meta property="og:description" content="Dr. Kamal Jabbour and Dr. Erich Devendorf have characterized the cyber threat the DoD faces.  They describe threats as having these ten characteristics:
+
+Highly educated on the science of information assurance
+Doctrinally trained on the art of cyber warfare
+Adequately resourced in talent, time, and treasure
+Thoroughly briefed on target missions and systems
+Mathematically specialized in architectural properties
+Superiorly skilled in byzantine failure analysis
+Intricately involved in protocol specification and analysis
+Critically embedded in the supply chain
+Strategically postured in command and control
+Conveniently situated for access and persistence
+
+The paper uses these points to demonstrate how an adversary thinks about attacking our systems.  However, I see a lot of ways in which these should coerce the DoD to make serious changes in how we build and maintain our cyber professional workforce." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2020/05/ten-dimensions-of-cyber-threat/" />
+<meta property="article:published_time" content="2020-05-26T10:13:45-06:00" />
+<meta property="article:modified_time" content="2020-05-26T10:13:45-06:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ten Dimensions of Cyber Threat"/>
+<meta name="twitter:description" content="Dr. Kamal Jabbour and Dr. Erich Devendorf have characterized the cyber threat the DoD faces.  They describe threats as having these ten characteristics:
+
+Highly educated on the science of information assurance
+Doctrinally trained on the art of cyber warfare
+Adequately resourced in talent, time, and treasure
+Thoroughly briefed on target missions and systems
+Mathematically specialized in architectural properties
+Superiorly skilled in byzantine failure analysis
+Intricately involved in protocol specification and analysis
+Critically embedded in the supply chain
+Strategically postured in command and control
+Conveniently situated for access and persistence
+
+The paper uses these points to demonstrate how an adversary thinks about attacking our systems.  However, I see a lot of ways in which these should coerce the DoD to make serious changes in how we build and maintain our cyber professional workforce."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.71.1" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2020/05/ten-dimensions-of-cyber-threat/">Ten Dimensions of Cyber Threat</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2020-05-26">2020.05.26</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/cyber">cyber</a>, 
+        
+        <a href="https://blog.notmet.net/tags/cyber-threat">cyber threat</a>, 
+        
+        <a href="https://blog.notmet.net/tags/education">education</a>, 
+        
+        <a href="https://blog.notmet.net/tags/air-force">air force</a>
+        
+    
+
+</span>
+</footer>
+
+        <p>Dr. Kamal Jabbour and Dr. Erich Devendorf <a href="https://cyberdefensereview.army.mil/Portals/6/Documents/CDR%20Journal%20Articles/Cyber%20Threat%20Characterization_Jabbour_Devendorf.pdf?ver=2018-07-31-093724-720">have characterized the cyber threat the DoD faces</a>.  They describe threats as having these ten characteristics:</p>
+<ul>
+<li>Highly educated on the science of information assurance</li>
+<li>Doctrinally trained on the art of cyber warfare</li>
+<li>Adequately resourced in talent, time, and treasure</li>
+<li>Thoroughly briefed on target missions and systems</li>
+<li>Mathematically specialized in architectural properties</li>
+<li>Superiorly skilled in byzantine failure analysis</li>
+<li>Intricately involved in protocol specification and analysis</li>
+<li>Critically embedded in the supply chain</li>
+<li>Strategically postured in command and control</li>
+<li>Conveniently situated for access and persistence</li>
+</ul>
+<p>The paper uses these points to demonstrate how an adversary thinks about attacking our systems.  However, I see a lot of ways in which these should coerce the DoD to make serious changes in how we build and maintain our cyber professional workforce.</p>
+<h2 id="highly-educated-on-the-science-of-information-assurance">Highly educated on the science of information assurance</h2>
+<p>The DoD focuses on training cyber professionals.  One strength in the DoD, in other domains, is the ability to train an individual from no ability to effective ability (effective during warfare).  This works for things like driving a tank, tactical-warfare thinking, and flying an aircraft.  The status-quo is thinking that this will suffice in cyberspace.</p>
+<p>The problem is that our adversaries are highly-educated, instead of highly-trained.  Our adversaries have achieved at higher levels on Bloom&rsquo;s taxonomy than many of our cyber professionals.  Further, the DoD doesn&rsquo;t properly value education in the cyber domain, as evidenced by hiring and pay practices.</p>
+<p>The DoD cannot rely on training to match our adversaries.  The DoD cannot feasibly take new accessions and begin to educate them&hellip;  The US Government must focus on building its next generation of cyber professionals starting at an early age.  This does not need to look like a Big Brother program, and can be solved with good leadership of our nation&rsquo;s education programs.</p>
+<h2 id="doctrinally-trained-on-the-art-of-cyber-warfare">Doctrinally trained on the art of cyber warfare</h2>
+<p>The DoD builds doctrine in its military services&hellip;  Each service has a different set of doctrine.  Doctrine does not prescribe the actions of a service&rsquo;s members, but it does try to form the basis of our collective planning/thinking/decision making.  Doctrine provides a set of good behaviors, examples, and broad techniques upon which we can base other actions.  It can act as a cognitive shortcut for service members.</p>
+<p>There is no cyber service.  The doctrine we use in cyberspace is largely derived from or glommed-on to service doctrine.  This truly colors the decisions we make and the ways we justify them, because our cognitive shortcuts are based in the air, land, or sea (soon to include space) domains.  Ideally decisions would be made without shortcuts, but in practice that&rsquo;s impractical.</p>
+<h2 id="adequately-resourced-in-talent-time-and-treasure">Adequately resourced in talent, time, and treasure</h2>
+<p>We will always battle over resources.  In the DoD resources are allocated by Congress to specific programs, via the services.  This allows Congress to require services to spend money on specific things.  In general though, services choose how and what they will fight for.  There is no cyber service, so there&rsquo;s no group that&rsquo;s truly got their dog in this fight.  Services are still fighting admirably (if sometimes looking half-heartedly) for resources in cyberspace.</p>
+<h2 id="thoroughly-briefed-on-target-missions-and-systems">Thoroughly briefed on target missions and systems</h2>
+<p>The DoD has an outstanding professional intelligence arm - and I speak specifically of the members who prepare us for cyber conflict against other nations.  They are some of the strongest cyberspace professionals in my opinion.</p>
+<p>The DoD also gets <a href="https://www.reuters.com/article/us-usa-defense-hackers/exclusive-hackers-breached-u-s-defense-contractors-idUSTRE74Q6VY20110527">its lunch eaten</a> frequently <a href="https://www.washingtonpost.com/world/national-security/china-hacked-a-navy-contractor-and-secured-a-trove-of-highly-sensitive-data-on-submarine-warfare/2018/06/08/6cc396fa-68e6-11e8-bea7-c8eb28bc52b1_story.html">by the adversaries</a> targeting our <a href="https://breakingdefense.com/2019/07/china-cyber-attacks-on-afspc-contractors-stealing-us-blind/">cleared defense contractors</a>.</p>
+<h2 id="mathematically-specialized-in-architectural-properties">Mathematically specialized in architectural properties</h2>
+<h2 id="superiorly-skilled-in-byzantine-failure-analysis">Superiorly skilled in byzantine failure analysis</h2>
+<h2 id="intricately-involved-in-protocol-specification-and-analysis">Intricately involved in protocol specification and analysis</h2>
+<p>Each of these three describes areas in which US education should refocus its information assurance education.  These are not issues I have seen get significant focus.  They&rsquo;re tough - I&rsquo;d consider them PhD work, the analysis piece of the third is possibly masters-degree work.  In the same way we must drive education of programming, information assurance, and everything cyber to lower grades, the we must drive understanding of these issues lower too.  That may not be the direct job of the US government, but entities like the DoD can influence education and we must have a stronger hand in that.</p>
+<h2 id="final-three">Final Three</h2>
+<p>I really have little opinion about these final three, but will describe how they fit into the paper and provide some context.</p>
+<h3 id="critically-embedded-in-the-supply-chain">Critically embedded in the supply chain</h3>
+<p>Our adversaries manufacture many of our goods, especially computer hardware.  The US government does regularly consider strategically changing requirements for some supply chains - forcing them to operate more in the US.  I&rsquo;ve seen some of this happen firsthand, and know that we have a greater control over this than I generally see acknowledged by engineers, newspapers, and even academic writers.  I do not have enough domain knowledge or experience to say whether we&rsquo;re acting correctly in this area though.</p>
+<h3 id="strategically-postured-in-command-and-control">Strategically postured in command and control</h3>
+<p>The paper explains this command and control issue as a sort of supply chain for information - the adversary has control, or can seize control, of some of the physical and virtual assets we use to move information around for the purposes of our military&rsquo;s command and control.  The DoD has multiple redundant command and control paths setup.  Are they tested and sufficient?  I would not speculate here.</p>
+<h3 id="conveniently-situated-for-access-and-persistence">Conveniently situated for access and persistence</h3>
+<p>This point refers to adversaries being physically located convenient to where we choose to do battle.  That&rsquo;s so because we choose to do battle in places other than the US.</p>
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2020%2f05%2ften-dimensions-of-cyber-threat%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Ten%20Dimensions%20of%20Cyber%20Threat&amp;url=https%3a%2f%2fblog.notmet.net%2f2020%2f05%2ften-dimensions-of-cyber-threat%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2020%2f05%2ften-dimensions-of-cyber-threat%2f&title=Ten%20Dimensions%20of%20Cyber%20Threat" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+
+<li><a href="mailto:kc0bfv@notmet.net" class="icon-mail" title="Email" aria-label="Email"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+
