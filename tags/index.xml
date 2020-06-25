@@ -8,10 +8,28 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Tue, 26 May 2020 10:13:45 -0600</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 20:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>brisket</title>
+      <link>https://blog.notmet.net/tags/brisket/</link>
+      <pubDate>Sat, 20 Jun 2020 20:00:00 -0500</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/brisket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>salmon</title>
+      <link>https://blog.notmet.net/tags/salmon/</link>
+      <pubDate>Sat, 20 Jun 2020 20:00:00 -0500</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/salmon/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>air force</title>
@@ -140,15 +158,6 @@
     </item>
     
     <item>
-      <title>brisket</title>
-      <link>https://blog.notmet.net/tags/brisket/</link>
-      <pubDate>Mon, 23 Mar 2020 12:33:04 -0600</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/brisket/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Jerky</title>
       <link>https://blog.notmet.net/tags/jerky/</link>
       <pubDate>Mon, 23 Mar 2020 12:33:04 -0600</pubDate>
@@ -262,15 +271,6 @@
       <pubDate>Thu, 26 Dec 2019 15:22:42 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/turkey/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>salmon</title>
-      <link>https://blog.notmet.net/tags/salmon/</link>
-      <pubDate>Sun, 20 Oct 2019 00:29:57 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/salmon/</guid>
       <description></description>
     </item>
     

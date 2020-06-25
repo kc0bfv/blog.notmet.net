@@ -23,7 +23,7 @@ It&rsquo;s cautionary in two ways: it is intended to cause shell programmers cau
 One of the biggest threats to the shell in memory was the Shellshock vulnerability. This wasn&rsquo;t typically a direct threat to shell scripts, but one caused by a bug in a shell, and by other programs exposing parts of the shell to external input, often in unexpected and unlikely places."/>
 <meta name="twitter:site" content="@kc0bfv"/>
 
-        <meta name="generator" content="Hugo 0.71.1" />
+        <meta name="generator" content="Hugo 0.73.0" />
         
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
@@ -111,7 +111,7 @@ One of the biggest threats to the shell in memory was the Shellshock vulnerabili
 <p>These are all fine recommendations, but are made in terrible ways.</p>
 <h2 id="know-the-utilities-you-invoke">Know the Utilities You Invoke</h2>
 <p>The author provides an example where a user drops a malicious &ldquo;ls&rdquo; script in /tmp, then scripts execute it because they do not completely specify the path of ls.  The author&rsquo;s recommendation is to completely specify all paths.  The problems with this are two-fold&hellip;</p>
-<p>First, to execute a program in a directory that isn&rsquo;t in your path, you must specify the path of that program.  If it&rsquo;s your current directory, that&rsquo;s just a &ldquo;./&quot;, but it still must be present.  If you have &ldquo;.&rdquo; in your path, as the article suggests, then you have made a configuration error that can easily cause you unexpected behavior at best, and the precise security vulnerability mentioned in the article at worst.</p>
+<p>First, to execute a program in a directory that isn&rsquo;t in your path, you must specify the path of that program.  If it&rsquo;s your current directory, that&rsquo;s just a &ldquo;./&rdquo;, but it still must be present.  If you have &ldquo;.&rdquo; in your path, as the article suggests, then you have made a configuration error that can easily cause you unexpected behavior at best, and the precise security vulnerability mentioned in the article at worst.</p>
 <p>The correct remediation for this issue is to not put &ldquo;.&rdquo; in your path.</p>
 <p>The second problem with the article&rsquo;s recommendation is that many programs are not in a set location on the system, and some even move around over time (decades).  Many claim that the &ldquo;/bin&rdquo;, &ldquo;/usr/bin&rdquo;, &ldquo;/usr/local/bin&rdquo; system is set, sensible, and regular.  This is not the case in practice.  Usage varies between distros, and even between versions of distros.  A system update can move the location of a program in the worst case.  This isn&rsquo;t a problem if the new location is in your path, you&rsquo;ll still execute the right thing.  Unless you fully specified the old location in all your scripts.</p>
 <p>This isn&rsquo;t to say that you can&rsquo;t usually specify the full location.  And specifying the full path might provide a greater security guarantee.  However, the author&rsquo;s recommendation has some practical downsides, and anyway don&rsquo;t put &ldquo;.&rdquo; in your path!</p>

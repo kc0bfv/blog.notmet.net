@@ -11,14 +11,14 @@
 <meta property="og:description" content="Karl&#39;s blog of randomness and programming" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.notmet.net/post/" />
-<meta property="og:updated_time" content="2020-05-26T10:13:45-06:00" />
+<meta property="og:updated_time" content="2020-06-20T20:00:00-05:00" />
 
         <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content="Karl&#39;s blog of randomness and programming"/>
 <meta name="twitter:site" content="@kc0bfv"/>
 
-        <meta name="generator" content="Hugo 0.71.1" />
+        <meta name="generator" content="Hugo 0.73.0" />
         
         <link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Karl&#39;s Blog" />
         <link href="/post/index.xml" rel="feed" type="application/rss+xml" title="Karl&#39;s Blog" />
@@ -80,6 +80,31 @@
 
     <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
     
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2013/02/unix-awesomeness/">Unix Text Editing Awesomeness</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2013-02-04">2013.02.04</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/programming">programming</a>, 
+        
+        <a href="https://blog.notmet.net/tags/latex">latex</a>, 
+        
+        <a href="https://blog.notmet.net/tags/bash">bash</a>
+        
+    
+
+</span>
+</footer>
+
+    <p>Oh, LaTeX acronym package, you won&rsquo;t automatically alphabetize my list of acronyms? Strange&hellip; Let&rsquo;s see if Unix will&hellip;
+$ echo &quot;\acro{SCADA}{Supervisory Control And Data Acquisition} \acro{PLC}{Programmable Logic Controller} \acro{RTU}{Remote Terminal Unit} ...&quot; &gt; toSort $ for i in `cat toSort |sed &quot;s/.*\\acro{\(.*\)}.*{.*}/\1/&quot; | sort`; do grep &quot;{$i}&quot; toSort; done \acro{ADC}{analog to digital converter} \acro{API}{application programming interface} \acro{APT}{Advanced Persistent Threat} \acro{ASCII}{American Standard Code for Information Interchange} ... Unix, you rock my world.&hellip;</p>
+    <a href="https://blog.notmet.net/2013/02/unix-awesomeness/" title="Unix Text Editing Awesomeness">Read more &raquo;</a>
+</article>
+
     
         <article class="post">
     
@@ -240,29 +265,6 @@ Men should know how to stop a toilet that&rsquo;s overflowing, and we should kno
 </article>
 
     
-        <article class="post">
-    
-<h1><a href="https://blog.notmet.net/2012/10/pythons-super/">Python&#39;s super()</a></h1>
-
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2012-10-05">2012.10.05</time>
-
-    &middot; Tagged in
-        
-        <a href="https://blog.notmet.net/tags/programming">programming</a>, 
-        
-        <a href="https://blog.notmet.net/tags/python">python</a>
-        
-    
-
-</span>
-</footer>
-
-    <p>I&rsquo;ve been writing a lot of Python lately, and there are some things I love about it, some things I&rsquo;m uncomfortable with, but nothing I hate. The super() builtin function makes life a lot easier when you&rsquo;re using Python for object oriented code and have some inheritance going on. This blog post describes the best way I&rsquo;ve seen it used so far.
-First of all, in Python3 you no longer need to write &ldquo;super(CurrentClass, self).&hellip;</p>
-    <a href="https://blog.notmet.net/2012/10/pythons-super/" title="Python&#39;s super()">Read more &raquo;</a>
-</article>
-
-    
     <div class="pagination">
 <nav>
 
@@ -270,7 +272,7 @@ First of all, in Python3 you no longer need to write &ldquo;super(CurrentClass, 
 	<a class="btn newer" href="/post/page/9/" title="Newer">&laquo; Newer</a>
 	
 
-	<p class="counter">Page 10 of 13</p>
+	<p class="counter">Page 10 of 14</p>
 
 
 	
