@@ -52,6 +52,7 @@ googleAnalytics = "UA-42117518-3"
 [social]
     twitter = "kc0bfv"
     github = "kc0bfv"
+    mastodon = "https://qoto.org/@finity"
 
 [permalinks]
     post = "/:year/:month/:slug/"
