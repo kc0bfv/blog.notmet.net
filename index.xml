@@ -8,10 +8,50 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sat, 25 Jan 2020 17:00:46 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 17:00:46 -0700</lastBuildDate><atom:link href="https://blog.notmet.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Roku Channel</title>
+      <link>https://blog.notmet.net/2020/11/creating-a-roku-channel/</link>
+      <pubDate>Sun, 15 Nov 2020 15:00:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/11/creating-a-roku-channel/</guid>
+      <description>I&amp;rsquo;ve been a Roku user for years. They were one of the original streaming boxes you could plug into your TV. Before I became one I debated over Mac Mini vs dedicated device&amp;hellip; As a programmer - I love the ability to have complete (-ish) control over a device that&amp;rsquo;s outputting to a device so central to the home as a TV. As a person who pays an energy bill - I love something that sips less electricity in-general, like a more-dedicated device.</description>
+    </item>
     
-	<atom:link href="https://blog.notmet.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pulled Pork and Salmon and Mmmm</title>
+      <link>https://blog.notmet.net/2020/09/pulled-pork-and-salmon-and-mmmm/</link>
+      <pubDate>Sat, 19 Sep 2020 20:48:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/09/pulled-pork-and-salmon-and-mmmm/</guid>
+      <description>14lbs pork butt at $1.89 per pound from Costco. 5.9 lbs salmon from Costco at $6.99 per pound.
+  Ready for the rub!
+  2025: started the smoker, with apple chips this time, at 225℉.
+2050: salted and Memphis dusted the pork, 1.5 cups dust, .5 tsp salt per pound (2 1/3 Tbsp).
+  Rubbed and ready
+  2110: it&amp;rsquo;s on the smoker! Marked probe on bottom.</description>
+    </item>
     
+    <item>
+      <title>Sourdough Experiment with More Whole Wheat</title>
+      <link>https://blog.notmet.net/2020/07/sourdough-experiment-with-more-whole-wheat/</link>
+      <pubDate>Sat, 25 Jul 2020 15:00:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/07/sourdough-experiment-with-more-whole-wheat/</guid>
+      <description>I don&amp;rsquo;t make sourdough posts every time I make sourdough, anymore. It&amp;rsquo;s a routine now.
+But this morning I&amp;rsquo;m going to try a little experiment. I have preferment for two loaves, and I&amp;rsquo;m going to add different amounts of whole wheat flour to them in the next stage. Normally I add no whole wheat flour, but I would like the loaves to rise a little more than usual, without waiting more time, and whole wheat flour jazzes the little guys up, so I think this might work.</description>
+    </item>
+    
+    <item>
+      <title>Grilling a Whole Chicken Texas</title>
+      <link>https://blog.notmet.net/2020/06/grilling-a-whole-chicken-texas/</link>
+      <pubDate>Sat, 27 Jun 2020 15:30:18 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/06/grilling-a-whole-chicken-texas/</guid>
+      <description>Time to grill a chicken! We&amp;rsquo;re using mojo sauce from HEB - it&amp;rsquo;s oil, Mediterranean flavors, a bit of citrus and spice. I got a &amp;ldquo;roaster&amp;rdquo;-sized chicken, and want the temperature to hit 165℉.
+1930: butterflied chicken is on the cool side of a two zone grill, skin up and legs toward the hot. Burner is on half, initial grill temperature says 350℉.
+1955: chicken hadn&amp;rsquo;t hit 100℉ yet, and the grill was still at 350℉ so I turned it up to about 3/4.</description>
+    </item>
     
     <item>
       <title>Brisket and Salmon in Texas</title>
@@ -788,7 +828,7 @@ Actually, I&amp;rsquo;ve been excited for the last two weeks to do another brisk
       <guid>https://blog.notmet.net/2018/02/pork-butt-baby-shower/</guid>
       <description>Alright! Time to BBQ for some other people. We&amp;rsquo;re throwing a baby shower for some friends of ours, and one of the I&amp;rsquo;m going to bust out the pork butt recipe I used last time, and do it the same.
 I got a 15 lbs butt from Costco again - it looks beautiful. There&amp;rsquo;s a bunch of dry rub from last time leftover in the cabinet.
-24 Feb 2018, 1420: Began trimming the pork (took out chunks, left layers of fat about 1/8&amp;rdquo; thick - leaving a little more fat than last time), and then salting it.</description>
+24 Feb 2018, 1420: Began trimming the pork (took out chunks, left layers of fat about 1/8&amp;quot; thick - leaving a little more fat than last time), and then salting it.</description>
     </item>
     
     <item>
@@ -1405,7 +1445,7 @@ Also see Public Enemy and Little Caesar.</description>
       <pubDate>Sun, 22 Feb 2009 23:20:00 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/2009/02/chiltepin-batch-1-day-1/</guid>
-      <description>I planted 10 of my Chiltepin seeds today. At Lowes, I picked up some seedling mix, a 11.5&amp;rdquo; clay dish and a 10&amp;rdquo; plastic dish insert.
+      <description>I planted 10 of my Chiltepin seeds today. At Lowes, I picked up some seedling mix, a 11.5&amp;quot; clay dish and a 10&amp;quot; plastic dish insert.
 These are chili peppers that are used to dry climates, and several websites I&amp;rsquo;ve seen suggest the seeds should not be watered too much. To avoid problems with overwatering, I poked holes in the bottom of the plastic dish, filled the clay dish with sand, then put the plastic dish containing the soil on top.</description>
     </item>
     
@@ -1426,8 +1466,8 @@ Bend to throw, heads bump!</description>
       <pubDate>Sat, 26 Jan 2008 18:17:00 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/2008/01/public-service-announcement/</guid>
-      <description>PSA: Don&amp;rsquo;t follow Starbucks&amp;rsquo; directions for making coffee if you like it black.
-Backstory: I usually make four cups of coffee whenever I need some. I&amp;rsquo;m feeling particularly lazy (it&amp;rsquo;s a Saturday and I got excused from going into the office to get shot at) and I&amp;rsquo;d like to get some exercise, so I put a pot on. That&amp;rsquo;s four cups based on the coffee pot markings. Starbucks&amp;rsquo; directions say use 2 Tbsp (10 grams) per 6 fl oz.</description>
+      <description>PSA: Don&amp;rsquo;t follow Starbucks&#39; directions for making coffee if you like it black.
+Backstory: I usually make four cups of coffee whenever I need some. I&amp;rsquo;m feeling particularly lazy (it&amp;rsquo;s a Saturday and I got excused from going into the office to get shot at) and I&amp;rsquo;d like to get some exercise, so I put a pot on. That&amp;rsquo;s four cups based on the coffee pot markings. Starbucks&#39; directions say use 2 Tbsp (10 grams) per 6 fl oz.</description>
     </item>
     
     <item>

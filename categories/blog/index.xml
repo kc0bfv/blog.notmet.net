@@ -8,10 +8,15 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Tue, 26 May 2020 10:13:45 -0600</lastBuildDate>
-    
-	<atom:link href="https://blog.notmet.net/categories/blog/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 15 Nov 2020 15:00:00 -0600</lastBuildDate><atom:link href="https://blog.notmet.net/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Roku Channel</title>
+      <link>https://blog.notmet.net/2020/11/creating-a-roku-channel/</link>
+      <pubDate>Sun, 15 Nov 2020 15:00:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/11/creating-a-roku-channel/</guid>
+      <description>I&amp;rsquo;ve been a Roku user for years. They were one of the original streaming boxes you could plug into your TV. Before I became one I debated over Mac Mini vs dedicated device&amp;hellip; As a programmer - I love the ability to have complete (-ish) control over a device that&amp;rsquo;s outputting to a device so central to the home as a TV. As a person who pays an energy bill - I love something that sips less electricity in-general, like a more-dedicated device.</description>
+    </item>
     
     <item>
       <title>Ten Dimensions of Cyber Threat</title>
@@ -1011,7 +1016,7 @@ Also see Public Enemy and Little Caesar.</description>
       <pubDate>Sun, 22 Feb 2009 23:20:00 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/2009/02/chiltepin-batch-1-day-1/</guid>
-      <description>I planted 10 of my Chiltepin seeds today. At Lowes, I picked up some seedling mix, a 11.5&amp;rdquo; clay dish and a 10&amp;rdquo; plastic dish insert.
+      <description>I planted 10 of my Chiltepin seeds today. At Lowes, I picked up some seedling mix, a 11.5&amp;quot; clay dish and a 10&amp;quot; plastic dish insert.
 These are chili peppers that are used to dry climates, and several websites I&amp;rsquo;ve seen suggest the seeds should not be watered too much. To avoid problems with overwatering, I poked holes in the bottom of the plastic dish, filled the clay dish with sand, then put the plastic dish containing the soil on top.</description>
     </item>
     
@@ -1032,8 +1037,8 @@ Bend to throw, heads bump!</description>
       <pubDate>Sat, 26 Jan 2008 18:17:00 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/2008/01/public-service-announcement/</guid>
-      <description>PSA: Don&amp;rsquo;t follow Starbucks&amp;rsquo; directions for making coffee if you like it black.
-Backstory: I usually make four cups of coffee whenever I need some. I&amp;rsquo;m feeling particularly lazy (it&amp;rsquo;s a Saturday and I got excused from going into the office to get shot at) and I&amp;rsquo;d like to get some exercise, so I put a pot on. That&amp;rsquo;s four cups based on the coffee pot markings. Starbucks&amp;rsquo; directions say use 2 Tbsp (10 grams) per 6 fl oz.</description>
+      <description>PSA: Don&amp;rsquo;t follow Starbucks&#39; directions for making coffee if you like it black.
+Backstory: I usually make four cups of coffee whenever I need some. I&amp;rsquo;m feeling particularly lazy (it&amp;rsquo;s a Saturday and I got excused from going into the office to get shot at) and I&amp;rsquo;d like to get some exercise, so I put a pot on. That&amp;rsquo;s four cups based on the coffee pot markings. Starbucks&#39; directions say use 2 Tbsp (10 grams) per 6 fl oz.</description>
     </item>
     
     <item>

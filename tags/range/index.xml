@@ -8,11 +8,7 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Fri, 03 Jan 2020 19:49:55 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.notmet.net/tags/range/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 03 Jan 2020 19:49:55 +0000</lastBuildDate><atom:link href="https://blog.notmet.net/tags/range/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Providing Cloud Services in the Air Force</title>
       <link>https://blog.notmet.net/2020/01/providing-cloud-services-in-the-air-force/</link>

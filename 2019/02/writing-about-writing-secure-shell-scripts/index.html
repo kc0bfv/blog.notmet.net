@@ -23,7 +23,7 @@ It&rsquo;s cautionary in two ways: it is intended to cause shell programmers cau
 One of the biggest threats to the shell in memory was the Shellshock vulnerability. This wasn&rsquo;t typically a direct threat to shell scripts, but one caused by a bug in a shell, and by other programs exposing parts of the shell to external input, often in unexpected and unlikely places."/>
 <meta name="twitter:site" content="@kc0bfv"/>
 
-        <meta name="generator" content="Hugo 0.73.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
@@ -126,7 +126,7 @@ One of the biggest threats to the shell in memory was the Shellshock vulnerabili
 <p>Using SSH-Agent is probably an even better solution: <a href="https://www.akadia.com/services/ssh_agent.html">https://www.akadia.com/services/ssh_agent.html</a></p>
 <p>What if it&rsquo;s not SSH that you&rsquo;re sending a password to, what if it&rsquo;s sudo?  I think we&rsquo;ve all wanted to do this at some point, I confess that I have.</p>
 <p>Don&rsquo;t do it though!</p>
-<p>Change your sudo configuration so that for the specific command you need a specific user to run, it doesn&rsquo;t require a password!  Then lock access to that user down some.  Even in this case, you&rsquo;re probably causing problems you don&rsquo;t expect.  Imagine if the target executable has a vulnerability…  Now you&rsquo;re opening the aperture for privilege escalation. A better solution is to change permissions to allow specific users access to the specific resources required, then reduce others&rsquo; access to those user accounts.</p>
+<p>Change your sudo configuration so that for the specific command you need a specific user to run, it doesn&rsquo;t require a password!  Then lock access to that user down some.  Even in this case, you&rsquo;re probably causing problems you don&rsquo;t expect.  Imagine if the target executable has a vulnerability…  Now you&rsquo;re opening the aperture for privilege escalation. A better solution is to change permissions to allow specific users access to the specific resources required, then reduce others' access to those user accounts.</p>
 <p>What if you need to script password sending to telnet or ftp?  I don&rsquo;t have great solutions at hand for you.  At some point you may need to put passwords and usernames in files, then limit access to those files, and have your script grab the file contents.</p>
 <h2 id="beware-of-invoking-anything-the-user-inputs">Beware of Invoking Anything the User Inputs</h2>
 <p>The author suggests that a specific setup and command line can cause, &ldquo;quite dire consequences.&rdquo; Try this command for yourself though, after changing the &ldquo;rm&rdquo; command to something benign like a version of &ldquo;ls&rdquo;.</p>

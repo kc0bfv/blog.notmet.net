@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BrightScript on Karl&#39;s Blog</title>
+    <link>https://blog.notmet.net/tags/brightscript/</link>
+    <description>Recent content in BrightScript on Karl&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
+    <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
+    <lastBuildDate>Sun, 15 Nov 2020 15:00:00 -0600</lastBuildDate><atom:link href="https://blog.notmet.net/tags/brightscript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Roku Channel</title>
+      <link>https://blog.notmet.net/2020/11/creating-a-roku-channel/</link>
+      <pubDate>Sun, 15 Nov 2020 15:00:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2020/11/creating-a-roku-channel/</guid>
+      <description>I&amp;rsquo;ve been a Roku user for years. They were one of the original streaming boxes you could plug into your TV. Before I became one I debated over Mac Mini vs dedicated device&amp;hellip; As a programmer - I love the ability to have complete (-ish) control over a device that&amp;rsquo;s outputting to a device so central to the home as a TV. As a person who pays an energy bill - I love something that sips less electricity in-general, like a more-dedicated device.</description>
+    </item>
+    
+  </channel>
+</rss>

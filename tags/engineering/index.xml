@@ -8,11 +8,7 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sat, 20 Aug 2016 00:14:23 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.notmet.net/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 20 Aug 2016 00:14:23 +0000</lastBuildDate><atom:link href="https://blog.notmet.net/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RasPi Flow Meter In A Pinch - Part 2</title>
       <link>https://blog.notmet.net/2016/08/raspi-flow-meter-in-a-pinch-part-2/</link>

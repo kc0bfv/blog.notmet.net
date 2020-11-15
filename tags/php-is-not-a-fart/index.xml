@@ -8,11 +8,7 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Tue, 10 Jul 2012 20:44:18 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.notmet.net/tags/php-is-not-a-fart/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 10 Jul 2012 20:44:18 +0000</lastBuildDate><atom:link href="https://blog.notmet.net/tags/php-is-not-a-fart/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PHP: The Right Way</title>
       <link>https://blog.notmet.net/2012/07/php-the-right-way/</link>

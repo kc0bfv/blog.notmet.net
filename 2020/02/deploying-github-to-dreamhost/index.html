@@ -23,7 +23,7 @@ I wanted that back - a posting solution from my cellphone.
 The reason I lost that ability is because the simplest update process for Hugo is:"/>
 <meta name="twitter:site" content="@kc0bfv"/>
 
-        <meta name="generator" content="Hugo 0.73.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
@@ -140,27 +140,27 @@ The reason I lost that ability is because the simplest update process for Hugo i
 </ol>
 <p>So - steps 1 and 2 are built-in to GitHub.  I created a repo on GitHub, then updated the repo on my computer to point to it, and pushed everything onto GitHub.  This is a publicly-available blog, so the source is public too.  It&rsquo;s pretty easy to create a new file in a spot within a repo, but saving it generates a new commit.  I&rsquo;ll probably generally edit in email then paste in so I only make one commit.</p>
 <h1 id="setting-up-travis-ci-to-build">Setting Up Travis CI to Build</h1>
-<p>Step 3 I&rsquo;ve already had success with previously.  To set this up, first add Travis CI to your GitHub account.  Create a branch named <code>gh-pages</code> (make it empty, preferrably, but this is not necessary).  Create a &ldquo;Personal Access Token&rdquo; on GitHub (Profile Settings-&gt;Developer Settings-&gt;Personal Access Token).  Save that token code as <code>GITHUB_TOKEN</code> under the repo&rsquo;s settings&rsquo; Environment Variables section on Travis CI (go to Travis CI&rsquo;s webpage, login, select your repo on the left, select the hamburger menu on right, then settings).  Then, create and commit this file into your repo:</p>
+<p>Step 3 I&rsquo;ve already had success with previously.  To set this up, first add Travis CI to your GitHub account.  Create a branch named <code>gh-pages</code> (make it empty, preferrably, but this is not necessary).  Create a &ldquo;Personal Access Token&rdquo; on GitHub (Profile Settings-&gt;Developer Settings-&gt;Personal Access Token).  Save that token code as <code>GITHUB_TOKEN</code> under the repo&rsquo;s settings' Environment Variables section on Travis CI (go to Travis CI&rsquo;s webpage, login, select your repo on the left, select the hamburger menu on right, then settings).  Then, create and commit this file into your repo:</p>
 <p><code>.travis.yml</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">language</span>: generic
-<span style="color:#66d9ef">install</span>:
-  - sudo snap install hugo
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">language</span>: <span style="color:#ae81ff">generic</span>
+<span style="color:#f92672">install</span>:
+  - <span style="color:#ae81ff">sudo snap install hugo</span>
 
-<span style="color:#66d9ef">script</span>:
-  - hugo
+<span style="color:#f92672">script</span>:
+  - <span style="color:#ae81ff">hugo</span>
 
-<span style="color:#66d9ef">deploy</span>:
-  <span style="color:#66d9ef">provider</span>: pages
-  <span style="color:#66d9ef">skip_cleanup</span>: <span style="color:#66d9ef">true</span>
-  <span style="color:#66d9ef">github_token</span>: $GITHUB_TOKEN
-  <span style="color:#66d9ef">keep_history</span>: <span style="color:#66d9ef">true</span>
-  <span style="color:#66d9ef">local_dir</span>: public
-  <span style="color:#66d9ef">on</span>:
-    <span style="color:#66d9ef">branch</span>: master
+<span style="color:#f92672">deploy</span>:
+  <span style="color:#f92672">provider</span>: <span style="color:#ae81ff">pages</span>
+  <span style="color:#f92672">skip_cleanup</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#f92672">github_token</span>: <span style="color:#ae81ff">$GITHUB_TOKEN</span>
+  <span style="color:#f92672">keep_history</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#f92672">local_dir</span>: <span style="color:#ae81ff">public</span>
+  <span style="color:#f92672">on</span>:
+    <span style="color:#f92672">branch</span>: <span style="color:#ae81ff">master</span>
 </code></pre></div><p>That&rsquo;ll build your site and deploy it into the &ldquo;gh-pages&rdquo; branch (the one typically for GitHub Pages, but don&rsquo;t set that up and GitHub will ignore it).</p>
 <h1 id="signalling-dreamhost-and-git-pulling">Signalling Dreamhost and Git-Pulling</h1>
 <p>Steps 4 and 5 were the slightly trickier part.  The best thing I came up with was a PHP file located on the server in a spot that wouldn&rsquo;t get overwritten by site updates&hellip;  I have a separate domain on there that I used.  The PHP file looks like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
   $trigger_code <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;PUT SOMETHING NOBODY WILL GUESS HERE&#34;</span>;
   <span style="color:#66d9ef">if</span>( $_POST[<span style="color:#e6db74">&#34;code&#34;</span>] <span style="color:#f92672">==</span> $trigger_code ) {
     <span style="color:#a6e22e">shell_exec</span>(<span style="color:#e6db74">&#34;/PULL/SCRIPT/PATH/pull_script.sh&#34;</span>);
@@ -168,8 +168,8 @@ The reason I lost that ability is because the simplest update process for Hugo i
   } <span style="color:#66d9ef">else</span> {
     <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;!triggered&#34;</span>;
   }
-<span style="color:#75715e">?&gt;</span>
-</code></pre></div><p>Basically - when someone does a POST request to this script&rsquo;s URL, and they include <code>code=YOUR TRIGGER CODE</code> as POST data, this script will run <code>pull_script.sh</code>.  Pull script looks like:</p>
+<span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>Basically - when someone does a POST request to this script&rsquo;s URL, and they include <code>code=YOUR TRIGGER CODE</code> as POST data, this script will run <code>pull_script.sh</code>.  Pull script looks like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
 </span><span style="color:#75715e"></span>EXECUTION_OUTPUT<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>echo <span style="color:#e6db74">&#34;DEPLOYING SITE 1&#34;</span> <span style="color:#f92672">&amp;&amp;</span> cd ~/SITE_DIRECTORY_1 <span style="color:#f92672">&amp;&amp;</span> git pull<span style="color:#e6db74">`</span>
 EXECUTION_OUTPUT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$EXECUTION_OUTPUT<span style="color:#e6db74">\n\n\n</span><span style="color:#66d9ef">$(</span>echo DEPLOYING SITE <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span> cd ~/SITE_DIRECTORY_2 &amp; git pull<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
@@ -187,8 +187,8 @@ echo -e <span style="color:#e6db74">&#34;</span>$EXECUTION_OUTPUT<span style="co
 <li><code>PULL_ENDPOINT</code> - make this the URL to your PHP script</li>
 </ul>
 <p>Now update your <code>.travis.yml</code> file to have a blank line followed by this at the very bottom:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">after_deploy</span>:
-  - curl -d <span style="color:#e6db74">&#34;code=$PULL_CODE&#34;</span> $PULL_ENDPOINT
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">after_deploy</span>:
+  - <span style="color:#ae81ff">curl -d &#34;code=$PULL_CODE&#34; $PULL_ENDPOINT</span>
 </code></pre></div><p>Travis CI images have curl installed by default.</p>
 <p>Pushing this updated file to your GitHub repo should cause a site build.  Then the <code>after_deploy</code> curl trigger to Dreamhost.  Then Dreamhost should <code>git pull</code> the build.  Then it should email you the output from the pull&hellip;  Then you should see your website!</p>
 <p>Only gotta set this up once, fortunately.  I think it&rsquo;s pretty slick.</p>

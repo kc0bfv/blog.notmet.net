@@ -8,11 +8,7 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sat, 16 May 2020 14:21:18 -0600</lastBuildDate>
-    
-	<atom:link href="https://blog.notmet.net/tags/nextcloud/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 16 May 2020 14:21:18 -0600</lastBuildDate><atom:link href="https://blog.notmet.net/tags/nextcloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Switching to My Own Cloud</title>
       <link>https://blog.notmet.net/2020/05/switching-to-my-own-cloud/</link>

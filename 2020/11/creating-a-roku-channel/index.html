@@ -1,0 +1,338 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Creating a Roku Channel &middot; Karl&#39;s Blog</title>
+        <meta name="author" content="Karl Sickendick">
+        <meta name="description" content="Karl&#39;s blog of randomness and programming">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Creating a Roku Channel" />
+<meta property="og:description" content="I&rsquo;ve been a Roku user for years. They were one of the original streaming boxes you could plug into your TV. Before I became one I debated over Mac Mini vs dedicated device&hellip; As a programmer - I love the ability to have complete (-ish) control over a device that&rsquo;s outputting to a device so central to the home as a TV. As a person who pays an energy bill - I love something that sips less electricity in-general, like a more-dedicated device." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.notmet.net/2020/11/creating-a-roku-channel/" />
+<meta property="article:published_time" content="2020-11-15T15:00:00-06:00" />
+<meta property="article:modified_time" content="2020-11-15T15:00:00-06:00" />
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Creating a Roku Channel"/>
+<meta name="twitter:description" content="I&rsquo;ve been a Roku user for years. They were one of the original streaming boxes you could plug into your TV. Before I became one I debated over Mac Mini vs dedicated device&hellip; As a programmer - I love the ability to have complete (-ish) control over a device that&rsquo;s outputting to a device so central to the home as a TV. As a person who pays an energy bill - I love something that sips less electricity in-general, like a more-dedicated device."/>
+<meta name="twitter:site" content="@kc0bfv"/>
+
+        <meta name="generator" content="Hugo 0.78.2" />
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://blog.notmet.net/css/styles.css">
+        <link rel="icon" href="https://blog.notmet.net/favicon.ico">
+        <link rel="stylesheet" href="https://blog.notmet.net/css/highlightjs/monokai.css">
+        <script src="https://blog.notmet.net/js/vendor/modernizr-2.8.0.min.js"></script>
+        
+
+        <script>
+            
+            function randomHeaderImg() {
+                let images = ["https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171008_114417.jpg","https://blog.notmet.net/wp-content/uploads/2017/12/20161104_125204.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/blog.jpg","https://blog.notmet.net/wp-content/uploads/2012/07/cropped-arequipadoorheader.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/austinWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/bridge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/candles.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coloredWindows.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/coolStepsBro.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cuzcoNight.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/flowerClose.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/guinneaPigMeal.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/ivyWall.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/montereyTree.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/motorcycle.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/mushroom.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/cropped-peruFruit.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccu.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/piccuEdge.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/seaweed.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/smallFalls.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/terraceFarming.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeHouse.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/treeShadow.jpg","https://blog.notmet.net/wp-content/uploads/2012/10/waterBridge.jpg"];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            
+        </script>
+        
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url(https://blog.notmet.net/wp-content/uploads/2017/12/IMG_20171012_150021.jpg);
+                }
+            </style>
+        </noscript>
+        
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          
+          </div>
+        </header>
+        <div class="container clearfix">
+            <nav class="nav" id="navtop">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+
+            <main class="content">
+
+    <article class="post">
+        <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
+        
+<h1><a href="https://blog.notmet.net/2020/11/creating-a-roku-channel/">Creating a Roku Channel</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2020-11-15">2020.11.15</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/programming">programming</a>, 
+        
+        <a href="https://blog.notmet.net/tags/brightscript">brightscript</a>, 
+        
+        <a href="https://blog.notmet.net/tags/roku">roku</a>
+        
+    
+
+</span>
+</footer>
+
+        <p>I&rsquo;ve been a Roku user for years.  They were one of the original streaming boxes you could plug into your TV.  Before I became one I debated over Mac Mini vs dedicated device&hellip;  As a programmer - I love the ability to have complete (-ish) control over a device that&rsquo;s outputting to a device so central to the home as a TV.  As a person who pays an energy bill - I love something that sips less electricity in-general, like a more-dedicated device.  Plus, the interface of the dedicated device is simpler than that for a Mac Mini.</p>
+<p>I settled for Roku.</p>
+<p>In all this time, I&rsquo;ve never tried to build a Roku channel.  I&rsquo;ve only had a few use cases, and none were strong enough to pull me away from other projects taking my time.</p>
+<p>Until recently.</p>
+<h1 id="the-problem">The Problem</h1>
+<p>Now I&rsquo;ve got a baby.  And she doesn&rsquo;t want to be interrupted by YouTube ads while watching Baby Einstein.  My wife doesn&rsquo;t want to have to pop in a DVD every time.  And I don&rsquo;t want to setup some always-on local media server.  (We don&rsquo;t watch Baby Einstein very much - but the girl loves it, so one episode is part of her morning routine, and it&rsquo;s a way to keep her distracted when the 12 hour car ride starts to get unbearable.)</p>
+<p>I put some Baby Einstein on a Fire tablet so we could take it on the road.  While preparing to download it to the tablet, I realized I could just drop them on my web host (locked down to our IP address), and then figure out how to stream them to the Roku!</p>
+<p>I don&rsquo;t know of many good ways to stream personal video to the Roku - the best is typically to setup a local media server and use a pre-built channel.  It seemed like I should be able to setup a Roku channel to stream to my Roku.</p>
+<p>I was going to build a personal Roku channel.</p>
+<h1 id="the-challenge">The Challenge</h1>
+<blockquote>
+<p>Goal: build a Roku channel that streams specific videos from my website.</p>
+</blockquote>
+<p>I settled on the third method I tried for building the channel.  I&rsquo;ll briefly explain each, and the problems that caused me to skip them.</p>
+<ol>
+<li>
+<p><a href="https://developer.roku.com/docs/direct-publisher/getting-started.md">Roku Direct Publisher</a> - this method takes a JSON or MRSS feed you provide, some theme data, and builds you a channel quickly and easily.  This method has fantastic features, for something so easy to use.  Unfortunately it is a little broken.  The documentation for the JSON feed format specified some optional parts and mandatory, and other mandatory parts as optional/unspecified.  There are examples to work from, and the validation tool provides a little feedback which is generally helpful.  There are some bugs with this right now - I couldn&rsquo;t get my feed to show any videos despite ingesting correctly, and I&rsquo;m not sure if that&rsquo;s due to the bugs or due to me doing something wrong.</p>
+</li>
+<li>
+<p>InstantTVChannel - I&rsquo;m not going to link to these guys because they don&rsquo;t really deserve it.  This is a service that will build a Direct Publisher or &ldquo;SDK&rdquo; channel for Roku.  It&rsquo;s reasonably easy to use for either, but this service pissed me off a bit.  There&rsquo;s a free level - which for me is perfect as I really don&rsquo;t need them to host anything for me, just to produce the channel app.  Unfortunately the free level is limited to 10 videos per channel, which is silly.  I thought I&rsquo;d use the direct publisher feed to help debug my work with the direct publisher - these guys have the feed locked down to only be accessible from Roku&rsquo;s servers, though, requiring a username and password to access the feed.  That level of unfriendliness completely turned me off from them.  I&rsquo;m sure they don&rsquo;t care - I wasn&rsquo;t going to pay $5 per month for the privilege of hosting all my own content other than a bit of XML or JSON.</p>
+</li>
+<li>
+<p><a href="https://developer.roku.com/docs/developer-program/getting-started/roku-dev-prog.md">Custom &ldquo;SDK&rdquo; Channel</a> - this method requires writing or modifying BrightScript, building out the program that is the channel, packaging it, and then deploying it.  This sounds the most complicated, but it was actually fairly simple because Roku provided some excellent examples to start with.</p>
+</li>
+</ol>
+<h1 id="solution">Solution</h1>
+<p>After some searching I found this excellent example: <a href="https://github.com/rokudev/samples/blob/master/ux%20components/lists%20and%20grids/VideoList.zip">VideoList.zip</a>.  That&rsquo;s from Roku&rsquo;s <a href="https://github.com/rokudev/samples">samples repo</a>, and just unzipping it reveals all the source code.</p>
+
+<figure>
+    <img src="/2020/11/creating-a-roku-channel/video_list.jpg"
+         alt="A list of videos to play, with a video preview shown - source https://sdkdocs-archive.roku.com/attachments/4262787/4262824.jpg"/> <figcaption>
+            <p>This is what the example channel looks like, by default</p>
+        </figcaption>
+</figure>
+
+<p>I&rsquo;ve taken that example and made some changes to suit me, and make your job easier.  <a href="https://github.com/kc0bfv/sickendick_home_channel_roku_app/tree/clean">It&rsquo;s here</a>.</p>
+<blockquote>
+<p>Dev Tools Required: Roku device, web browser, text editor, image editor</p>
+</blockquote>
+<p>Yeah - this ain&rsquo;t rocket surgery.  Thankfully.</p>
+<p>I&rsquo;ll walk through the files in there that need changes.</p>
+<h2 id="manifest"><code>manifest</code></h2>
+<p>This file sets the main properties of the channel so Roku can display and use it properly.  Change things as required.  <code>title</code> and <code>subtitle</code> are self-explanatory.</p>
+<p><code>major</code>, <code>minor</code>, and <code>build</code> <code>_version</code>s help Roku devices determine when they need to update the channel.  Starting with <code>1</code> <code>0</code> <code>0000</code> is fine, and I had no problem leaving it as that throughout the development process.  Once I deploy my channel, I will increment at least one of these versions so my Rokus will know to update.  There&rsquo;s a separate version that you specify in the Roku developer deployment interface - it doesn&rsquo;t seem to have to tie to this number, but it probably makes sense to keep it the same or similar and always increment in the same way.</p>
+<p>The &ldquo;splash&rdquo; screen is what&rsquo;s shown first when you open up a channel, so Roku can display something nice while the channel loads, before the channel contents are displayed.  These properties are set with <code>splash_screen_sd</code>, <code>splash_screen_hd</code>, <code>splash_color</code>, and <code>splash_min_time</code>.  The <code>sd</code> and <code>hd</code> versions are shown on SD and HD screens respectively, and you&rsquo;ll see this naming convention throughout Roku.  I&rsquo;ll specify the required properties of these images below.  The color is specified as hexadecimal, and the time is in milliseconds.</p>
+<p>The remaining lines specify icons displayed on the home screen.  I actually haven&rsquo;t seen any of the &ldquo;side&rdquo; ones used, so I&rsquo;m not sure where they show up.  The <code>hd</code> <code>focus</code> versions are what the main menu displays on my Roku.</p>
+<p>Note the <code>pkg:/images/...</code> format for specifying paths.  That format is relative to the package location, exactly as you might suspect.  There are other relative locations like <code>pkg</code> too, but it&rsquo;s the important one here.</p>
+<h2 id="componentsvideoexamplescenexml"><code>components/videoexamplescene.xml</code></h2>
+<p>This does a ton of the work for the channel - you&rsquo;ll see the BrightScript in this file.  There are several things you&rsquo;ll want to change in here. <code>m.top.backgroundURI</code> - set this to whatever you want to display in the background of your list/video preview.</p>
+<blockquote>
+<p>For non-programmers, things like <code>m.top.backgroundURI</code> are called &ldquo;variables&rdquo;.  When I say &ldquo;set this to whatever you want&rdquo;, I mean change the part inside the quotes after the equals sign.  If you use an image editor to create a new background image for your channel, you can save it in the &ldquo;images&rdquo; folder, then change what&rsquo;s inside the quotes to reflect the filename you chose.  Make sure to keep the quotation marks similar to how they were initially - at the beginning and the end.  Make sure not to mess up the variable name <code>m.top.backgroundURI</code>.  Make sure to still keep the equals sign.</p>
+</blockquote>
+<p><code>m.readVideoContentTask.videocontenturi</code> - this specifies the location of your videos list.  Initially you can find the video list in the package, in <code>server/videocontent.xml</code>.  The problem with this is that whenever you want to change your list of videos you&rsquo;ll have to update your channel package, and that&rsquo;s a bit of a pain.  I put the video list on my web server, which you can totally do - you&rsquo;ll have to make some changes in <code>components/videocontentreader.xml</code>, but we&rsquo;ll do that next.  To specify a web location, just change the URI from <code>pkg:/server...</code> to <code>https://whatever.com/something...</code>.</p>
+<p><code>uri</code> for <code>tvPoster</code> - this is way down on line 88, and is an XML property.  This URI specifies the image for the fake looking flat screen TV displayed in the example channel.  I didn&rsquo;t like this at all and changed the image, but this totally isn&rsquo;t required.  Image properties are below.</p>
+<h2 id="componentsvideocontentreaderxml"><code>components/videocontentreader.xml</code></h2>
+<p>The BrightScript in this file reads in the list of video entries.  If you are just modifying the <code>server/videocontent.xml</code> file then you don&rsquo;t need any changes here.  If you, like me, are putting the video list on a website, then you need to comment out lines 25 and 26, and uncomment and modify the block below it.  The changes you need to make are to the variable names which are just &ldquo;foo&rdquo;&rsquo;d out.  You also need to add some lines that cause it to handle &ldquo;https&rdquo; correctly which you should be using.</p>
+<p>Easier than making these changes yourself - just download <a href="https://github.com/kc0bfv/sickendick_home_channel_roku_app/blob/clean/components/videocontentreader.xml">my modified version</a>.</p>
+<h2 id="servervideocontentxml"><code>server/videocontent.xml</code></h2>
+<p>This file contains the list of videos you want to be able to play.  Again - you can choose to keep this in the package, or serve it over the web.  This list will display on your Roku in-order, and each <code>video</code> entry in the <code>VideoContent</code> element will be one video.  The properties are fairly self-explanatory, but <code>hdposterurl</code> should point to the image you want displayed as a preview.  <code>streamformat</code> should be one of: mp4, wma, mp3, hls, ism, dash, mkv, mka, mks.  It&rsquo;s <a href="https://developer.roku.com/docs/developer-program/getting-started/architecture/content-metadata.md#playback-configuration-attributes">described here</a>.  <code>url</code> should point to your video file - which should be in the format you gave in <code>streamformat</code>.</p>
+<blockquote>
+<p>NOTE: Your URLs should be URL encoded - thus, instead of a space you&rsquo;d have &ldquo;%20&rdquo;, etc.</p>
+</blockquote>
+<p>I made a little Python script for myself to build this file - I certainly don&rsquo;t recommend doing it by hand.  <a href="https://docs.google.com/spreadsheets/d/1O5BEbdVMRxqd1uZ9sPBkoW64Us1yaNfvusvlaU3e5i0/edit?usp=sharing">Here&rsquo;s a Google Docs Spreadsheet that&rsquo;ll build it for you though</a>.  You&rsquo;ll need to make a copy of the spreadsheet before you can edit it.  When you have your videos all entered, copy the entry in row 2 column O into your file.  I haven&rsquo;t tested this method, and am especially worried about the URL encoding I setup here - if you have trouble please let me know so I can fix this spreadsheet.</p>
+<h2 id="image-requirements">Image Requirements</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Required Resolution</th>
+<th>File Format</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>splash_screen_hd</code></td>
+<td>1280x720</td>
+<td>jpg or png (maybe others)</td>
+<td>HD Splash Screen</td>
+</tr>
+<tr>
+<td><code>splash_screen_sd</code></td>
+<td>720x480</td>
+<td>jpg or png (maybe others)</td>
+<td>SD Splash Screen</td>
+</tr>
+<tr>
+<td><code>mm_icon_focus_hd</code></td>
+<td>336x210</td>
+<td>jpg (maybe others, but <strong>not png</strong> for some reason)</td>
+<td>HD main menu icon</td>
+</tr>
+<tr>
+<td><code>mm_icon_side_hd</code></td>
+<td>108x69</td>
+<td>png (maybe others)</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td><code>mm_icon_focus_sd</code></td>
+<td>248x140</td>
+<td>png (maybe others)</td>
+<td>SD main menu icon</td>
+</tr>
+<tr>
+<td><code>mm_icon_side_sd</code></td>
+<td>248x140</td>
+<td>png (maybe others)</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td><code>m.top.backgroundURI</code></td>
+<td>1280x720</td>
+<td>jpg or png (maybe others)</td>
+<td>Background image for your channel list/preview</td>
+</tr>
+<tr>
+<td><code>tvPoster</code> <code>uri</code></td>
+<td>647x448</td>
+<td>png (maybe others)</td>
+<td>The surrounding image for your channel video preview</td>
+</tr>
+<tr>
+<td><code>hdposterurl</code></td>
+<td>540x304</td>
+<td>jpg or png (maybe others)</td>
+<td>The image displayed as video preview</td>
+</tr>
+</tbody>
+</table>
+<h2 id="publishing">Publishing</h2>
+<p>Once you get your channel all edited, your videos, logos, and video list deployed, then you want to test your channel.  You need to package it as a zip file - you can do that by running <code>make</code> if you&rsquo;re using my repo.  Then you&rsquo;re ready to start publishing.  <a href="https://developer.roku.com/docs/developer-program/publishing/pre-publishing-checklist.md">Roku&rsquo;s guide is excellent, so just use that</a>.</p>
+<p>I&rsquo;ll paraphrase.</p>
+<ol>
+<li>Make sure you have rights to whatever you&rsquo;re doing.  Consider taking measures to prevent other people from accessing videos, if this is a private channel.  Like - use an <code>.htaccess</code> file to limit access to just your IP address.</li>
+<li>Enable developer mode on your Roku.  <a href="https://github.com/rokudev/samples">Instructions here, under quick start</a>.</li>
+<li>Sideload your channel from your Roku device&rsquo;s developer web page, then test out your channel by playing with it on the Roku.  Make sure it works like you want.</li>
+<li>Generate a developer key on the Roku by telnetting to it and running <code>genkey</code>, keep track of the password and dev ID.</li>
+<li>Go to your device&rsquo;s dev web page packager and package your side-loaded channel.  Download the result.</li>
+<li>Go to <a href="https://developer.roku.com/">developer.roku.com</a>, create an account, and create a channel.  Set it as a &ldquo;Developer SDK&rdquo; channel, &ldquo;non-certified&rdquo; so it remains private, set required properties, upload a 540x405 sized poster when asked, upload the package you downloaded in step 5 and set the channel version as required (minimum firmware is probably 1.0 for you, unless you deviated), and click through to publish.</li>
+<li>Click on the displayed &ldquo;vanity access code&rdquo; for your channel to start adding the private channel to your Roku.</li>
+<li>Now you can go back to your Roku device&rsquo;s developer web page and remove the side-loaded channel.</li>
+</ol>
+<p>If you picked a &ldquo;non-certified&rdquo; channel, unless someone guesses your Roku channel access code they cannot add your channel.  That&rsquo;s probably for the best.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>That should do it.  A couple things I hope to do in the future - get some security cameras for my home that provide local feeds on my network.  Then I could create a Roku channel that displays those.  Perhaps not as a list, like here, but in the typical quad format.  There are examples for how to create a screensaver - so perhaps I&rsquo;d create one that displays those camera feeds.</p>
+
+        <ul class="share-buttons">
+    <li>Share this article:</li>
+    <li>
+        <a class="icon-facebook-squared" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fblog.notmet.net%2f2020%2f11%2fcreating-a-roku-channel%2f" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook"></a>
+    </li>
+    <li>
+        <a class="icon-twitter" href="https://twitter.com/share?text=Creating%20a%20Roku%20Channel&amp;url=https%3a%2f%2fblog.notmet.net%2f2020%2f11%2fcreating-a-roku-channel%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Tweet this article"></a>
+    </li>
+    <li>
+        <a class="icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fblog.notmet.net%2f2020%2f11%2fcreating-a-roku-channel%2f&title=Creating%20a%20Roku%20Channel" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="Share on Linkedin"></a>
+    </li>
+</ul>
+
+    </article>
+    
+</main>
+<aside class="author">
+  <img class="profile-image" src="https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80" alt="Karl Sickendick" />
+  <p class="name">by 
+  <strong>Karl Sickendick</strong></p>
+  <p class="address"></p>
+  <p class="link"></p>
+  <ul class="social">
+    
+<li><a href="//twitter.com/kc0bfv" class="icon-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//github.com/kc0bfv" class="icon-github" target="_blank" title="Github" aria-label="Github"></a></li>
+
+
+
+<li><a href="mailto:kc0bfv@notmet.net" class="icon-mail" title="Email" aria-label="Email"></a></li>
+
+
+<li><a href="https://blog.notmet.net/index.xml" class="icon-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>
+
+  </ul>
+  <br><br>
+</aside>
+
+<nav class="nav" id="navbot">
+  <p class="link"><a href="https://notmet.net/">Homepage</a></p>
+<p class="link"><a href="/categories/">Categories</a></p>
+<p class="link"><a href="/tags/">Tags</a></p>
+<p class="link"><a href="/archive/">Archive</a></p>
+
+</nav>
+
+</div>
+<footer class="main-footer">
+  <div class="container clearfix">
+        <a class="icon-rss" href="https://blog.notmet.net/index.xml" title="RSS" aria-label="RSS"></a>
+        <p>&copy; 2020 &middot; Karl Sickendick</p>
+  </div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>window.jQuery || document.write('<script src="https:\/\/blog.notmet.net\/js\/vendor\/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://blog.notmet.net/js/plugins.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-42117518-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
+

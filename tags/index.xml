@@ -8,10 +8,78 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sat, 20 Jun 2020 20:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 15:00:00 -0600</lastBuildDate><atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BrightScript</title>
+      <link>https://blog.notmet.net/tags/brightscript/</link>
+      <pubDate>Sun, 15 Nov 2020 15:00:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/brightscript/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://blog.notmet.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>programming</title>
+      <link>https://blog.notmet.net/tags/programming/</link>
+      <pubDate>Sun, 15 Nov 2020 15:00:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/programming/</guid>
+      <description></description>
+    </item>
     
+    <item>
+      <title>Roku</title>
+      <link>https://blog.notmet.net/tags/roku/</link>
+      <pubDate>Sun, 15 Nov 2020 15:00:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/roku/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pork Butt</title>
+      <link>https://blog.notmet.net/tags/pork-butt/</link>
+      <pubDate>Sat, 19 Sep 2020 20:48:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/pork-butt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>salmon</title>
+      <link>https://blog.notmet.net/tags/salmon/</link>
+      <pubDate>Sat, 19 Sep 2020 20:48:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/salmon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bread</title>
+      <link>https://blog.notmet.net/tags/bread/</link>
+      <pubDate>Sat, 25 Jul 2020 15:00:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/bread/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sourdough</title>
+      <link>https://blog.notmet.net/tags/sourdough/</link>
+      <pubDate>Sat, 25 Jul 2020 15:00:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/sourdough/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chicken</title>
+      <link>https://blog.notmet.net/tags/chicken/</link>
+      <pubDate>Sat, 27 Jun 2020 15:30:18 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/tags/chicken/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>brisket</title>
@@ -19,15 +87,6 @@
       <pubDate>Sat, 20 Jun 2020 20:00:00 -0500</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/brisket/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>salmon</title>
-      <link>https://blog.notmet.net/tags/salmon/</link>
-      <pubDate>Sat, 20 Jun 2020 20:00:00 -0500</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/salmon/</guid>
       <description></description>
     </item>
     
@@ -82,15 +141,6 @@
       <pubDate>Sat, 16 May 2020 14:21:18 -0600</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/nextcloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://blog.notmet.net/tags/programming/</link>
-      <pubDate>Thu, 07 May 2020 14:11:08 -0600</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/programming/</guid>
       <description></description>
     </item>
     
@@ -185,15 +235,6 @@
     </item>
     
     <item>
-      <title>Pork Butt</title>
-      <link>https://blog.notmet.net/tags/pork-butt/</link>
-      <pubDate>Sat, 08 Feb 2020 18:00:00 -0700</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/pork-butt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hugo</title>
       <link>https://blog.notmet.net/tags/hugo/</link>
       <pubDate>Sat, 08 Feb 2020 10:00:00 -0700</pubDate>
@@ -244,15 +285,6 @@
       <pubDate>Sun, 02 Feb 2020 10:00:00 -0700</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/sanity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sourdough</title>
-      <link>https://blog.notmet.net/tags/sourdough/</link>
-      <pubDate>Sat, 25 Jan 2020 08:00:00 -0700</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/sourdough/</guid>
       <description></description>
     </item>
     
@@ -347,15 +379,6 @@
     </item>
     
     <item>
-      <title>Bread</title>
-      <link>https://blog.notmet.net/tags/bread/</link>
-      <pubDate>Sun, 05 May 2019 01:14:00 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/bread/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Sous Vide</title>
       <link>https://blog.notmet.net/tags/sous-vide/</link>
       <pubDate>Mon, 22 Apr 2019 11:45:53 +0000</pubDate>
@@ -370,15 +393,6 @@
       <pubDate>Sun, 31 Mar 2019 22:25:09 +0000</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/tags/steak/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chicken</title>
-      <link>https://blog.notmet.net/tags/chicken/</link>
-      <pubDate>Mon, 11 Mar 2019 00:57:18 +0000</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/tags/chicken/</guid>
       <description></description>
     </item>
     

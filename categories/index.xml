@@ -8,33 +8,29 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sat, 20 Jun 2020 20:00:00 -0500</lastBuildDate>
-    
-	<atom:link href="https://blog.notmet.net/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Smoker Log</title>
-      <link>https://blog.notmet.net/categories/smoker-log/</link>
-      <pubDate>Sat, 20 Jun 2020 20:00:00 -0500</pubDate>
-      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
-      <guid>https://blog.notmet.net/categories/smoker-log/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sun, 15 Nov 2020 15:00:00 -0600</lastBuildDate><atom:link href="https://blog.notmet.net/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
       <link>https://blog.notmet.net/categories/blog/</link>
-      <pubDate>Tue, 26 May 2020 10:13:45 -0600</pubDate>
+      <pubDate>Sun, 15 Nov 2020 15:00:00 -0600</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Smoker Log</title>
+      <link>https://blog.notmet.net/categories/smoker-log/</link>
+      <pubDate>Sat, 19 Sep 2020 20:48:00 -0600</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/categories/smoker-log/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Baking</title>
       <link>https://blog.notmet.net/categories/baking/</link>
-      <pubDate>Sat, 25 Jan 2020 08:00:00 -0700</pubDate>
+      <pubDate>Sat, 25 Jul 2020 15:00:00 -0600</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/categories/baking/</guid>
       <description></description>
@@ -43,7 +39,7 @@
     <item>
       <title>Cooking</title>
       <link>https://blog.notmet.net/categories/cooking/</link>
-      <pubDate>Mon, 22 Apr 2019 11:45:53 +0000</pubDate>
+      <pubDate>Sat, 27 Jun 2020 15:30:18 -0600</pubDate>
       <author>kc0bfv@notmet.net (Karl Sickendick)</author>
       <guid>https://blog.notmet.net/categories/cooking/</guid>
       <description></description>

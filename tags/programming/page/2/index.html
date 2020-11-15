@@ -11,14 +11,14 @@
 <meta property="og:description" content="Karl&#39;s blog of randomness and programming" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://blog.notmet.net/tags/programming/" />
-<meta property="og:updated_time" content="2020-05-07T14:11:08-06:00" />
+<meta property="og:updated_time" content="2020-11-15T15:00:00-06:00" />
 
         <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="programming"/>
 <meta name="twitter:description" content="Karl&#39;s blog of randomness and programming"/>
 <meta name="twitter:site" content="@kc0bfv"/>
 
-        <meta name="generator" content="Hugo 0.73.0" />
+        <meta name="generator" content="Hugo 0.78.2" />
         
         <link href="/tags/programming/index.xml" rel="alternate" type="application/rss+xml" title="Karl&#39;s Blog" />
         <link href="/tags/programming/index.xml" rel="feed" type="application/rss+xml" title="Karl&#39;s Blog" />
@@ -80,6 +80,31 @@
 
     <a class="btn home" href="https://blog.notmet.net/" title="Back to home">&laquo; Back to home</a>
     
+    
+        <article class="post">
+    
+<h1><a href="https://blog.notmet.net/2013/02/unix-awesomeness/">Unix Text Editing Awesomeness</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2013-02-04">2013.02.04</time>
+
+    &middot; Tagged in
+        
+        <a href="https://blog.notmet.net/tags/programming">programming</a>, 
+        
+        <a href="https://blog.notmet.net/tags/latex">latex</a>, 
+        
+        <a href="https://blog.notmet.net/tags/bash">bash</a>
+        
+    
+
+</span>
+</footer>
+
+    <p>Oh, LaTeX acronym package, you won&rsquo;t automatically alphabetize my list of acronyms? Strange&hellip; Let&rsquo;s see if Unix will&hellip;
+$ echo &quot;\acro{SCADA}{Supervisory Control And Data Acquisition} \acro{PLC}{Programmable Logic Controller} \acro{RTU}{Remote Terminal Unit} ...&quot; &gt; toSort $ for i in `cat toSort |sed &quot;s/.*\\acro{\(.*\)}.*{.*}/\1/&quot; | sort`; do grep &quot;{$i}&quot; toSort; done \acro{ADC}{analog to digital converter} \acro{API}{application programming interface} \acro{APT}{Advanced Persistent Threat} \acro{ASCII}{American Standard Code for Information Interchange} ... Unix, you rock my world.&hellip;</p>
+    <a href="https://blog.notmet.net/2013/02/unix-awesomeness/" title="Unix Text Editing Awesomeness">Read more &raquo;</a>
+</article>
+
     
         <article class="post">
     

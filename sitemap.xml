@@ -3,6 +3,101 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.notmet.net/categories/blog/</loc>
+    <lastmod>2020-11-15T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/brightscript/</loc>
+    <lastmod>2020-11-15T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/</loc>
+    <lastmod>2020-11-15T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/11/creating-a-roku-channel/</loc>
+    <lastmod>2020-11-15T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/post/</loc>
+    <lastmod>2020-11-15T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/programming/</loc>
+    <lastmod>2020-11-15T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/roku/</loc>
+    <lastmod>2020-11-15T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/</loc>
+    <lastmod>2020-11-15T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/pork-butt/</loc>
+    <lastmod>2020-09-19T20:48:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/09/pulled-pork-and-salmon-and-mmmm/</loc>
+    <lastmod>2020-09-19T20:48:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/salmon/</loc>
+    <lastmod>2020-09-19T20:48:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/smoker-log/</loc>
+    <lastmod>2020-09-19T20:48:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/baking/</loc>
+    <lastmod>2020-07-25T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/bread/</loc>
+    <lastmod>2020-07-25T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/sourdough/</loc>
+    <lastmod>2020-07-25T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/07/sourdough-experiment-with-more-whole-wheat/</loc>
+    <lastmod>2020-07-25T15:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/tags/chicken/</loc>
+    <lastmod>2020-06-27T15:30:18-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/categories/cooking/</loc>
+    <lastmod>2020-06-27T15:30:18-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.notmet.net/2020/06/grilling-a-whole-chicken-texas/</loc>
+    <lastmod>2020-06-27T15:30:18-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.notmet.net/tags/brisket/</loc>
     <lastmod>2020-06-20T20:00:00-05:00</lastmod>
   </url>
@@ -13,37 +108,7 @@
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/categories/</loc>
-    <lastmod>2020-06-20T20:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/post/</loc>
-    <lastmod>2020-06-20T20:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/salmon/</loc>
-    <lastmod>2020-06-20T20:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/categories/smoker-log/</loc>
-    <lastmod>2020-06-20T20:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/</loc>
-    <lastmod>2020-06-20T20:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/tags/air-force/</loc>
-    <lastmod>2020-05-26T10:13:45-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/categories/blog/</loc>
     <lastmod>2020-05-26T10:13:45-06:00</lastmod>
   </url>
   
@@ -80,11 +145,6 @@
   <url>
     <loc>https://blog.notmet.net/2020/05/switching-to-my-own-cloud/</loc>
     <lastmod>2020-05-16T14:21:18-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/programming/</loc>
-    <lastmod>2020-05-07T14:11:08-06:00</lastmod>
   </url>
   
   <url>
@@ -183,11 +243,6 @@
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/tags/pork-butt/</loc>
-    <lastmod>2020-02-08T18:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/2020/02/deploying-github-to-dreamhost/</loc>
     <lastmod>2020-02-08T10:00:00-07:00</lastmod>
   </url>
@@ -255,16 +310,6 @@
   <url>
     <loc>https://blog.notmet.net/archive/</loc>
     <lastmod>2020-01-25T17:00:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/categories/baking/</loc>
-    <lastmod>2020-01-25T08:00:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/sourdough/</loc>
-    <lastmod>2020-01-25T08:00:00-07:00</lastmod>
   </url>
   
   <url>
@@ -458,18 +503,8 @@
   </url>
   
   <url>
-    <loc>https://blog.notmet.net/tags/bread/</loc>
-    <lastmod>2019-05-05T01:14:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.notmet.net/2019/05/sourdough-bread/</loc>
     <lastmod>2019-05-05T01:14:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/categories/cooking/</loc>
-    <lastmod>2019-04-22T11:45:53+00:00</lastmod>
   </url>
   
   <url>
@@ -500,11 +535,6 @@
   <url>
     <loc>https://blog.notmet.net/2019/03/more-jerky/</loc>
     <lastmod>2019-03-17T20:21:24+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.notmet.net/tags/chicken/</loc>
-    <lastmod>2019-03-11T00:57:18+00:00</lastmod>
   </url>
   
   <url>

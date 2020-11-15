@@ -8,11 +8,7 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Thu, 26 Mar 2020 15:20:15 -0600</lastBuildDate>
-    
-	<atom:link href="https://blog.notmet.net/tags/anti-cloud/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 26 Mar 2020 15:20:15 -0600</lastBuildDate><atom:link href="https://blog.notmet.net/tags/anti-cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>One-File Tools</title>
       <link>https://blog.notmet.net/2020/03/one-file-tools/</link>
