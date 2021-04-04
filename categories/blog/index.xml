@@ -8,7 +8,17 @@
     <language>en-us</language>
     <managingEditor>kc0bfv@notmet.net (Karl Sickendick)</managingEditor>
     <webMaster>kc0bfv@notmet.net (Karl Sickendick)</webMaster>
-    <lastBuildDate>Sun, 15 Nov 2020 15:00:00 -0600</lastBuildDate><atom:link href="https://blog.notmet.net/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Apr 2021 15:41:06 -0500</lastBuildDate><atom:link href="https://blog.notmet.net/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using AWS Lambda as Proxy</title>
+      <link>https://blog.notmet.net/2021/04/using-aws-lambda-as-proxy/</link>
+      <pubDate>Sun, 04 Apr 2021 15:41:06 -0500</pubDate>
+      <author>kc0bfv@notmet.net (Karl Sickendick)</author>
+      <guid>https://blog.notmet.net/2021/04/using-aws-lambda-as-proxy/</guid>
+      <description>AWS Lambdas are some of the original &amp;ldquo;serverless computing&amp;rdquo; implementations. These little bits of code run when you hit an API endpoint, taking whatever inputs you provide and returning the output. They can be written in many programming languages, including my favorite: Python 3.
+So I wondered - could I use this to build a simple little proxy at a URL? Why not, right? They can run any Python code&amp;hellip; If I wanted to, I could use the result to evade perimeter firewalls that might be blocking many arbitrary destination hosts, but not AWS assets.</description>
+    </item>
+    
     <item>
       <title>Creating a Roku Channel</title>
       <link>https://blog.notmet.net/2020/11/creating-a-roku-channel/</link>
