@@ -3,7 +3,10 @@ title: "More Brisket"
 date: 2021-03-07T16:11:22-05:00
 draft: false
 categories: Smoker Log
-tags: Brisket, Serrano, Peppers
+tags:
+- Brisket
+- Serrano
+- Peppers
 ---
 
 This brisket was 16.6 lbs, $3.49 per pound, from Costco.

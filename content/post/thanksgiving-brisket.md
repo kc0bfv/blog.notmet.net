@@ -3,7 +3,8 @@ title: "Thanksgiving Brisket"
 date: 2020-11-26T16:19:15-05:00
 draft: false
 categories: Smoker Log
-tags: Brisket
+tags:
+- Brisket
 ---
 
 Time for a very COVID-19 Thanksgiving, and that means a break with family, a break with friends, a break with tradition.  That means - Thanksgiving brisket!

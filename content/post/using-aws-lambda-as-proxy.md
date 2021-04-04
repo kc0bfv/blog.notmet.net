@@ -3,7 +3,10 @@ title: "Using AWS Lambda as Proxy"
 date: 2021-04-04T15:41:06-05:00
 draft: false
 categories: Blog
-tags: Programming, Cloud, Python
+tags:
+- Programming
+- Cloud
+- Python
 ---
 
 AWS Lambdas are some of the original "serverless computing" implementations.  These little bits of code run when you hit an API endpoint, taking whatever inputs you provide and returning the output.  They can be written in many programming languages, including my favorite: Python 3.

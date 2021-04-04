@@ -3,7 +3,8 @@ title: "Smoked Corned Beef"
 date: 2021-03-14T16:07:42-05:00
 draft: false
 categories: Smoker Log
-tags: Corned Beef
+tags:
+- Corned Beef
 ---
 
 This is the day for smoking corned beef!  My parents are in town and it's almost St Patty's Day, so corned beef is the perfect thing to make.  It's easy and we all like it.  Normally I boil it or bake it, baking it being my favorite way to make it so far...  This time we'll try smoking it, to which I've heard makes it fantastic.

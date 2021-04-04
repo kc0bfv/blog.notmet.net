@@ -3,7 +3,9 @@ title: "Smoking Lamb"
 date: 2020-12-20T16:15:42-05:00
 draft: false
 categories: Smoker Log
-tags: Lamb, Salmon
+tags:
+- Lamb
+- Salmon
 ---
 
 4.13 lbs, $5.99 per lb, from Costco San Antonio
