@@ -1,0 +1,12 @@
+<ul class="share-buttons">
+    <li>{{ .Site.Data.l10n.share.title }}</li>
+    <li>
+        <a class="fab fa-facebook-square" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="{{ .Site.Data.l10n.share.facebook }}"></a>
+    </li>
+    <li>
+        <a class="fab fa-twitter" href="https://twitter.com/share?text={{ .Title }}&amp;url={{ .Permalink }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="{{ .Site.Data.l10n.share.twitter }}"></a>
+    </li>
+    <li>
+        <a class="fab fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}" onclick="window.open(this.href, 'linkedin-share', 'width=600,height=494');return false;" title="{{ .Site.Data.l10n.share.linkedin }}"></a>
+    </li>
+</ul>

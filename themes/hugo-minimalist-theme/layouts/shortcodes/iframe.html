@@ -1,0 +1,12 @@
+{{ if .Get "caption" }}
+<figure>
+{{ end }}
+<div class="maintain_aspect_60">
+<div>
+    <iframe style="border: 0" src="{{ .Get "src" }}" frameborder="0" allowfullscreen="allowfullscreen" width="100%" height="100%"></iframe>
+</div>
+</div>
+{{ if .Get "caption" }}
+<figcaption>{{ .Get "caption" }}</figcaption>
+</figure>
+{{ end }}

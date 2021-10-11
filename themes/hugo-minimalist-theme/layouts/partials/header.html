@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" data-theme="dark" lang="{{ .Site.LanguageCode }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ with .Title }}{{ . }} &middot; {{end}}{{ .Site.Title }}</title>
+        <meta name="author" content="{{ .Site.Author.name }}">
+        <meta name="description" content="{{ $.Param "description" }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{ template "_internal/opengraph.html" . }}
+        {{ template "_internal/twitter_cards.html" . }}
+        {{ hugo.Generator }}
+        {{ with .OutputFormats.Get "RSS" }}
+        <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+        <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+        {{ end }}
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700%7CNoto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ "css/styles.css" | absURL }}">
+        <link rel="icon" href="{{ "favicon.ico" | absURL }}">
+        <link rel="stylesheet" href="{{ "css/highlightjs/monokai.css" | absURL }}">
+        <script src="https://kit.fontawesome.com/18869afe50.js" crossorigin="anonymous"></script>
+        <script src="{{ "js/vendor/modernizr-2.8.0.min.js" | absURL }}"></script>
+        {{ range .Site.Params.custom_css }}
+        <link rel="stylesheet" href="{{ . | absURL }}">
+        {{ end }}
+
+        <script>
+            {{ with .Site.Params.header_background }}
+            function randomHeaderImg() {
+                let images = [
+                    {{- $last_elem := sub (len .) 1 -}}
+                    {{ range $index, $component := . -}}
+                        {{ . | absURL }}{{ if lt $index $last_elem }},{{ end }}
+                    {{- end -}}
+                ];
+                let img_ind = Math.ceil(Math.random() * images.length) - 1;
+                let sel_url = images[img_ind];
+                let img = new Image();
+                img.onload = function() {
+                    function set_img() {
+                        let element = document.getElementsByClassName("site-header")[0];
+                        element.style.backgroundImage = "url(" + sel_url + ")";
+                    }
+                    if( document.readyState === "complete" ) { set_img() }
+                    else { window.onload = set_img }
+                }
+                img.src = sel_url;
+            }
+            randomHeaderImg();
+            {{ end }}
+        </script>
+        {{ with .Site.Params.header_background }}
+        <noscript>
+            <style>
+                .site-header {
+                    background-image: url({{ index . 0 | safeURL | absURL }});
+                }
+            </style>
+        </noscript>
+        {{ end }}
+    </head>
+    <body>
+        <header class="site-header">
+          <div>
+          {{ with .Site.Params.header_title }}
+              <h2>{{ . }}</h2>
+          {{ end }}
+          </div>
+        </header>
+        <div class="container clearfix">
+            {{ partial "navtop" . }}
+
+            <main class="content">

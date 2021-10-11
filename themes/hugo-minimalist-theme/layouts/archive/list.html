@@ -1,0 +1,37 @@
+{{ partial "header" . }}
+        <a class="btn home" href="{{ .Site.BaseURL }}" title="{{ .Site.Data.l10n.article.back_to_home }}">&laquo; {{ .Site.Data.l10n.article.back_to_home }}</a>
+
+        {{ $.Scratch.Set "open" 0 }}
+        {{ $.Scratch.Set "month" 13 }}
+        {{ $.Scratch.Set "year" 0 }}
+        {{ range $.Site.Pages.ByDate.Reverse }}
+            {{ if and .IsPage (in .Site.Params.mainSections .Section) }}
+                {{ $last_yr := $.Scratch.Get "year" }}
+                {{ $last_mn := $.Scratch.Get "month" }}
+                {{ if ne .Date.Year $last_yr }}
+                    {{ if eq ($.Scratch.Get "open") 1 }}
+                        </ul>
+                        {{ $.Scratch.Set "open" 0 }}
+                    {{ end }}
+                    <h1>{{ .Date.Year }}</h1>
+                    {{ $.Scratch.Set "year" .Date.Year }}
+                    {{ $.Scratch.Set "month" 13 }}
+                {{ end }}
+                {{ if ne .Date.Month $last_mn }}
+                    {{ if eq ($.Scratch.Get "open") 1 }}
+                        </ul>
+                        {{ $.Scratch.Set "open" 0 }}
+                    {{ end }}
+                    <h2>{{ .Date.Month }}</h2>
+                    {{ $.Scratch.Set "month" .Date.Month }}
+                    <ul>
+                    {{ $.Scratch.Set "open" 1 }}
+                {{ end }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        {{ end }}
+        {{ if eq ($.Scratch.Get "open") 1 }}
+            </ul>
+        {{ end }}
+
+{{ partial "footer" . }}

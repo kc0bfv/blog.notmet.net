@@ -1,0 +1,37 @@
+{{ with .Site.Social.mastodon }}
+<li><a href="{{.}}" class="fab fa-mastodon" target="_blank" title="Mastodon"></a></li>
+{{ end }}
+
+{{ with .Site.Social.twitter }}
+<li><a href="//twitter.com/{{.}}" class="fab fa-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
+{{ end }}
+
+{{ with .Site.Social.facebook }}
+<li><a href="//facebook.com/{{.}}" class="fab fa-facebook-square" target="_blank" title="Facebook" aria-label="Facebook"></a></li>
+{{ end }}
+
+{{ with .Site.Social.linkedin }}
+<li><a href="//linkedin.com/in/{{.}}" class="fab fa-linkedin" target="_blank" title="Linkedin" aria-label="Linkedin"></a></li>
+{{ end }}
+
+{{ with .Site.Social.behance }}
+<li><a href="//behance.net/{{.}}" class="fab fa-behance" target="_blank" title="Behance" aria-label="Behance"></a></li>
+{{ end }}
+
+{{ with .Site.Social.dribbble }}
+<li><a href="//dribbble.com/{{.}}" class="fab fa-dribbble" target="_blank" title="Dribbble" aria-label="Dribbble"></a></li>
+{{ end }}
+
+{{ with .Site.Social.instagram }}
+<li><a href="//instagram.com/{{.}}" class="fab fa-instagram" target="_blank" title="Instagram" aria-label="Instagram"></a></li>
+{{ end }}
+
+{{ with .Site.Social.github }}
+<li><a href="//github.com/{{.}}" class="fab fa-github" target="_blank" title="Github" aria-label="Github"></a></li>
+{{ end }}
+
+{{ with $.Site.Author.email }}
+<li><a href="mailto:{{.}}" class="far fa-envelope" title="Email" aria-label="Email"></a></li>
+{{ end }}
+
+<li><a href="{{ .Site.BaseURL }}index.xml" class="fas fa-rss" target="_blank" title="RSS" aria-label="RSS"></a></li>

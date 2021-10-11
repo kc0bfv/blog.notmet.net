@@ -1,0 +1,8 @@
+{{ partial "header" . }}
+    <a class="btn home" href="{{ .Site.BaseURL }}" title="{{ .Site.Data.l10n.article.back_to_home }}">&laquo; {{ .Site.Data.l10n.article.back_to_home }}</a>
+    {{ $paginator := .Paginate .Data.Pages }}
+    {{ range $paginator.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+    {{ partial "pagination" . }}
+{{ partial "footer" . }}
