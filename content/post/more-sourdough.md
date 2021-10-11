@@ -36,7 +36,7 @@ This time I used 1.5 Tbsp starter instead of 1, hoping to get more rise in the d
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190601_094014-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190601_094014-768x1024.jpg)
 Before Rising
 
 
@@ -49,7 +49,7 @@ Before Rising
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190601_135536-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190601_135536-768x1024.jpg)
 After Bulk Rise
 
 

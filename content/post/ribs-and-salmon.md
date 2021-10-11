@@ -14,13 +14,13 @@ tags:
 
 Time to try some ribs!  I'll use [this recipe](https://masterbuilt.com/recipes/pork-or-baby-back-ribs) with the [Memphis Dust](https://amazingribs.com/tested-recipes/spice-rubs-and-pastes/meatheads-memphis-dust-rub-recipe) dry rub I used on the pork butts.  Also - we're out of Salmon.  I'm going to do a double batch of the usual.  I'll just do 6 pounds for four hours, then do 6 more for 4 more hours.
 
-[![The inside of the smoker before starting.](https://blog.notmet.net/wp-content/uploads/2018/05/IMG_20180505_190255-225x300.jpg)
-](https://blog.notmet.net/wp-content/uploads/2018/05/IMG_20180505_190255-e1525627185151.jpg)
+[![The inside of the smoker before starting.](https://static.notmet.net/wp-content/uploads/2018/05/IMG_20180505_190255-225x300.jpg)
+](https://static.notmet.net/wp-content/uploads/2018/05/IMG_20180505_190255-e1525627185151.jpg)
 
 I bought what I thought were 3 racks of ribs - 3 large vacuum-packed things of ribs from Costco.  About 30 lbs total.  What I didn't realize is that each vacuum packed bag contains 3 racks of ribs...  So I'm going to do 9 racks of ribs.  This is stupid and I almost certainly don't have enough room in the smoker, but it'll all work out :-)
 
-[![Nine racks of ribs on cutting boards.](https://blog.notmet.net/wp-content/uploads/2018/05/received_10157063550895021-300x225.jpeg)
-](https://blog.notmet.net/wp-content/uploads/2018/05/received_10157063550895021-e1525627308646.jpeg)
+[![Nine racks of ribs on cutting boards.](https://static.notmet.net/wp-content/uploads/2018/05/received_10157063550895021-300x225.jpeg)
+](https://static.notmet.net/wp-content/uploads/2018/05/received_10157063550895021-e1525627308646.jpeg)
 
 1900, 5 May 2018: Started the smoker at 225℉ and started washing, salting and dry-rubbing the ribs.  I used 1/2 tsp salt per pound, although didn't get it as evenly-distributed as I'd like.  I wish I had salted these earlier, but we don't have the fridge space or the time.  I used up all the remaining dry rub from the earlier pork butts.
 

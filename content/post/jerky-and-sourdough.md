@@ -46,7 +46,7 @@ For the jerky marinade, I followed the original foodie recipe but skipped the br
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190615_081947-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190615_081947-768x1024.jpg)
 Just Put the Ingredients In
 
 
@@ -59,17 +59,17 @@ Just Put the Ingredients In
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190615_114001-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190615_114001-768x1024.jpg)
 Ready for the Pan
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190615_150301-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190615_150301-768x1024.jpg)
 All Done!
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190615_160017-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190615_160017-768x1024.jpg)
 Sliced
 
 

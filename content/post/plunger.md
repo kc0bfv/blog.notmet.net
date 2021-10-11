@@ -21,7 +21,7 @@ A wooden stick with a rubber cone on the end can solve so many problems.
 > You've got to plunge it.
 
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2013/02/cat_toilet.png" link="https://blog.notmet.net/wp-content/uploads/2013/02/cat_toilet.png" alt="Cat on a toilet, with a plunger" caption="That cat clogged the toilet. PLUNGE HIM." >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2013/02/cat_toilet.png" link="https://static.notmet.net/wp-content/uploads/2013/02/cat_toilet.png" alt="Cat on a toilet, with a plunger" caption="That cat clogged the toilet. PLUNGE HIM." >}}
 
 
 > When your dinner's in the pot,
@@ -30,7 +30,7 @@ A wooden stick with a rubber cone on the end can solve so many problems.
 > You've got to plunge it.
 
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2013/02/kitchen_sink.png" link="https://blog.notmet.net/wp-content/uploads/2013/02/kitchen_sink.png" alt="Dinner in the kitchen sink, with a plunger on it" caption="Apply plunger to dinner. Throw dinner away." >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2013/02/kitchen_sink.png" link="https://static.notmet.net/wp-content/uploads/2013/02/kitchen_sink.png" alt="Dinner in the kitchen sink, with a plunger on it" caption="Apply plunger to dinner. Throw dinner away." >}}
 
 
 > And when the shower doesn't drain,
@@ -39,7 +39,7 @@ A wooden stick with a rubber cone on the end can solve so many problems.
 > You've got to plunge it.
 
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2013/02/shower.png" link="https://blog.notmet.net/wp-content/uploads/2013/02/shower.png" alt="A plunger on a shower drain" caption="Take the plunge in the shower." >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2013/02/shower.png" link="https://static.notmet.net/wp-content/uploads/2013/02/shower.png" alt="A plunger on a shower drain" caption="Take the plunge in the shower." >}}
 
 
 > If your vehicle don't start,
@@ -48,7 +48,7 @@ A wooden stick with a rubber cone on the end can solve so many problems.
 > You've got to plunge it.
 
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2013/02/car.png" link="https://blog.notmet.net/wp-content/uploads/2013/02/car.png" alt="A Tesla car with a plunger assassin" caption="Plunge the electric hookup. Do it. That'll definitely work." >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2013/02/car.png" link="https://static.notmet.net/wp-content/uploads/2013/02/car.png" alt="A Tesla car with a plunger assassin" caption="Plunge the electric hookup. Do it. That'll definitely work." >}}
 
 
 > Computer's getting worms,
@@ -57,7 +57,7 @@ A wooden stick with a rubber cone on the end can solve so many problems.
 > You've got to plunge it.
 
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2013/02/computer.png" link="https://blog.notmet.net/wp-content/uploads/2013/02/computer.png" alt="A bald white dude, in like, a Yoga Guru outfit, with a computer, and a plunger." caption="Plungers work on computers too. Apply to screen liberally." >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2013/02/computer.png" link="https://static.notmet.net/wp-content/uploads/2013/02/computer.png" alt="A bald white dude, in like, a Yoga Guru outfit, with a computer, and a plunger." caption="Plungers work on computers too. Apply to screen liberally." >}}
 
 
 > Sometimes the boss man starts to growl,
@@ -66,7 +66,7 @@ A wooden stick with a rubber cone on the end can solve so many problems.
 > You've got to plunge him.
 
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2013/02/boss.png" link="https://blog.notmet.net/wp-content/uploads/2013/02/boss.png" alt="A dude plunging his boss' face" caption="Bosses really appreciate plungers to the face. It gets things moving through the digestive tract." >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2013/02/boss.png" link="https://static.notmet.net/wp-content/uploads/2013/02/boss.png" alt="A dude plunging his boss' face" caption="Bosses really appreciate plungers to the face. It gets things moving through the digestive tract." >}}
 
 
 > For when your baby starts to tire,
@@ -75,6 +75,6 @@ A wooden stick with a rubber cone on the end can solve so many problems.
 > You've got to plunge him.
 
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2013/02/baby.png" link="https://blog.notmet.net/wp-content/uploads/2013/02/baby.png" alt="A plunger on a baby's butt" caption="Johnson and Johnson approved - no tears." >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2013/02/baby.png" link="https://static.notmet.net/wp-content/uploads/2013/02/baby.png" alt="A plunger on a baby's butt" caption="Johnson and Johnson approved - no tears." >}}
 
 

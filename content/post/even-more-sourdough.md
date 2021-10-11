@@ -44,7 +44,7 @@ We're gonna try even more starter this time.  I want to fill the large bread pan
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190608_170429-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190608_170429-768x1024.jpg)
 Bulk Rise Done
 
 
@@ -57,7 +57,7 @@ Bulk Rise Done
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190608_172101-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190608_172101-768x1024.jpg)
 Starting to Rise in the Pans
 
 
@@ -70,7 +70,7 @@ Starting to Rise in the Pans
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190609_095639-1024x768.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190609_095639-1024x768.jpg)
 Ready to Bake
 
 
@@ -91,7 +91,7 @@ Ready to Bake
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/06/IMG_20190609_104411-1024x768.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/06/IMG_20190609_104411-1024x768.jpg)
 Ready to Eat!
 
 

@@ -21,25 +21,25 @@ It's a short walk from the train station to the main bus station, in Cork, and t
 
 Blarney castle is beautiful. We sat next to some nice Swiss folks, and toured most of the castle and grounds with them. There are some beautiful gardens you can walk around in for quite a while, and of course the castle.
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112543-1-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112543-1.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112543-1-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112543-1.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113505-2-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113505-2.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113505-2-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113505-2.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113601-1-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113601-1.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113601-1-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113601-1.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113648-768x1024.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113648.jpg" alt="Looking up from the base of Blarney Castle at the Blarney Stone" caption="Blarney Castle and the Blarney Stone" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113648-768x1024.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_113648.jpg" alt="Looking up from the base of Blarney Castle at the Blarney Stone" caption="Blarney Castle and the Blarney Stone" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_111513-1-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_111513-1.jpg" alt="Map of Blarney Castle" caption="Map of Blarney Castle" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_111513-1-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_111513-1.jpg" alt="Map of Blarney Castle" caption="Map of Blarney Castle" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_120156-768x1024.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_120156.jpg" alt="Looking out a window at Blarney Castle" caption="Blarney Castle" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_120156-768x1024.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_120156.jpg" alt="Looking out a window at Blarney Castle" caption="Blarney Castle" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_115755-768x1024.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_115755.jpg" alt="Looking out a window at Blarney Castle" caption="Blarney Castle" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_115755-768x1024.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_115755.jpg" alt="Looking out a window at Blarney Castle" caption="Blarney Castle" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112842-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112842.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112842-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112842.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112218-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112218.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112218-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_112218.jpg" alt="Blarney Castle" caption="Blarney Castle" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_122038-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_122038.jpg" alt="Gardens at Blarney Castle" caption="Gardens at Blarney Castle" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_122038-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_122038.jpg" alt="Gardens at Blarney Castle" caption="Gardens at Blarney Castle" >}}
 
 Kiss the Blarney Stone. Just do it. It's fine. It's at the top of the castle on the outer wall hanging about 150 feet in the air. They carefully lay you down and help you out to kiss it. Nobody is peeing on it in the middle of the night. Get your mates to take a picture of you.
 
@@ -53,11 +53,11 @@ We changed busses in Blarney and went out to Midleton, getting off right next to
 
 Anyway, we had a drink at Jamie's, took some photos, then looked around at all the awesome shops in Midleton while waiting for the right return bus. This gave us about 1 hour out there.
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_162058-2-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_162058-2.jpg" alt="Jameson Distillery Midleton" caption="Jameson Distillery Midleton" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_162058-2-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_162058-2.jpg" alt="Jameson Distillery Midleton" caption="Jameson Distillery Midleton" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_162051-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_162051.jpg" alt="Jameson Distillery Midleton" caption="Jameson Distillery Midleton" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_162051-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_162051.jpg" alt="Jameson Distillery Midleton" caption="Jameson Distillery Midleton" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_170858-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171013_170858.jpg" alt="Midleton, Ireland" caption="Midleton, Ireland" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_170858-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171013_170858.jpg" alt="Midleton, Ireland" caption="Midleton, Ireland" >}}
 
 Because we didn't plan enough time, we wished we'd skipped Midleton and hung out at the Blarney gardens longer. However, if we had made the Jamie tour we would have preferred the tour.
 
@@ -67,17 +67,17 @@ The Cliffs of Moher is another all day trip... We used Paddywagon tours - their 
 
 The tour guide was excellent. He had all this info about the history of everything we were traveling through. He had color commentary too. Great old dude.
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112745-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112745.jpg" alt="Trip out to Cliffs of Moher" caption="Trip out to Cliffs of Moher" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112745-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112745.jpg" alt="Trip out to Cliffs of Moher" caption="Trip out to Cliffs of Moher" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112834-768x1024.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112834.jpg" alt="Trip out to Cliffs of Moher" caption="Trip out to Cliffs of Moher" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112834-768x1024.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112834.jpg" alt="Trip out to Cliffs of Moher" caption="Trip out to Cliffs of Moher" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112922-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112922.jpg" alt="Trip out to Cliffs of Moher" caption="Trip out to Cliffs of Moher" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112922-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_112922.jpg" alt="Trip out to Cliffs of Moher" caption="Trip out to Cliffs of Moher" >}}
 
 The bus made a few stops - a couple at service stations which were nice and let us refuel and de-fuel. You know what I mean. A couple stops at historical points. One was this little town called Galway. Famous for it's hookers. Ask your guide. But, they also have toilets and a take-away Irish coffee place. So, they're awesome.
 
 Another stop was at an awesome rock outcropping area. We walked out along this awesome flat plane in an area called the Barrens. Our guide explained the history of the area both geologically and socially. Excellent guide.
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_125746-1-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_125746-1.jpg" alt="Trip out to Cliffs of Moher" caption="Trip out to Cliffs of Moher" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_125746-1-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_125746-1.jpg" alt="Trip out to Cliffs of Moher" caption="Trip out to Cliffs of Moher" >}}
 
 
 
@@ -87,15 +87,15 @@ Next stop, lunch. Paddywagon and a couple other companies stop in this town that
 
 Cliffs of Moher! This is a crazy set of cliffs. There's a short walk to a tower where you can get amazing views. There are dangerous paths you can walk on, but you can also just stick to the asphalt and there's no danger.
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143808-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143808.jpg" alt="Tower at Cliffs of Moher" caption="Tower at Cliffs of Moher" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143808-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143808.jpg" alt="Tower at Cliffs of Moher" caption="Tower at Cliffs of Moher" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143922-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143922.jpg" alt="Tower at Cliffs of Moher" caption="Tower at Cliffs of Moher" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143922-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143922.jpg" alt="Tower at Cliffs of Moher" caption="Tower at Cliffs of Moher" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143558-768x1024.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143558.jpg" alt="Tower at Cliffs of Moher" caption="Tower at Cliffs of Moher" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143558-768x1024.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_143558.jpg" alt="Tower at Cliffs of Moher" caption="Tower at Cliffs of Moher" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_144829-1-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_144829-1.jpg" alt="Cliffs of Moher" caption="Cliffs of Moher" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_144829-1-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_144829-1.jpg" alt="Cliffs of Moher" caption="Cliffs of Moher" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_144947-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171014_144947.jpg" alt="Cliffs of Moher" caption="Cliffs of Moher" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_144947-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171014_144947.jpg" alt="Cliffs of Moher" caption="Cliffs of Moher" >}}
 
 
 

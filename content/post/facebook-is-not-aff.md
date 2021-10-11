@@ -13,13 +13,13 @@ So, maybe a year ago I changed my "religion" on Facebook, because I wanted to ma
 
 Today I find that someone took an interest in my made up religion:
 
-[![A Facebook notification that someone liked my made up religion.](http://blog.notmet.net/wp-content/uploads/2012/07/somebodyLikes31Jul.jpg)
-](http://blog.notmet.net/wp-content/uploads/2012/07/somebodyLikes31Jul.jpg)
+[![A Facebook notification that someone liked my made up religion.](http://static.notmet.net/wp-content/uploads/2012/07/somebodyLikes31Jul.jpg)
+](http://static.notmet.net/wp-content/uploads/2012/07/somebodyLikes31Jul.jpg)
 
 "Cool!"  I exclaimed.   Is that a dog in his profile picture?  "Let's find out more about this person!"
 
-[![The Facebook page of a nudist.](http://blog.notmet.net/wp-content/uploads/2012/07/wtfdude31Jul.jpg)
-](http://blog.notmet.net/wp-content/uploads/2012/07/wtfdude31Jul.jpg)
+[![The Facebook page of a nudist.](http://static.notmet.net/wp-content/uploads/2012/07/wtfdude31Jul.jpg)
+](http://static.notmet.net/wp-content/uploads/2012/07/wtfdude31Jul.jpg)
 
 WTF dude?  Is this allowed on Facebook?  If it is it should not be.  Maybe I'm just a prude or something, but damn.  This honestly made me think that maybe Facebook should go back to college students only.  I'm past that now, but come on folks, Facebook is not Adult Friend Finder.
 

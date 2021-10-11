@@ -28,7 +28,7 @@ Evening, 17 May: did the pre-ferment.
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190518_081814-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190518_081814-768x1024.jpg)
 All In
 
 
@@ -41,7 +41,7 @@ All In
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190518_103623-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190518_103623-768x1024.jpg)
 Ready to Start Bulk Rise
 
 
@@ -54,7 +54,7 @@ Ready to Start Bulk Rise
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190518_144711-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190518_144711-768x1024.jpg)
 Risen Enough
 
 
@@ -67,13 +67,13 @@ Risen Enough
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190518_152857-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190518_152857-768x1024.jpg)
 Starting to Rise in Pan  
 
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190518_183226-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190518_183226-768x1024.jpg)
 Ready to Bake
 
 
@@ -94,7 +94,7 @@ Ready to Bake
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190518_193529-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190518_193529-768x1024.jpg)
 Yarp  
 
 

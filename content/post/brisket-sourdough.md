@@ -102,7 +102,7 @@ tags:
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/11/IMG_20191110_122650-1024x768.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/11/IMG_20191110_122650-1024x768.jpg)
 Cleaned up, sliced up, gotta cool a bit...
 
 

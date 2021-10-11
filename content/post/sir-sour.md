@@ -44,7 +44,7 @@ The bulk rise finished around 1300 today, and the loaf is quite large.  Bread is
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/10/15722033036511369375121820470850-e1572203709472-1024x904.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/10/15722033036511369375121820470850-e1572203709472-1024x904.jpg)
 Starting final rise
 
 
@@ -57,7 +57,7 @@ Looking good @1600!  The cheater yeast really increases volume.
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/10/15722137392468888591572510882703-e1572214343230-1024x730.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/10/15722137392468888591572510882703-e1572214343230-1024x730.jpg)
 Final rise complete, about to go in the oven
 
 

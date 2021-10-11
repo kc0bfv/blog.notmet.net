@@ -114,8 +114,8 @@ Build as many certificates as you need.  Each of them will be stored in the "ke
 
 Alright, certs are built, now how do we setup our DD-WRT?  Login to your router, go to Services->VPN, and make that page look like the one below.  (Click on it to get a big version...)
 
-[![DDWRTPage](http://blog.notmet.net/wp-content/uploads/2016/03/DDWRTPage-648x1024.png)
-](http://blog.notmet.net/wp-content/uploads/2016/03/DDWRTPage.png)
+[![DDWRTPage](http://static.notmet.net/wp-content/uploads/2016/03/DDWRTPage-648x1024.png)
+](http://static.notmet.net/wp-content/uploads/2016/03/DDWRTPage.png)
 
 Ok - that image explained where to get the values you need for the crypto settings, but there are a couple other values you should consider changing from my setup...  Literally, only two!  Easy stuff.
 

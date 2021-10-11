@@ -17,7 +17,7 @@ Once we got to the airport, Ryanair made the flights easy.  By the time I'm wri
 
 Stansted makes security easy, but after security is a different story.  Security is well organized, with many short lines and a couple large lines that feed into those in a fair manner.  There's an automatic bin-return hopper, so employees aren't wasting their time there.
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/blackfriday.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/blackfriday.jpg" alt="Stansted Airport is basically this for a damn mile.  Photo from Eric Cartman: https://www.counter-currents.com/2011/12/christmas-shopping-in-multicultural-hell/" caption="Shopping Hell - Source http://bit.ly/2ACJgZV" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/blackfriday.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/blackfriday.jpg" alt="Stansted Airport is basically this for a damn mile.  Photo from Eric Cartman: https://www.counter-currents.com/2011/12/christmas-shopping-in-multicultural-hell/" caption="Shopping Hell - Source http://bit.ly/2ACJgZV" >}}
 
 Once past security you have to crawl through the bowels of a shopping mall in what seems like a crowded line that will never end, with no sign to indicate the status or locations of any flights, no clues as to where to go other than forward, and a constant crush of people and what I can only assume are soulless automatons that are capable of spraying perfume and foisting garbage fliers upon you.  This part feel like a bad dream.  I told Sarah that I had literally had this bad dream before - at the airport there's always this low level worry I have that I'm late, and that coupled with the ridiculous market really is straight out of a nightmare of mine.
 
@@ -27,7 +27,7 @@ At this point, waiting at Stansted was largely pleasant.  Eventually the airpor
 
 The analogy has to end there, because Glasgow is anything other than a toilet.
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_131527-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_131527.jpg" alt="Kelvingrove Museum, with the park in the background.  Yup, Scotland's pretty nice." caption="Kelvingrove Museum - Glasgow" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_131527-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_131527.jpg" alt="Kelvingrove Museum, with the park in the background.  Yup, Scotland's pretty nice." caption="Kelvingrove Museum - Glasgow" >}}
 
 I had reserved a car at Budget from the Glasgow airport.  The rental car woman and I had a funny little conversation, after which she expressed concern that I had rented the smallest cat possible.  I crouched down and showed her that I would have no problem fitting, she laughed.
 
@@ -45,15 +45,15 @@ Overall though, once I re-learned how to drive driving was extremely pleasant. D
 
 But I'm moving too fast. Glasgow was a beauty of a city. We stayed in a nice little hotel in a part of town called Finnieston. This is trendy area with great food and drink, for good prices too.  We started by going to Kelvingrove Cafe for lunch, and I really can't imagine a better way to start a visit to Scotland.  Great whisky for crazy low prices, but we just had coffee and lunch and were impressed.
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_120439-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_120439.jpg" alt="The whisky menu at the cafe was impressive, as were the prices.  This would be a daily stop for me if I lived nearby." caption="Whisky Menu at the Cafe" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_120439-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_120439.jpg" alt="The whisky menu at the cafe was impressive, as were the prices.  This would be a daily stop for me if I lived nearby." caption="Whisky Menu at the Cafe" >}}
 
 Sarah and I stayed at Sandyford Hotel, which is wonderful and really could be considered a good spot for breakfast apart from the hotel. I got in a great run around downtown and the river, and Sarah and I went for a walk from the hotel through downtown Glasgow.
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_184921-1-768x1024.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_184921-1.jpg" alt="Glasgow is a big city, but it has all these parts that feel like a smaller city.  Little segments with shopping, or business, or punks, or a church.  This is a beautiful old church in downtown." caption="Downtown Glasgow" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_184921-1-768x1024.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_184921-1.jpg" alt="Glasgow is a big city, but it has all these parts that feel like a smaller city.  Little segments with shopping, or business, or punks, or a church.  This is a beautiful old church in downtown." caption="Downtown Glasgow" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_164047-1024x768.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_164047.jpg" alt="These kids rocked.  No two-ways about it." caption="Teenagers Rockin Out in Glasgow" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_164047-1024x768.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_164047.jpg" alt="These kids rocked.  No two-ways about it." caption="Teenagers Rockin Out in Glasgow" >}}
 
-{{< figure src="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_164304-768x1024.jpg" link="https://blog.notmet.net/wp-content/uploads/2017/10/IMG_20171007_164304.jpg" alt="The Tardis Dispensary.  It's red though..." caption="A Little Dr. Who Shoutout" >}}
+{{< figure src="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_164304-768x1024.jpg" link="https://static.notmet.net/wp-content/uploads/2017/10/IMG_20171007_164304.jpg" alt="The Tardis Dispensary.  It's red though..." caption="A Little Dr. Who Shoutout" >}}
 
 At one point we stopped at this karaoke place, an old guy bar.  We stayed for about an hour drinking cheap beer and whisky, and then this old dude who had been giving Sarah the eye all night got up.
 

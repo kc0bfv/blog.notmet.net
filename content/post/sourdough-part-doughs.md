@@ -42,7 +42,7 @@ Gonna try to make it lighter this time by catching it at peak rise.
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190511_120707-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190511_120707-768x1024.jpg)
 
 
 
@@ -63,12 +63,12 @@ Gonna try to make it lighter this time by catching it at peak rise.
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190511_185532-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190511_185532-768x1024.jpg)
 Has This Risen Enough?
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190511_190439-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190511_190439-768x1024.jpg)
 In Da Pan - For Final Rise  
 
 
@@ -106,7 +106,7 @@ Late afternoon, 12 May: took the bread out of the fridge, let it warm up, then b
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190512_164202-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190512_164202-768x1024.jpg)
 It has clearly risen a bit more
 
 
@@ -119,12 +119,12 @@ The dough still seemed too wet this afternoon, but everything seems to have bake
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190512_172500-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190512_172500-768x1024.jpg)
 
 
 
 
-![](https://blog.notmet.net/wp-content/uploads/2019/05/IMG_20190512_175738-768x1024.jpg)
+![](https://static.notmet.net/wp-content/uploads/2019/05/IMG_20190512_175738-768x1024.jpg)
 
 
 
