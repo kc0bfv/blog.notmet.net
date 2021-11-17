@@ -6,6 +6,7 @@ categories:
 - blog
 tags:
 - leadership
+- leadership development course
 ---
 
 This is an interesting article shared as part of this leadership class I'm in right now: [Dear White Colonel ... we must address our blind spots around race](https://miro.com/app/board/o9J_ljkDicQ=/?moveToWidget=3074457367482895714&cot=14)

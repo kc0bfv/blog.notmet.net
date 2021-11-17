@@ -7,6 +7,7 @@ categories:
 tags:
 - leadership
 - things I hope I remember
+- leadership development course
 ---
 
 I'm sitting in the Leader Development Course from Air University - distance learning.  One of the stories I heard this morning has the crux - the commander needs to walk a line between being too involved and not being involved.  The story involved the former commander trying to show he cared by being there when new members arrived, by sitting with folks as they did work, and by visiting them when they were out in the field.  Later he learned that folks felt like he was checking up on them, making sure they were doing what they were supposed to.

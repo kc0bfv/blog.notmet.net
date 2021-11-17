@@ -7,6 +7,7 @@ categories:
 tags:
 - leadership
 - things I hope I remember
+- leadership development course
 ---
 
 This video discusses organizational culture - I don't love it because it's too cheesy-motivational to me.

@@ -7,6 +7,7 @@ categories:
 tags:
 - things I hope I remember
 - leadership
+- leadership development course
 ---
 
 I'm finding this course pretty interesting.
