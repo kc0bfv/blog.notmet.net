@@ -53,3 +53,9 @@ This fix is working, hopefully it'll last for a while.  I wish I'd had a splice 
 A professional that's trenching and running cable should have the tools and knowledge to make a better fix than I can.  This person made only the most amateur fix possible.  It's aggravating that this person is probably doing something similar to other folks' yards, and maybe they're not realizing the connection to the Google Fiber trench.  Maybe it's days or weeks before their sprinklers act up, or their phones act up...
 
 It's even more aggravating that this guy left a tripping hazard on our sidewalk.  This neighborhood is mostly older folks and Winter is Coming.
+
+# Update - 19 Nov 2021
+
+{{< fig-res res="PXL_20211119_143945237.jpg" alt="The fiber cable is buried now in the sidewalk." caption="Update - now buried..." >}}
+
+As of today the fiber line is buried below the sidewalk now.  No more trip hazard.  Back on the 7th I tweeted this at the Google Fiber tweet helpdesk.  They steered me to a form to fill in and a number to call.  I filled in the form that night.  Then I hadn't heard anything, and called on maybe the 9th.  Specifically I got in touch with the Google Fiber infrastructure install team.  They took the report and - while it still took over a week - the problem did get fixed.
