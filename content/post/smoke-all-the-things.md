@@ -26,4 +26,4 @@ Today I'm smoking brisket, salmon, and lamb.  Last night I brined the fish, the
 
 13 Feb 1300: brisket is done, everything's off!
 
-You know, the lamb bark is a little salty.  I think maybe it always has been.  Perhaps next time I should use a similar salt content as I do with brisket and salmon and such.  Otherwise everything was great.  Unfortunately one of my temperature probes is having trouble now - the marked one - it looks like an open circuit
+You know, the lamb bark is a little salty.  I think maybe it always has been.  Perhaps next time I should use a similar salt content as I do with brisket and salmon and such.  Otherwise everything was great.  Unfortunately one of my temperature probes is having trouble now - the marked one - it looks like an open circuit.
