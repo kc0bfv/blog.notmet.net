@@ -3,6 +3,7 @@ title: "Power Sensor"
 date: 2022-02-27T08:35:10-06:00
 draft: false
 categories:
+- blog
 images: ["https://blog.notmet.net/2022/02/power-sensor/Guts.jpg"]
 description: "Building a current sensor that reports over cellular network to the Internet, providing a summary webpage and email alerting for when the current dies."
 tags:
