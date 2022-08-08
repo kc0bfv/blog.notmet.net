@@ -34,7 +34,8 @@ This is such a simple, straightforward problem solving meth--- wait a second...
 > 2. Generate alternative solutions
 > 3. Evaluate and select an alternative
 > 4. Implement and follow-up on the solution
-> -- <cite> https://asq.org/quality-resources/problem-solving </cite>
+>
+> -- https://asq.org/quality-resources/problem-solving
 
 The process is the same as a generic problem solving process applied to conducting systems engineering and where the end-goal is only presenting the results to decision makers.
 
@@ -46,7 +47,8 @@ Their presentation methodology is similarly general but powerful, and follows di
 > * Define presentation mechanisms for stakeholder decisions
 > * Align information requirements for the data sets for decisions
 > * Develop presentation products
-> -- <cite>https://dodcio.defense.gov/Library/DoD-Architecture-Framework/dodaf20_presentation/</cite>
+>
+> -- https://dodcio.defense.gov/Library/DoD-Architecture-Framework/dodaf20_presentation/
 
 Still - this is the exact process many people seem to miss when determining how and what to present to an audience.
 
