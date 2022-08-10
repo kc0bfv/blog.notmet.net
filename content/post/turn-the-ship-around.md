@@ -19,28 +19,28 @@ Captain Marquet needed to push control down to lower and lower levels to build t
 These three effort areas needed some supporting actions to make them happen:
 
 * Control - push it down to lower and lower levels
-** Find the generic code for control and rewrite it - are there regs that specify who is in control?  change them
-** Act your way to new thinking - fake it till you make it - consider talking the talk while you try to start walking the walk
-** Short early conversations make efficient work - teams should sync regularly among all levels
-** Use "I Intend To" to turn passive followers into active leaders - when folks recommend an action, or request to take an action, ask them to rephrase it as an "I intend to" statement
-** Resist the urge to provide solutions - listen to the ones folks provide
-** Eliminate top down monitoring systems - what were you trying to accomplish with them?  Find a better way to accomplish that goal that gives leaders autonomy
-** Think out loud, both superiors and subordinates - more sharing of info
-** Embrace the inspectors - learn from them, don't be afraid of them
+    * Find the generic code for control and rewrite it - are there regs that specify who is in control?  change them
+    * Act your way to new thinking - fake it till you make it - consider talking the talk while you try to start walking the walk
+    * Short early conversations make efficient work - teams should sync regularly among all levels
+    * Use "I Intend To" to turn passive followers into active leaders - when folks recommend an action, or request to take an action, ask them to rephrase it as an "I intend to" statement
+    * Resist the urge to provide solutions - listen to the ones folks provide
+    * Eliminate top down monitoring systems - what were you trying to accomplish with them?  Find a better way to accomplish that goal that gives leaders autonomy
+    * Think out loud, both superiors and subordinates - more sharing of info
+    * Embrace the inspectors - learn from them, don't be afraid of them
 * Competence - supports pushing control down, must be developed to exist, must exist to permit pushing control down to work
-** Take deliberate action - point at the action you're about to take, state it out loud, then take it
-** We learn everywhere all the time - adopt this mindset publicly within your org
-** Don't brief, certify - teams were briefing the safety/activities they would take before taking them, to the folks who would take the actions.  Folks were falling asleep.  Instead, certify the folks on the actions they need to take.
-** Continually and consistently repeat the message - clarity...
-** Specify goals, not methods - permit autonomy
+    * Take deliberate action - point at the action you're about to take, state it out loud, then take it
+    * We learn everywhere all the time - adopt this mindset publicly within your org
+    * Don't brief, certify - teams were briefing the safety/activities they would take before taking them, to the folks who would take the actions.  Folks were falling asleep.  Instead, certify the folks on the actions they need to take.
+    * Continually and consistently repeat the message - clarity...
+    * Specify goals, not methods - permit autonomy
 * Clarity - supports pushing control down, gets everyone on the same page regarding what the organization is about
-** Achieve excellence, don't just avoid errors - don't just survive, thrive
-** Build trust and take care of your people
-** Use your legacy for inspiration - embrace the history of your team, find some interesting fun ways to bring that into play
-** Use guiding principles for decision criteria - let your conscience be your guide, and have guiding principles capable of steering decision criteria
-** Use immediate recognition to reinforce desired behaviors - be ready to give the award right when it's time
-** Begin with the end in mind - start with why
-** Encourage a questioning attitude over blind obedience
+    * Achieve excellence, don't just avoid errors - don't just survive, thrive
+    * Build trust and take care of your people
+    * Use your legacy for inspiration - embrace the history of your team, find some interesting fun ways to bring that into play
+    * Use guiding principles for decision criteria - let your conscience be your guide, and have guiding principles capable of steering decision criteria
+    * Use immediate recognition to reinforce desired behaviors - be ready to give the award right when it's time
+    * Begin with the end in mind - start with why
+    * Encourage a questioning attitude over blind obedience
 
 Some of these are not problems for me - they're natural and I abhor situations where they're not already the norm.  "Encourage a questioning attitude," for instance.  "Embrace the inspectors," is no problem.  "Use guiding principles for decision criteria," is the way I typically think about organizational problems.  I like to ask what's the right way to solve a problem for a situation.  Building an environment where team members act the same is something I have not intentionally done in the past, though.
 
