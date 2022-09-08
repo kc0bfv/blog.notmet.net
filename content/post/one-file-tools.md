@@ -8,6 +8,7 @@ tags:
 - Programming
 - Anti-Cloud
 - JavaScript
+- One-File Tools
 ---
 
 Many of us use computers that are locked-down by some corporate policy.  The restrictions prevent you from downloading software, or running anything that's not pre-approved.  Most of us have used workarounds of some type - Excel spreadsheets created by that one guy in the office, Word documents with macros, Sharepoint sites, maybe even the occasional Powershell script...
