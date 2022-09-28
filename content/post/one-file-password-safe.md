@@ -36,7 +36,7 @@ That leads me to my discovery today...
 
 It basically meets all those needs up there.  There's also a cloud storage version.  The interface looks great...  Check it out.
 
-I need to verify that it makes no resource requests, but initially it doesn't seem to.
+~~I need to verify that it makes no resource requests, but initially it doesn't seem to.~~ I checked quickly using Chromium dev network tab - it doesn't seem to make any external resource requests when taking any action.  That's perfect.
 
 It's open-source-ish - by which I mean that while there's a Github, the source is basically just the final HTML/JS/CSS file.  I suspect the author had some other build components that got compiled into that combined file but :shrug:.
 
