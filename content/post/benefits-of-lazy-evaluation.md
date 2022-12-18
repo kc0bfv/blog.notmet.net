@@ -30,7 +30,7 @@ This is an example of "eager evaluation".
 
 If the functions `get_sonic_locations`, `is_open`, and `has_ice` are really fast, this is no big deal!  This will evaluate quickly.
 
-Last Sunday though - I was driving around San Antonio with a two year old whose lollipop was almost gone.  Those functions were not fast - they involved me driving to the Sonic location, realizing that Google Maps thought it was open but it was permanently closed, Sonic's website thought it was open but it listed a wrong address and was anyway permanently closed, and then trying the next location.  San Antonio's northside has lost a couple Sonics for some reason.
+Last Sunday though - I was driving around San Antonio with a two year old whose lollipop was almost gone.  Those functions were not fast - they involved me driving to the Sonic location, realizing that Google Maps thought it was open but it was permanently closed, Sonic's website thought it was open but it listed a wrong address and was anyway permanently closed, and then trying the next location.  San Antonio's north-side has lost a couple Sonics for some reason.
 
 So - if I did eager evaluation last Sunday I would have:
 

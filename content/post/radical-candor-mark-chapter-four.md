@@ -13,7 +13,7 @@ From "Radical Candor" by Kim Scott, Chapter 4:
 
 > If Mark hadn't decided on these OKRs, what would you all have planned to do next quarter?
 
-> While Mark's vision was inspiring, [one team member] felt it was unrealistic.  [...] They would be working 85 hours per week.  [...]  He had badly understimated the lag time in a system that made work less efficient than it should be.
+> While Mark's vision was inspiring, [one team member] felt it was unrealistic.  [...] They would be working 85 hours per week.  [...]  He had badly underestimated the lag time in a system that made work less efficient than it should be.
 
 > While Mark's proposed goals made sense in theory, his team knew there were major obstacles that made his plan impracticable.
 

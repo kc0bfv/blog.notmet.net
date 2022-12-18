@@ -12,7 +12,7 @@ tags:
 
 I'm reading *An Elegant Puzzle: Systems of Engineering Management*, by Will Larson, at the recommendation of a good friend, and wanted to take some notes on it.
 
-First, the book is gorgeous.  I've got a hardcover copy via interlibrary loan (thank you Meridian Library District, near Boise, ID, and thank you San Antonio Public Library), and the cover is bright white rough linen with black text and printing, and a black line drawing of a bush on the front cover reminiscent of an organizational structure, data structure, or actual organic bush.  The back has only the printer's logo and name in black print.  The chapters are nicely printed on full pages, which makes them easy to locate in the book.  Also easy to locate are the figures, which are on bright yellow/orange pages, while the other pages are bright white and slightly thicker than book pages I'm used to.  The references section in the back is broken out by chapter, and instead of the usual bibliographic BS there are URLs with QR codes.  I've long felt it's time to move away from standard bibliographic formats, especially ones where URLs are optional, and to something that emphasizes easily accessing the relevant data digitally.  (Although, URLs break, so I would include some information with the URL, and for a book I might have a separate website with the full information...)  So I'm enjoying just holding this book.  It also seems informative.
+First, the book is gorgeous.  I've got a hardcover copy via inter-library loan (thank you Meridian Library District, near Boise, ID, and thank you San Antonio Public Library), and the cover is bright white rough linen with black text and printing, and a black line drawing of a bush on the front cover reminiscent of an organizational structure, data structure, or actual organic bush.  The back has only the printer's logo and name in black print.  The chapters are nicely printed on full pages, which makes them easy to locate in the book.  Also easy to locate are the figures, which are on bright yellow/orange pages, while the other pages are bright white and slightly thicker than book pages I'm used to.  The references section in the back is broken out by chapter, and instead of the usual bibliographic BS there are URLs with QR codes.  I've long felt it's time to move away from standard bibliographic formats, especially ones where URLs are optional, and to something that emphasizes easily accessing the relevant data digitally.  (Although, URLs break, so I would include some information with the URL, and for a book I might have a separate website with the full information...)  So I'm enjoying just holding this book.  It also seems informative.
 
 # Chapter Two
 
@@ -90,7 +90,7 @@ I'm in the military so focusing on improving efficiency and productivity is some
 
 ## Succession Planning
 
-This section was also fun and is basically exactly the process I went through when I was leaving RANS and there was no backfill.
+This section was also fun and is basically exactly the process I went through when I was leaving RANS and there was no back-fill.
 
 # End of Line
 

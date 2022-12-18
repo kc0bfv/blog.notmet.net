@@ -35,7 +35,7 @@ Membership is a precondition for people feeling like they belong.  It is having 
 
 * Recurring weekly events - socially, during work hours, open for many to attend but optional.  90th does this in several ways already.
 * Employee resource groups - these are groups for folks with similar backgrounds, so they can build communities.
-* Team offsites - work differently once a quarter
+* Team off-sites - work differently once a quarter
 * Coffee chats - perhaps randomly assigned, "get folks from different teams interacting when they don't need something from each other", slightly different than the CC coffee chats, but a cool idea
 * Team lunches - maybe org once a week
 

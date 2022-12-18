@@ -15,7 +15,7 @@ Weapon school grads want to be, "humble, approachable, credible", and this has a
 
 Approachability can be quantified by how my team interacts with me.  I need to let them know that to me approachability really is important.
 
-A common mangerial saying in the military (and at work more broadly) is:
+A common managerial saying in the military (and at work more broadly) is:
 
 > "Don't bring me problems, bring me solutions." - Other Managers
 

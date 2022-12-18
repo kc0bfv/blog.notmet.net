@@ -24,7 +24,7 @@ I'm continuing to read an Elegant Puzzle and chapter 3 had some good considerati
 
 And, 5 minute media training:
 
-* Answer the question you want to be asked - reframe a difficult or challenging question into one you're comfortable answering.  Don't accept a question's implicit framing, take the opportunity to frame it yourself.
+* Answer the question you want to be asked - re-frame a difficult or challenging question into one you're comfortable answering.  Don't accept a question's implicit framing, take the opportunity to frame it yourself.
 * Stay positive - especially when it comes to competitors and controversy.
 * Speak in threes - three concise points, continue to refer back to them.
 
