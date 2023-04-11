@@ -10,7 +10,7 @@ tags:
 
 Costco leg of lamb, 4.6 lbs, $5.49 per lb.  Slathering it in, per lb:
 
-```
+```no-highlight
 2 cloves garlic
 .25 Tbsp salt (this is a change from the past, when it was too salty)
 .25 Tbsp pepper (to match the salt now)
