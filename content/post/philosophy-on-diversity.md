@@ -1,7 +1,7 @@
 ---
 title: "Philosophy on Diversity"
 date: 2023-05-23T15:35:01Z
-draft: true
+draft: false
 categories:
 - Blog
 tags:
