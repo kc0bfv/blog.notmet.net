@@ -1,7 +1,7 @@
 ---
 title: "Chief Disruption Officer"
-date: 2024-02-25T12:18:00-06:00
-draft: true
+date: 2024-03-08T08:00:00-06:00
+draft: False
 categories:
 - Blog
 tags:
