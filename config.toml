@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Karl's Blog"
 theme = "hugo-minimalist-theme"
 paginate = 10
-googleAnalytics = "UA-42117518-3"
+rssLimit = 20
 
 [params]
 
@@ -40,17 +40,13 @@ googleAnalytics = "UA-42117518-3"
     copyright = "Karl Sickendick"
     mainSections = ["post"]
 
-[author]
-    name = "Karl Sickendick"
-    email = "kc0bfv@notmet.net"
-    avatar = "https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80"
-    [author.Social]
-        facebook = "karl.sickendick"
-        twitter = "kc0bfv"
+    [params.author]
+        name = "Karl Sickendick"
+        email = "kc0bfv@notmet.net"
+        avatar = "https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80"
 
 
 [social]
-    twitter = "kc0bfv"
     github = "kc0bfv"
     mastodon = "https://qoto.org/@finity"
 
