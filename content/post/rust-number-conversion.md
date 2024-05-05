@@ -9,6 +9,26 @@ tags:
 - rust
 ---
 
+***
+
+Bottom-Line Up Front: I think `as` should be harder to use for Integer conversion in Rust.  I recommend you use TryFrom/TryInto instead.  Here's how I recommend doing it (more complete example of right/wrong at the end):
+
+```rust
+use std::convert::TryInto;
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let orig: u64 = u64::MAX;
+
+    let ti_u64: u64 = orig.try_into()?;
+    let ti_i64: i64 = orig.try_into()?;
+    let ti_u32: u32 = orig.try_into()?;
+
+    Ok(())
+}
+```
+
+***
+
 I'm at an intermediate level with the Rust programming language.  I've done a year of [adventofcode](https://adventofcode.com/), a medium-sized API server project, and little more.  While refactoring some code in my project recently I got rid of some of my explicit string conversions and let the type inference system and From/Into do their jobs.  Now that I'm more comfortable with reading code using From/Into patterns I think it's actually simpler - I can easily understand and trust what the type inference system does in those instances.  Before I had intuition about how the inference system worked, I didn't trust it.  I didn't know what it was doing under the hood.
 
 Integer type conversion is not something I have intuition and trust in yet though, and I was refactoring some instances of that too.  Having gone through Rust by Example I am familiar with the [section on casting](https://doc.rust-lang.org/rust-by-example/types/cast.html), which recommends `as`.
@@ -68,4 +88,44 @@ help: you can convert an `i32` to an `i64`: `(i32::MIN+1).into()`
 
 I'm interested in opposing opinions!
 
-EDIT: The first edition of the Rust Book recommended `as` for "safe casts", but the current edition doesn't seem to mention any way of converting numeric types.  I was mostly thinking of Rust by Example, as shown now.
+## Full Example
+
+Here's a full example of what (I suggest) you should not do, and what you should do.
+
+```rust
+use std::convert::TryInto;
+
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let orig: u64 = u64::MAX;
+    println!("Orig: {}", orig);
+
+    // Non-bounds-checked conversion - will wrap silently
+    // This can introduce a class of vulnerabilities!
+    //
+    // DON'T USE THIS METHOD OF INTEGER CONVERSION, I RECOMMEND
+    println!(
+        "As:   u64 {} u32 {} u8 {} i64 {} i32 {} i8 {} usize {}",
+        orig as u64, orig as u32, orig as u8, orig as i64, orig as i32, orig as i8, orig as usize
+    ); // bad, in this case
+
+    // Bounds-checked conversion.
+    // Will not introduce vulnerabilities, but may add some overhead.
+    //
+    // Executing this will actually produce a TryFromIntError because
+    // `orig` is u64::MAX which is too big to fit in a u32.
+    //
+    // I RECOMMEND DOING INTEGER CONVERSION THIS WAY
+    let ti_u64: u64 = orig.try_into()?;
+    let ti_i64: i64 = orig.try_into()?;
+    let ti_u32: u32 = orig.try_into()?;
+    println!("try_into:   u64 {} u32 {} i64 {}", ti_u64, ti_u32, ti_i64);
+
+    Ok(())
+}
+```
+
+---
+
+EDIT 1: The first edition of the Rust Book recommended `as` for "safe casts", but the current edition doesn't seem to mention any way of converting numeric types.  I was mostly thinking of Rust by Example, as shown now.
+
+EDIT 2: Adding some code example and a "just tell me what you're saying is the right way" up front.
