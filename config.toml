@@ -48,7 +48,7 @@ rssLimit = 20
 
 [social]
     github = "kc0bfv"
-    mastodon = "https://qoto.org/@finity"
+    mastodon = "https://infosec.exchange/@finity"
 
 [permalinks]
     post = "/:year/:month/:slug/"
