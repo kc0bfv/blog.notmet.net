@@ -2,8 +2,10 @@ baseURL = "https://blog.notmet.net/"
 languageCode = "en-us"
 title = "Karl's Blog"
 theme = "hugo-minimalist-theme"
-paginate = 10
 rssLimit = 20
+
+[pagination]
+    paginate = 10
 
 [params]
 
@@ -46,9 +48,9 @@ rssLimit = 20
         avatar = "https://s.gravatar.com/avatar/8dcaef6cede11442234ac079a71f35a8?s=80"
 
 
-[social]
-    github = "kc0bfv"
-    mastodon = "https://infosec.exchange/@finity"
+    [params.social]
+        github = "kc0bfv"
+        mastodon = "https://infosec.exchange/@finity"
 
 [permalinks]
     post = "/:year/:month/:slug/"

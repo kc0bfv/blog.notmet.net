@@ -1,32 +1,32 @@
-{{ with .Site.Social.mastodon }}
+{{ with .Site.Params.Social.mastodon }}
 <li><a href="{{.}}" class="fab fa-mastodon" target="_blank" title="Mastodon"></a></li>
 {{ end }}
 
-{{ with .Site.Social.twitter }}
+{{ with .Site.Params.Social.twitter }}
 <li><a href="//twitter.com/{{.}}" class="fab fa-twitter" target="_blank" title="Twitter" aria-label="Twitter"></a></li>
 {{ end }}
 
-{{ with .Site.Social.facebook }}
+{{ with .Site.Params.Social.facebook }}
 <li><a href="//facebook.com/{{.}}" class="fab fa-facebook-square" target="_blank" title="Facebook" aria-label="Facebook"></a></li>
 {{ end }}
 
-{{ with .Site.Social.linkedin }}
+{{ with .Site.Params.Social.linkedin }}
 <li><a href="//linkedin.com/in/{{.}}" class="fab fa-linkedin" target="_blank" title="Linkedin" aria-label="Linkedin"></a></li>
 {{ end }}
 
-{{ with .Site.Social.behance }}
+{{ with .Site.Params.Social.behance }}
 <li><a href="//behance.net/{{.}}" class="fab fa-behance" target="_blank" title="Behance" aria-label="Behance"></a></li>
 {{ end }}
 
-{{ with .Site.Social.dribbble }}
+{{ with .Site.Params.Social.dribbble }}
 <li><a href="//dribbble.com/{{.}}" class="fab fa-dribbble" target="_blank" title="Dribbble" aria-label="Dribbble"></a></li>
 {{ end }}
 
-{{ with .Site.Social.instagram }}
+{{ with .Site.Params.Social.instagram }}
 <li><a href="//instagram.com/{{.}}" class="fab fa-instagram" target="_blank" title="Instagram" aria-label="Instagram"></a></li>
 {{ end }}
 
-{{ with .Site.Social.github }}
+{{ with .Site.Params.Social.github }}
 <li><a href="//github.com/{{.}}" class="fab fa-github" target="_blank" title="Github" aria-label="Github"></a></li>
 {{ end }}
 
