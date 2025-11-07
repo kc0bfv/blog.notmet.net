@@ -6,7 +6,7 @@ categories:
 - Smoker Log
 tags:
 - ribs
-- port butt
+- pork butt
 - pulled pork
 ---
 
