@@ -1,5 +1,5 @@
 ---
-title: "Get Together Port Butt"
+title: "Get Together Pork Butt"
 date: 2021-05-30T20:15:00-06:00
 draft: false
 categories:

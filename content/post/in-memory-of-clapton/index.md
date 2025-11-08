@@ -23,7 +23,7 @@ After that third visit I told the staff I wanted to take him home.
 
 "He has been here two years, we wondered when someone would take him."
 
-{{< fig-res res="20150406-184038.jpg" alt="" >}}                                                                          
+{{< fig-res res="20150406-184038.jpg" alt="" >}}
 
 He moved into my apartment, and I kept him in his crate whenever I wasn't there and when I was sleeping.  He whined about that quite a bit, and I was only able to ask him to get in or trick him into it a couple times before I just had to shove him in there.  I moved some sheets to the floor next to his crate and slept there so he wouldn't be alone, and he stopped whining.
 
@@ -156,4 +156,4 @@ I fed him some pulled pork and brisket on his last morning.  We ambled out into 
 I love you buddy.
 
 {{< fig-res res="20251105-122948.jpg" alt="" >}}                                                                          
-
+[More Photos](https://sarahandkarl.sickendick.com/in_memory_of_clapton/)
