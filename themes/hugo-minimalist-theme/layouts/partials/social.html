@@ -30,7 +30,7 @@
 <li><a href="//github.com/{{.}}" class="fab fa-github" target="_blank" title="Github" aria-label="Github"></a></li>
 {{ end }}
 
-{{ with $.Site.Author.email }}
+{{ with $.Site.Params.Author.email }}
 <li><a href="mailto:{{.}}" class="far fa-envelope" title="Email" aria-label="Email"></a></li>
 {{ end }}
 
