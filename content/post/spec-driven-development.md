@@ -97,9 +97,11 @@ Where's the sweet spot between a prompt stub (“build me X”) and paralysis by
 [Brigitta describes how spec-driven development echoes model-driven development](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html), which is a lot like Model-Based Systems Engineering that provides significant return for managing large-scale engineering projects.  She points out that we may be able to avoid the complications and overhead of that methodology now that we're leveraging LLMs.
 
 2. **Decomposition strategy**
+
 Microservices and modular boundaries already help humans manage context. Do we need to double down on small, well-encapsulated components so specs (and AI prompts) stay digestible? Is the existing microservice granularity right-sized? Do we need smaller/more composable units?
 
 3. **Spec management best-practices**
+
 Who owns spec updates? How often are they updated? How are they stored? What processes do we use to build them? Do we need version control, review workflows, linting for specs the way we do for code? How do we keep specs trustworthy when half the edits might come from AI agents themselves?
 
 4. **Agile ritual resets**
