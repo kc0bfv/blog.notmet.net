@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="120" viewBox="0 0 500 120">
+  <rect x="20" y="40" width="120" height="40" rx="6" fill="#e8f0fe" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="80" y="65" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#1a1a2e">Imaginary</text>
+
+  <line x1="140" y1="60" x2="190" y2="60" stroke="#4a6fa5" stroke-width="2"/>
+
+  <rect x="190" y="40" width="120" height="40" rx="6" fill="#e8f0fe" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="250" y="65" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#1a1a2e">Symbolic</text>
+
+  <line x1="310" y1="60" x2="360" y2="60" stroke="#4a6fa5" stroke-width="2"/>
+
+  <rect x="360" y="40" width="120" height="40" rx="6" fill="#e8f0fe" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="420" y="65" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#1a1a2e">Real</text>
+</svg>
